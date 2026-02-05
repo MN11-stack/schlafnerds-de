@@ -60,13 +60,13 @@ function HeroBoxspring() {
 
           <div className="relative">
             <div className="overflow-hidden rounded-2xl">
-              <Image
-                src="/images/store/ladenlokal-betten.jpeg"
-                alt="Boxspringbetten im Schlafnerds Showroom in Bocholt"
-                width={800}
-                height={600}
+              <video
+                src="/images/products/boxspring-hero.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="h-auto w-full object-cover"
-                priority
               />
             </div>
             <div className="absolute -bottom-4 -right-4 -z-10 h-full w-full rounded-2xl bg-primary/10" />
