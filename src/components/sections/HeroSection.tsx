@@ -64,8 +64,8 @@ export default function HeroSection() {
           <div className="relative">
             <div className="overflow-hidden rounded-2xl">
               <Image
-                src="/images/store/berater-erklaert.jpeg"
-                alt="Schlafnerds Berater erklärt Schlaflösungen in Bocholt"
+                src="/images/store/dirk-markus.jpeg"
+                alt="Dirk und Markus – das Team von Schlafnerds in Bocholt"
                 width={800}
                 height={600}
                 className="h-auto w-full object-cover"
