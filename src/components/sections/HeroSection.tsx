@@ -21,7 +21,7 @@ export default function HeroSection() {
               auf Augenhöhe.
             </p>
 
-            <div className="mt-10">
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
                 target="_blank"
@@ -29,6 +29,9 @@ export default function HeroSection() {
                 className="btn-primary"
               >
                 Beratungstermin vereinbaren
+              </a>
+              <a href="#laden" className="btn-outline">
+                Laden besuchen &amp; Probeliegen
               </a>
             </div>
 
@@ -54,8 +57,8 @@ export default function HeroSection() {
                 />
               </svg>
               <span>
-                Bocholt &middot; Kreis Borken &middot; Wesel &middot; Dorsten
-                &middot; NL-Grenzregion
+                Ihr Fachgeschäft in Bocholt – für die Region Borken, Wesel,
+                Dorsten und das NL-Grenzgebiet
               </span>
             </div>
           </div>

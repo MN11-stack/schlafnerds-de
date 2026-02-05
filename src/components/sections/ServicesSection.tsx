@@ -3,25 +3,55 @@ const services = [
     title: "Wer wir sind",
     videoId: "tqI10w-3VSs",
     description:
-      "Ein kurzer Blick hinter die Kulissen: Wer sind die Schlafnerds, was treibt uns an – und warum machen wir das, was wir tun?",
+      "Markus und Dirk – zwei Menschen, die guten Schlaf persönlich nehmen. In diesem Video lernen Sie uns kennen: wie wir beraten, worauf wir achten und warum Transparenz für uns kein Schlagwort ist, sondern Arbeitsweise.",
+    primaryCta: {
+      label: "Beratungstermin vereinbaren",
+      href: "https://calendly.com/schlafnerds/45min?back=1&month=2026-02",
+      external: true,
+    },
+    secondaryCta: {
+      label: "Laden besuchen",
+      href: "#laden",
+      external: false,
+    },
   },
   {
     title: "Kissentaxi – Beratung bei Ihnen zu Hause",
     videoId: "PiCfRn64Dv4",
     description:
-      "Manchmal ist es sinnvoll, direkt im eigenen Schlafzimmer zu beraten. Mit dem Kissentaxi kommen wir zu Ihnen – mit einer Auswahl an Kissen, abgestimmt auf Ihre Schlafsituation.",
+      "Manchmal ist es sinnvoll, direkt im eigenen Schlafzimmer zu beraten. Mit dem Kissentaxi kommen wir zu Ihnen – mit einer Auswahl an Kissen, abgestimmt auf Ihre Schlafsituation. Nah, praktisch und persönlich.",
+    primaryCta: {
+      label: "Kissentaxi im Termin besprechen",
+      href: "https://calendly.com/schlafnerds/45min?back=1&month=2026-02",
+      external: true,
+    },
+    secondaryCta: {
+      label: "Anrufen",
+      href: "tel:+4928713492862",
+      external: false,
+    },
   },
   {
     title: "Schlafnerds-Beute – besondere Einzelstücke",
     videoId: "unSCTO_rKME",
     description:
-      "Immer wieder finden wir Stücke, die herausragen: besondere Betten, Matratzen oder Accessoires in begrenzter Stückzahl. Wer Lust hat auf Besonderes, schaut regelmäßig vorbei.",
+      "Immer wieder finden wir Stücke, die herausragen: besondere Betten, Matratzen oder Accessoires in begrenzter Verfügbarkeit. Wer Lust hat auf Besonderes, schaut regelmäßig bei uns vorbei.",
+    primaryCta: {
+      label: "Im Laden ansehen",
+      href: "#laden",
+      external: false,
+    },
+    secondaryCta: {
+      label: "Anrufen",
+      href: "tel:+4928713492862",
+      external: false,
+    },
   },
 ];
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="bg-white">
+    <section id="services" className="bg-soft">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center">
@@ -56,7 +86,7 @@ export default function ServicesSection() {
                 </div>
               </div>
 
-              {/* Text */}
+              {/* Text + CTA */}
               <div className={index % 2 === 1 ? "md:order-1" : ""}>
                 <h3 className="font-heading text-2xl leading-snug font-normal md:text-3xl">
                   {service.title}
@@ -64,6 +94,32 @@ export default function ServicesSection() {
                 <p className="mt-4 text-lg leading-relaxed text-tagline">
                   {service.description}
                 </p>
+                <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                  <a
+                    href={service.primaryCta.href}
+                    {...(service.primaryCta.external
+                      ? {
+                          target: "_blank",
+                          rel: "noopener noreferrer",
+                        }
+                      : {})}
+                    className="btn-primary text-sm"
+                  >
+                    {service.primaryCta.label}
+                  </a>
+                  <a
+                    href={service.secondaryCta.href}
+                    {...(service.secondaryCta.external
+                      ? {
+                          target: "_blank",
+                          rel: "noopener noreferrer",
+                        }
+                      : {})}
+                    className="btn-outline text-sm"
+                  >
+                    {service.secondaryCta.label}
+                  </a>
+                </div>
               </div>
             </div>
           ))}
