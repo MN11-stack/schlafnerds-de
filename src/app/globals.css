@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Fonts – mapped from next/font CSS variables */
+  --font-heading: var(--font-newsreader), Georgia, serif;
+  --font-body: var(--font-nunito), Arial, sans-serif;
+
+  /* Brand Colors */
+  --color-primary: #31AFB4;
+  --color-primary-dark: #2a9499;
+  --color-secondary: #AA407F;
+  --color-secondary-dark: #8f3569;
+  --color-tagline: #474749;
+  --color-soft: #F5F5F5;
+}
+
+/* ============================================ */
+/* BASE STYLES                                  */
+/* ============================================ */
+
+body {
+  font-family: var(--font-body);
+  color: #000000;
+  background: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* ============================================ */
+/* TYPOGRAPHY UTILITIES                         */
+/* ============================================ */
+
+.accent-text {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--color-tagline);
+}
+
+/* ============================================ */
+/* BUTTON STYLES                                */
+/* ============================================ */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-weight: 500;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  color: #ffffff;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-weight: 500;
+  padding: 14px 28px;
+  border: 2px solid var(--color-primary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+/* ============================================ */
+/* VIDEO EMBED                                  */
+/* ============================================ */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ============================================ */
+/* IMAGE PLACEHOLDER (for missing photos)       */
+/* ============================================ */
+
+.image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-soft);
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  color: var(--color-tagline);
+  font-family: var(--font-body);
+  font-size: 14px;
+  min-height: 200px;
+}
+
+/* ============================================ */
+/* SMOOTH SCROLL                                */
+/* ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================ */
+/* LINK RESET for sections                      */
+/* ============================================ */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
