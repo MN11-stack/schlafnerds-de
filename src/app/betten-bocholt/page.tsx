@@ -55,6 +55,12 @@ function HeroBetten() {
                 Direkt vorbeikommen
               </a>
             </div>
+
+            <p className="mt-6 max-w-lg text-sm leading-relaxed text-tagline/60">
+              Viele unserer Kundinnen und Kunden aus Bocholt und dem Kreis
+              Borken entscheiden sich bewusst für einen Termin, um sich die
+              nötige Zeit zu nehmen.
+            </p>
           </div>
 
           <div className="relative">
@@ -328,7 +334,7 @@ function TerminOderVorbeikommen() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Zeit exklusiv für Sie</span>
+                <span>Planungssicherheit – Zeit exklusiv für Sie reserviert</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg
@@ -344,7 +350,7 @@ function TerminOderVorbeikommen() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Strukturierter Vergleich verschiedener Systeme</span>
+                <span>Strukturierter Vergleich mehrerer Schlafsysteme</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg
@@ -360,7 +366,7 @@ function TerminOderVorbeikommen() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Klare Einordnung ohne Hektik</span>
+                <span>Ruhige Einordnung in Ihrem Tempo</span>
               </li>
             </ul>
 
@@ -376,6 +382,11 @@ function TerminOderVorbeikommen() {
             >
               Beratungstermin vereinbaren
             </a>
+
+            <p className="mt-4 text-center text-xs leading-relaxed text-tagline/50">
+              Viele Kundinnen und Kunden aus der Region wählen bewusst
+              einen Termin, um verschiedene Optionen in Ruhe zu vergleichen.
+            </p>
           </div>
 
           {/* Kachel B: Direkt vorbeikommen */}
@@ -408,8 +419,10 @@ function TerminOderVorbeikommen() {
             </div>
 
             <p className="mt-4 leading-relaxed text-tagline">
-              Auch ohne Termin möglich. Für eine ruhige, strukturierte Beratung
-              empfehlen wir jedoch einen Termin.
+              Auch ohne Termin sind Sie willkommen. Allerdings kann die
+              Beratung dann kürzer ausfallen oder zwischendurch unterbrochen
+              werden. Für einen ruhigen, strukturierten Vergleich empfehlen
+              wir eine Terminvereinbarung.
             </p>
 
             {/* Öffnungszeiten */}
@@ -491,6 +504,10 @@ function RuhigerAbschluss() {
         <p className="accent-text text-2xl !text-white/90">
           Guter Schlaf beginnt mit einer guten Entscheidung. Nehmen Sie sich die
           Zeit, die dafür nötig ist.
+        </p>
+        <p className="mt-4 text-base leading-relaxed text-white/70">
+          Am besten mit einem Termin – damit wir uns ganz auf Ihre Fragen
+          und Ihr Liegegefühl konzentrieren können.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
