@@ -26,8 +26,8 @@ const solutions = [
       "Druckentlastung & Schlafklima verstehen",
       "Passt zu vielen Bettsystemen",
     ],
-    linkText: "Material verstehen & testen",
-    linkHref: "#laden",
+    linkText: "Mehr erfahren",
+    linkHref: "/matratzen-bocholt",
   },
   {
     title: "Holzbetten",
