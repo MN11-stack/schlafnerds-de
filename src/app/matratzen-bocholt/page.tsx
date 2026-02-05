@@ -58,10 +58,9 @@ function HeroMatratzen() {
 
           <div className="relative">
             <div className="overflow-hidden rounded-2xl">
-              {/* PLATZHALTER: Hero-Foto (z.B. Matratzen-Beratung oder Probeliegen) */}
               <Image
-                src="/images/products/matratze.png"
-                alt="Matratzenberatung bei Schlafnerds in Bocholt"
+                src="/images/products/matratzen-beratung.jpeg"
+                alt="Beratung liegend auf einer Naturlatex-Kokos-Matratze bei Schlafnerds in Bocholt"
                 width={800}
                 height={600}
                 className="h-auto w-full object-cover"
@@ -103,10 +102,9 @@ function WarumBeratung() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            {/* PLATZHALTER: Foto Beratungssituation / Matratzen im Showroom */}
             <Image
-              src="/images/store/ladenlokal-betten.jpeg"
-              alt="Matratzen-Showroom bei Schlafnerds in Bocholt"
+              src="/images/products/matratzen-liegeposition.jpeg"
+              alt="Liegeposition auf einer Naturlatex-Kokos-Matratze bei Schlafnerds"
               width={500}
               height={400}
               className="h-auto w-full max-w-md rounded-2xl object-cover"
