@@ -26,22 +26,15 @@ export default function PeopleRegionSection() {
               </p>
             </div>
 
-            {/* Team Placeholder */}
-            <div className="mt-10 grid grid-cols-2 gap-4">
-              <div className="image-placeholder aspect-[3/4] rounded-xl">
-                <span>
-                  📷 Foto:
-                  <br />
-                  Markus Niehaus
-                </span>
-              </div>
-              <div className="image-placeholder aspect-[3/4] rounded-xl">
-                <span>
-                  📷 Foto:
-                  <br />
-                  Dirk
-                </span>
-              </div>
+            {/* Teamfoto */}
+            <div className="mt-10 overflow-hidden rounded-2xl">
+              <Image
+                src="/images/team/dirk-markus-teamfoto.jpeg"
+                alt="Dirk und Markus – die Schlafnerds"
+                width={800}
+                height={500}
+                className="h-auto w-full object-cover"
+              />
             </div>
 
             {/* NL Redirect */}

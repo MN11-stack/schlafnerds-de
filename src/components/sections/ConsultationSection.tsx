@@ -9,8 +9,8 @@ export default function ConsultationSection() {
           <div className="order-2 md:order-1">
             <div className="overflow-hidden rounded-2xl">
               <Image
-                src="/images/store/beratung.jpeg"
-                alt="Persönliche Schlafberatung bei den Schlafnerds"
+                src="/images/team/dirk-beratung.jpg"
+                alt="Dirk erklärt die Körperstatik bei der Schlafberatung"
                 width={700}
                 height={500}
                 className="h-auto w-full object-cover"

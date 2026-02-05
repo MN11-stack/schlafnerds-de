@@ -62,8 +62,8 @@ export default function HeroSection() {
           <div className="relative">
             <div className="overflow-hidden rounded-2xl">
               <Image
-                src="/images/store/ladenlokal.jpeg"
-                alt="Schlafnerds Fachgeschäft in Bocholt – einladender Showroom"
+                src="/images/store/ladenlokal-betten.jpeg"
+                alt="Schlafnerds Fachgeschäft in Bocholt – Showroom mit Betten"
                 width={800}
                 height={600}
                 className="h-auto w-full object-cover"

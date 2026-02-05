@@ -66,15 +66,26 @@ export default function SolutionsSection() {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="mt-14 text-center">
-          <p className="accent-text text-lg">
-            Lassen Sie sich beraten – wir finden gemeinsam heraus, was zu Ihnen
-            passt.
-          </p>
-          <a href="#termin" className="btn-primary mt-6 inline-block">
-            Beratungstermin vereinbaren
-          </a>
+        {/* Trust Visual + CTA */}
+        <div className="mt-14 grid items-center gap-10 md:grid-cols-2">
+          <div className="overflow-hidden rounded-2xl">
+            <Image
+              src="/images/team/dirk-stoffmuster.jpeg"
+              alt="Dirk zeigt Stoffmuster – persönliche Materialberatung"
+              width={600}
+              height={400}
+              className="h-auto w-full object-cover"
+            />
+          </div>
+          <div className="text-center md:text-left">
+            <p className="accent-text text-xl">
+              Lassen Sie sich beraten – wir finden gemeinsam heraus, was zu
+              Ihnen passt.
+            </p>
+            <a href="#termin" className="btn-primary mt-6 inline-block">
+              Beratungstermin vereinbaren
+            </a>
+          </div>
         </div>
       </div>
     </section>
