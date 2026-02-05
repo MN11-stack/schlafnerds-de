@@ -76,6 +76,12 @@ export default function Footer() {
               >
                 Termin vereinbaren
               </a>
+              <a
+                href="/betten-bocholt"
+                className="text-white/70 transition-colors hover:!text-primary"
+              >
+                Betten in Bocholt & Region
+              </a>
             </nav>
           </div>
 
