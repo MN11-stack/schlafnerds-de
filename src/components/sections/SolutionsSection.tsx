@@ -12,7 +12,8 @@ const solutions = [
       "Vielseitig in Härtegrad & Design",
       "Gut für den Alltag – leicht zu pflegen",
     ],
-    linkText: "Im Laden vergleichen",
+    linkText: "Mehr erfahren",
+    linkHref: "/boxspringbetten-bocholt",
   },
   {
     title: "Matratzen",
@@ -26,6 +27,7 @@ const solutions = [
       "Passt zu vielen Bettsystemen",
     ],
     linkText: "Material verstehen & testen",
+    linkHref: "#laden",
   },
   {
     title: "Holzbetten",
@@ -39,6 +41,7 @@ const solutions = [
       "Konstruktion, die über Jahre hält",
     ],
     linkText: "Konstruktion & Material ansehen",
+    linkHref: "#laden",
   },
 ];
 
@@ -107,7 +110,7 @@ export default function SolutionsSection() {
 
                 {/* Category Link */}
                 <a
-                  href="#laden"
+                  href={item.linkHref}
                   className="mt-auto pt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition-colors hover:text-primary-dark"
                 >
                   {item.linkText}

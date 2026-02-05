@@ -35,6 +35,12 @@ export default function Header() {
             Lösungen
           </a>
           <a
+            href="/boxspringbetten-bocholt"
+            className="font-body text-sm font-medium text-tagline transition-colors hover:text-primary"
+          >
+            Boxspringbetten
+          </a>
+          <a
             href="#services"
             className="font-body text-sm font-medium text-tagline transition-colors hover:text-primary"
           >
@@ -97,6 +103,13 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
             >
               Lösungen
+            </a>
+            <a
+              href="/boxspringbetten-bocholt"
+              className="font-body text-base text-tagline"
+              onClick={() => setMenuOpen(false)}
+            >
+              Boxspringbetten
             </a>
             <a
               href="#services"
