@@ -69,7 +69,9 @@ export default function Footer() {
                 Menschen & Region
               </a>
               <a
-                href="#termin"
+                href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white/70 transition-colors hover:!text-primary"
               >
                 Termin vereinbaren

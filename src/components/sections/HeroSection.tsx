@@ -21,12 +21,14 @@ export default function HeroSection() {
               auf Augenhöhe.
             </p>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <a href="#termin" className="btn-primary">
+            <div className="mt-10">
+              <a
+                href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
                 Beratungstermin vereinbaren
-              </a>
-              <a href="#kontakt" className="btn-outline">
-                Im Laden beraten lassen
               </a>
             </div>
 

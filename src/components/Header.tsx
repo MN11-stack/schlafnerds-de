@@ -46,7 +46,12 @@ export default function Header() {
           >
             Über uns
           </a>
-          <a href="#termin" className="btn-primary text-sm">
+          <a
+            href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary text-sm"
+          >
             Beratungstermin
           </a>
         </nav>
@@ -108,7 +113,9 @@ export default function Header() {
               Über uns
             </a>
             <a
-              href="#termin"
+              href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary mt-2 text-center text-base"
               onClick={() => setMenuOpen(false)}
             >

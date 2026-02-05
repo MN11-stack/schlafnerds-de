@@ -82,7 +82,12 @@ export default function SolutionsSection() {
               Lassen Sie sich beraten – wir finden gemeinsam heraus, was zu
               Ihnen passt.
             </p>
-            <a href="#termin" className="btn-primary mt-6 inline-block">
+            <a
+              href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary mt-6 inline-block"
+            >
               Beratungstermin vereinbaren
             </a>
           </div>

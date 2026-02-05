@@ -11,20 +11,14 @@ export default function ClosingSection() {
           möchten – wir sind für Sie da.
         </p>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <div className="mt-10">
           <a
-            href="https://calendly.com/schlafnerds"
+            href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 font-body text-base font-semibold text-primary transition-colors hover:bg-white/90"
           >
             Beratungstermin vereinbaren
-          </a>
-          <a
-            href="#kontakt"
-            className="inline-flex items-center justify-center rounded-md border-2 border-white px-8 py-4 font-body text-base font-semibold text-white transition-colors hover:bg-white/10"
-          >
-            Im Laden beraten lassen
           </a>
         </div>
 
