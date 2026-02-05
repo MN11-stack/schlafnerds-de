@@ -103,11 +103,11 @@ function WarumBeratung() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="/images/products/matratzen-liegeposition.jpeg"
-              alt="Liegeposition auf einer Naturlatex-Kokos-Matratze bei Schlafnerds"
-              width={500}
-              height={400}
-              className="h-auto w-full max-w-md rounded-2xl object-cover"
+              src="/images/products/matratze-freigestellt.jpg"
+              alt="Frau liegend auf einer Matratze – ergonomische Liegeposition"
+              width={600}
+              height={250}
+              className="h-auto w-full max-w-lg object-contain"
             />
           </div>
         </div>
