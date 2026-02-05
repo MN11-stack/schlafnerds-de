@@ -108,7 +108,7 @@ function WasIstBoxspring() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="/images/products/boxspringbett.png"
+              src="/images/products/boxspring-aufbau.png"
               alt="Aufbau eines Boxspringbetts – Unterbox, Matratze, Topper"
               width={500}
               height={400}
