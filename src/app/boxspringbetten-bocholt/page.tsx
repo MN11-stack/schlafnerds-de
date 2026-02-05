@@ -30,7 +30,7 @@ function HeroBoxspring() {
             </p>
             <h1 className="font-heading text-4xl leading-tight font-normal md:text-5xl md:leading-tight">
               Boxspringbetten in Bocholt –<br />
-              Beratung, die zu Ihnen passt.
+              Beratung, die versteht, was Ihr Körper braucht.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-tagline">
               Boxspringbetten fühlen sich oft sofort gut an. Entscheidend ist,
@@ -38,9 +38,9 @@ function HeroBoxspring() {
               Alltag passen.
             </p>
             <p className="mt-4 max-w-lg leading-relaxed text-tagline">
-              Dabei unterstützen wir Sie mit strukturierter Beratung,
-              Probeliegen und einer gemeinsamen Einordnung – ruhig und ohne
-              Vorgaben.
+              Dabei begleiten wir Sie mit strukturierter Fachberatung,
+              Probeliegen und einer gemeinsamen Einordnung – ruhig, fundiert
+              und transparent.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
