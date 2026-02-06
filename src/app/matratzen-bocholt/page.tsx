@@ -162,11 +162,11 @@ function Sortiment() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 flex flex-wrap justify-center gap-6">
           {materialien.map((mat) => (
             <div
               key={mat.name}
-              className="rounded-2xl border border-gray-100 bg-soft p-6"
+              className="w-full rounded-2xl border border-gray-100 bg-soft p-6 sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
             >
               <h3 className="font-heading text-lg font-medium text-tagline">
                 {mat.name}
