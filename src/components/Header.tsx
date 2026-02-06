@@ -60,6 +60,16 @@ export default function Header() {
           Beratungstermin
         </a>
 
+        {/* Mobile/Tablet CTA - compact version */}
+        <a
+          href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-lg bg-primary px-3 py-1.5 text-xs font-medium text-white lg:hidden"
+        >
+          Termin
+        </a>
+
         {/* Mobile/Tablet Burger Button - visible below lg */}
         <button
           className="flex h-12 w-12 flex-col items-center justify-center gap-[6px] lg:hidden"
