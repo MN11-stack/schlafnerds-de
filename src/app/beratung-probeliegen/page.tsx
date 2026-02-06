@@ -217,14 +217,14 @@ function Beratungsprozess() {
                   </div>
 
                   {step.bullets ? (
-                    <ul className="mt-4 space-y-2">
+                    <ul className="mt-4 space-y-3">
                       {step.bullets.map((bullet, i) => (
                         <li
                           key={i}
-                          className="flex items-start gap-2 leading-relaxed text-tagline"
+                          className="flex items-start gap-3 text-base leading-relaxed text-tagline"
                         >
                           <svg
-                            className="mt-1 h-4 w-4 shrink-0 text-primary"
+                            className="mt-1 h-5 w-5 shrink-0 text-primary"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -241,20 +241,20 @@ function Beratungsprozess() {
                       ))}
                     </ul>
                   ) : (
-                    <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                      <div className="rounded-lg bg-soft p-4">
-                        <p className="text-xs font-medium uppercase tracking-wide text-primary">
+                    <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                      <div className="rounded-xl border-2 border-primary/20 bg-primary/5 p-5">
+                        <p className="text-sm font-semibold uppercase tracking-wide text-primary">
                           Wir
                         </p>
-                        <p className="mt-1 text-sm leading-relaxed text-tagline">
+                        <p className="mt-2 text-base leading-relaxed text-tagline">
                           {step.wirText}
                         </p>
                       </div>
-                      <div className="rounded-lg bg-soft p-4">
-                        <p className="text-xs font-medium uppercase tracking-wide text-tagline/60">
+                      <div className="rounded-xl border border-gray-200 bg-white p-5">
+                        <p className="text-sm font-semibold uppercase tracking-wide text-tagline/70">
                           Sie
                         </p>
-                        <p className="mt-1 text-sm leading-relaxed text-tagline">
+                        <p className="mt-2 text-base leading-relaxed text-tagline">
                           {step.sieText}
                         </p>
                       </div>

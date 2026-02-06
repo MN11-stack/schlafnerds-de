@@ -21,18 +21,12 @@ export default function Header() {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-6 md:flex">
           <a
             href="/beratung-probeliegen"
             className="font-body text-sm font-medium text-tagline transition-colors hover:text-primary"
           >
             Beratung
-          </a>
-          <a
-            href="#loesungen"
-            className="font-body text-sm font-medium text-tagline transition-colors hover:text-primary"
-          >
-            Lösungen
           </a>
           <a
             href="/boxspringbetten-bocholt"
@@ -47,16 +41,10 @@ export default function Header() {
             Matratzen
           </a>
           <a
-            href="#services"
+            href="/holzbetten-bocholt"
             className="font-body text-sm font-medium text-tagline transition-colors hover:text-primary"
           >
-            Services
-          </a>
-          <a
-            href="#ueber-uns"
-            className="font-body text-sm font-medium text-tagline transition-colors hover:text-primary"
-          >
-            Über uns
+            Holzbetten
           </a>
           <a
             href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
@@ -104,13 +92,6 @@ export default function Header() {
               Beratung
             </a>
             <a
-              href="#loesungen"
-              className="font-body text-base text-tagline"
-              onClick={() => setMenuOpen(false)}
-            >
-              Lösungen
-            </a>
-            <a
               href="/boxspringbetten-bocholt"
               className="font-body text-base text-tagline"
               onClick={() => setMenuOpen(false)}
@@ -125,18 +106,11 @@ export default function Header() {
               Matratzen
             </a>
             <a
-              href="#services"
+              href="/holzbetten-bocholt"
               className="font-body text-base text-tagline"
               onClick={() => setMenuOpen(false)}
             >
-              Services
-            </a>
-            <a
-              href="#ueber-uns"
-              className="font-body text-base text-tagline"
-              onClick={() => setMenuOpen(false)}
-            >
-              Über uns
+              Holzbetten
             </a>
             <a
               href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
