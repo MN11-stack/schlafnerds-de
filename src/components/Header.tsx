@@ -60,7 +60,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="flex flex-col gap-1.5 md:hidden"
+          className="ml-auto flex flex-col gap-1.5 md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menü öffnen"
         >
