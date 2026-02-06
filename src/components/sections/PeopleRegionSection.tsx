@@ -4,7 +4,7 @@ export default function PeopleRegionSection() {
   return (
     <section id="ueber-uns" className="bg-soft">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <div className="grid items-center gap-16 md:grid-cols-2">
+        <div className="grid items-start gap-16 md:grid-cols-2">
           {/* Content */}
           <div>
             <h2 className="font-heading text-3xl leading-snug font-normal md:text-4xl md:leading-snug">
