@@ -13,9 +13,9 @@ export default function ClosingSection() {
         </div>
 
         {/* Two equal cards */}
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
+        <div className="mt-12 grid items-stretch gap-6 md:grid-cols-2">
           {/* Card A: Termin */}
-          <div className="rounded-2xl bg-white p-8">
+          <div className="flex h-full flex-col rounded-2xl bg-white p-8">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                 <svg
@@ -37,21 +37,72 @@ export default function ClosingSection() {
               </h3>
             </div>
             <p className="mt-4 leading-relaxed text-tagline">
-              Persönliche Beratung mit Probeliegen und Körperstatik-Check.
-              45–60 Minuten, ruhig und in Ihrem Tempo.
+              Auf Basis einer strukturierten Analyse empfehlen wir Schlafsysteme, die wirklich zu Ihnen passen.
             </p>
-            <a
-              href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary mt-6 w-full text-center"
-            >
-              Termin wählen
-            </a>
+            <ul className="mt-6 space-y-3 text-tagline">
+              <li className="flex items-start gap-2">
+                <svg
+                  className="mt-1 h-4 w-4 shrink-0 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>45–60 Minuten Zeit für Sie</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <svg
+                  className="mt-1 h-4 w-4 shrink-0 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Termine auch außerhalb der Geschäftszeiten möglich</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <svg
+                  className="mt-1 h-4 w-4 shrink-0 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Entspannter Vergleich mehrerer Schlafsysteme</span>
+              </li>
+            </ul>
+            <div className="mt-auto pt-6">
+              <a
+                href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary w-full text-center"
+              >
+                Termin wählen
+              </a>
+            </div>
           </div>
 
           {/* Card B: Laden besuchen */}
-          <div id="laden" className="rounded-2xl bg-white p-8">
+          <div id="laden" className="flex h-full flex-col rounded-2xl bg-white p-8">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                 <svg
@@ -134,7 +185,7 @@ export default function ClosingSection() {
             </ul>
 
             {/* Actions */}
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-auto pt-6 flex flex-col gap-3 sm:flex-row">
               <a
                 href="https://www.google.com/maps/dir/?api=1&destination=Nordstra%C3%9Fe+39,+46395+Bocholt"
                 target="_blank"
