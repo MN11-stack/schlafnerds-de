@@ -396,9 +396,9 @@ function TerminOderVorbeikommen() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-[1.2fr_1fr]">
+        <div className="mt-12 grid items-stretch gap-6 md:grid-cols-[1.2fr_1fr]">
           {/* Kachel A: Termin (empfohlen) */}
-          <div className="rounded-2xl border-2 border-primary bg-primary/5 p-8">
+          <div className="flex h-full flex-col rounded-2xl border-2 border-primary bg-primary/5 p-8">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                 <svg
@@ -424,6 +424,10 @@ function TerminOderVorbeikommen() {
                 </span>
               </div>
             </div>
+
+            <p className="mt-4 leading-relaxed text-tagline">
+              Auf Basis einer strukturierten Analyse empfehlen wir Schlafsysteme, die wirklich zu Ihnen passen.
+            </p>
 
             <ul className="mt-6 space-y-3 text-tagline">
               <li className="flex items-start gap-2">
@@ -476,18 +480,20 @@ function TerminOderVorbeikommen() {
               </li>
             </ul>
 
-            <a
-              href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary mt-6 w-full text-center"
-            >
-              Beratungstermin vereinbaren
-            </a>
+            <div className="mt-auto pt-6">
+              <a
+                href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary w-full text-center"
+              >
+                Beratungstermin vereinbaren
+              </a>
+            </div>
           </div>
 
           {/* Kachel B: Direkt vorbeikommen */}
-          <div className="rounded-2xl bg-white p-8">
+          <div className="flex h-full flex-col rounded-2xl bg-white p-8">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                 <svg
@@ -537,7 +543,7 @@ function TerminOderVorbeikommen() {
               Nordstraße 39, 46395 Bocholt
             </address>
 
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-auto pt-6 flex flex-col gap-3 sm:flex-row">
               <a
                 href="https://www.google.com/maps/dir/?api=1&destination=Nordstra%C3%9Fe+39,+46395+Bocholt"
                 target="_blank"
