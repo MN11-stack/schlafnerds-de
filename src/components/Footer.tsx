@@ -137,8 +137,8 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-white/50">
           <p>
-            &copy; {new Date().getFullYear()} Schlafnerds &middot; Markus
-            Niehaus &middot; Alle Rechte vorbehalten
+            &copy; {new Date().getFullYear()} Schlafnerds &middot; Alle Rechte
+            vorbehalten
           </p>
         </div>
       </div>
