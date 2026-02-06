@@ -21,7 +21,7 @@ export const metadata: Metadata = {
    ───────────────────────────────────────────── */
 function HeroBetten() {
   return (
-    <section className="relative overflow-hidden bg-white pt-36 md:pt-24">
+    <section className="relative overflow-hidden bg-white pt-24">
       <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div>
