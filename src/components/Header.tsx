@@ -10,12 +10,13 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.08)]">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a href="/" className="flex shrink-0 items-center gap-3">
+        <a href="/" className="flex shrink-0 items-center">
           <Image
             src="/images/logo.svg"
             alt="Schlafnerds"
             width={180}
             height={48}
+            className="h-auto w-[140px] md:w-[180px]"
             priority
           />
         </a>
@@ -60,7 +61,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="ml-auto flex flex-col gap-1.5 md:hidden"
+          className="flex flex-col gap-1.5 md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menü öffnen"
         >
