@@ -72,6 +72,19 @@ export default function HeroSection() {
                 priority
               />
             </div>
+            {/* Name Labels */}
+            <div className="mt-3 flex justify-around px-4 text-sm text-tagline">
+              <span className="text-center">
+                Markus
+                <br />
+                <span className="text-xs text-tagline/70">(Schlafcoach IST)</span>
+              </span>
+              <span className="text-center">
+                Dirk
+                <br />
+                <span className="text-xs text-tagline/70">(Ergopraktiker)</span>
+              </span>
+            </div>
             {/* Decorative Accent */}
             <div className="absolute -bottom-4 -right-4 -z-10 h-full w-full rounded-2xl bg-primary/10" />
           </div>
