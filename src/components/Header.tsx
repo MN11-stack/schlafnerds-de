@@ -23,7 +23,7 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-8 md:flex">
           <a
-            href="#beratung"
+            href="/beratung-probeliegen"
             className="font-body text-sm font-medium text-tagline transition-colors hover:text-primary"
           >
             Beratung
@@ -97,7 +97,7 @@ export default function Header() {
         <nav className="border-t border-gray-100 bg-white px-6 pb-6 md:hidden">
           <div className="flex flex-col gap-4 pt-4">
             <a
-              href="#beratung"
+              href="/beratung-probeliegen"
               className="font-body text-base text-tagline"
               onClick={() => setMenuOpen(false)}
             >
