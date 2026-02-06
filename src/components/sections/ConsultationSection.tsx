@@ -166,7 +166,7 @@ export default function ConsultationSection() {
               Beratungstermin vereinbaren
             </a>
             <a href="#laden" className="btn-outline">
-              Laden besuchen &amp; Probeliegen
+              Direkt vorbeikommen
             </a>
           </div>
         </div>
