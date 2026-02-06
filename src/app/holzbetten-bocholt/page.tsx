@@ -405,7 +405,7 @@ function TerminOderVorbeikommen() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Planungssicherheit – Zeit exklusiv für Sie reserviert</span>
+                <span>45–60 Minuten Zeit für Sie</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg
@@ -421,7 +421,7 @@ function TerminOderVorbeikommen() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Holzarten und Systeme in Ruhe vergleichen</span>
+                <span>Termine auch außerhalb der Geschäftszeiten möglich</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg
@@ -437,13 +437,9 @@ function TerminOderVorbeikommen() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Ruhige Einordnung in Ihrem Tempo</span>
+                <span>Entspannter Vergleich mehrerer Schlafsysteme</span>
               </li>
             </ul>
-
-            <p className="mt-4 text-sm text-tagline/70">
-              Dauer: ca. 45–60 Minuten
-            </p>
 
             <a
               href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
@@ -455,8 +451,8 @@ function TerminOderVorbeikommen() {
             </a>
 
             <p className="mt-4 text-center text-xs leading-relaxed text-tagline/50">
-              Viele Kundinnen und Kunden aus der Region wählen bewusst einen
-              Termin, um verschiedene Optionen in Ruhe zu vergleichen.
+              Die meisten unserer Kundinnen und Kunden entscheiden sich für
+              einen Termin.
             </p>
           </div>
 

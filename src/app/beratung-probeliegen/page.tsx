@@ -335,7 +335,7 @@ function TerminOderVorbeikommen() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Ca. 45–60 Minuten Zeit exklusiv für Sie</span>
+                <span>45–60 Minuten Zeit für Sie</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg
@@ -351,7 +351,7 @@ function TerminOderVorbeikommen() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Strukturierte Analyse und Einordnung durch uns</span>
+                <span>Termine auch außerhalb der Geschäftszeiten möglich</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg
@@ -367,7 +367,7 @@ function TerminOderVorbeikommen() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Ruhiger Vergleich mehrerer Schlafsysteme</span>
+                <span>Entspannter Vergleich mehrerer Schlafsysteme</span>
               </li>
             </ul>
 

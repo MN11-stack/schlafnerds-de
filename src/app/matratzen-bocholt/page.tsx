@@ -440,7 +440,7 @@ function TerminOderVorbeikommen() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Zeit exklusiv für Sie</span>
+                <span>45–60 Minuten Zeit für Sie</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg
@@ -456,7 +456,7 @@ function TerminOderVorbeikommen() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Strukturierter Vergleich mehrerer Materialien</span>
+                <span>Termine auch außerhalb der Geschäftszeiten möglich</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg
@@ -472,13 +472,9 @@ function TerminOderVorbeikommen() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Klare Einordnung ohne Hektik</span>
+                <span>Entspannter Vergleich mehrerer Schlafsysteme</span>
               </li>
             </ul>
-
-            <p className="mt-4 text-sm text-tagline/70">
-              Dauer: ca. 45–60 Minuten
-            </p>
 
             <a
               href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
