@@ -33,13 +33,13 @@ const services = [
     description:
       "Immer wieder finden wir Stücke, die herausragen: besondere Betten, Matratzen oder Accessoires in begrenzter Verfügbarkeit. Wer Lust hat auf Besonderes, schaut regelmäßig bei uns vorbei.",
     primaryCta: {
-      label: "Im Laden ansehen",
-      href: "#laden",
-      external: false,
+      label: "Beratungstermin vereinbaren",
+      href: "https://calendly.com/schlafnerds/45min?back=1&month=2026-02",
+      external: true,
     },
     secondaryCta: {
-      label: "Anrufen",
-      href: "tel:+4928713492862",
+      label: "Direkt vorbeikommen",
+      href: "#laden",
       external: false,
     },
   },
