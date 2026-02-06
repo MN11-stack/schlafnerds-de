@@ -21,15 +21,11 @@ const services = [
     description:
       "Manchmal ist es sinnvoll, direkt im eigenen Schlafzimmer zu beraten. Mit dem Kissentaxi kommen wir zu Ihnen – mit einer Auswahl an Kissen, abgestimmt auf Ihre Schlafsituation. Nah, praktisch und persönlich.",
     primaryCta: {
-      label: "Kissentaxi im Termin besprechen",
-      href: "https://calendly.com/schlafnerds/45min?back=1&month=2026-02",
-      external: true,
-    },
-    secondaryCta: {
-      label: "Anrufen",
+      label: "Anrufen und Kissentaxi ordern",
       href: "tel:+4928713492862",
       external: false,
     },
+    secondaryCta: null,
   },
   {
     title: "Schlafnerds-Beute – besondere Einzelstücke",
@@ -107,18 +103,20 @@ export default function ServicesSection() {
                   >
                     {service.primaryCta.label}
                   </a>
-                  <a
-                    href={service.secondaryCta.href}
-                    {...(service.secondaryCta.external
-                      ? {
-                          target: "_blank",
-                          rel: "noopener noreferrer",
-                        }
-                      : {})}
-                    className="btn-outline text-sm"
-                  >
-                    {service.secondaryCta.label}
-                  </a>
+                  {service.secondaryCta && (
+                    <a
+                      href={service.secondaryCta.href}
+                      {...(service.secondaryCta.external
+                        ? {
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                          }
+                        : {})}
+                      className="btn-outline text-sm"
+                    >
+                      {service.secondaryCta.label}
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
