@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function PeopleRegionSection() {
   return (
     <section id="ueber-uns" className="bg-soft">
-      <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+      <div className="mx-auto max-w-6xl px-6 pt-8 pb-20 md:pt-12 md:pb-28">
         <div className="grid items-start gap-16 md:grid-cols-2">
           {/* Content */}
           <div>
