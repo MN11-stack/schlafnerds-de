@@ -152,8 +152,8 @@ function LiegepositionZusammenspiel() {
         <div className="grid items-center gap-16 md:grid-cols-2">
           <div className="order-2 md:order-1">
             <Image
-              src="/images/store/ladenlokal-betten.jpeg"
-              alt="Probeliegen im Showroom bei Schlafnerds in Bocholt"
+              src="/images/products/holzbett-gesamtsystem.jpeg"
+              alt="Kunde liegt auf Matratze im Holzbett – Gesamtsystem aus Bettrahmen, Lattenrost und Matratze"
               width={600}
               height={400}
               className="h-auto w-full rounded-2xl object-cover"
