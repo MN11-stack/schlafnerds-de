@@ -43,8 +43,8 @@ export default function PeopleRegionSection() {
                 Voor onze Nederlandse gasten
               </p>
               <p className="mt-2 leading-relaxed text-tagline">
-                Schlafnerds beraten in Bocholt – auf Deutsch, vor Ort. Für
-                unsere niederländischen Gäste haben wir{" "}
+                Schlafnerds adviseert in Bocholt – in het Duits, ter plaatse.
+                Voor onze Nederlandse gasten hebben we{" "}
                 <a
                   href="https://slaapnerds.nl"
                   target="_blank"
@@ -53,8 +53,8 @@ export default function PeopleRegionSection() {
                 >
                   slaapnerds.nl
                 </a>{" "}
-                eingerichtet: Informationen in Ihrer Sprache, als Einstieg vor
-                Ihrem Besuch.
+                ingericht: informatie in uw taal, als voorbereiding op uw
+                bezoek.
               </p>
             </div>
           </div>
