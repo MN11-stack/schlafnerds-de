@@ -40,8 +40,8 @@ const solutions = [
       "Natürliches Material, ruhige Ästhetik",
       "Konstruktion, die über Jahre hält",
     ],
-    linkText: "Konstruktion & Material ansehen",
-    linkHref: "#laden",
+    linkText: "Mehr erfahren",
+    linkHref: "/holzbetten-bocholt",
   },
 ];
 
