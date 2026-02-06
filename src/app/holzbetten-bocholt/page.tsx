@@ -104,8 +104,8 @@ function WarumHolz() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="/images/team/dirk-beratung.jpg"
-              alt="Beratung zu Holzbetten bei Schlafnerds in Bocholt"
+              src="/images/products/holz-maserung.png"
+              alt="Detailaufnahme der Maserung von massivem Eichenholz"
               width={500}
               height={400}
               className="h-auto w-full max-w-md rounded-2xl object-cover"
