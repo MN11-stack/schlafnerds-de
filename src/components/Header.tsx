@@ -8,9 +8,9 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.08)]">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-6xl items-center px-6 py-4">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-3">
+        <a href="/" className="flex shrink-0 items-center gap-3">
           <Image
             src="/images/logo.svg"
             alt="Schlafnerds"
@@ -20,8 +20,8 @@ export default function Header() {
           />
         </a>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-6 md:flex">
+        {/* Desktop Navigation - centered links */}
+        <nav className="hidden flex-1 items-center justify-center gap-10 md:flex">
           <a
             href="/beratung-probeliegen"
             className="font-body text-sm font-medium text-tagline transition-colors hover:text-primary"
@@ -46,15 +46,17 @@ export default function Header() {
           >
             Holzbetten
           </a>
-          <a
-            href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary text-sm"
-          >
-            Beratungstermin
-          </a>
         </nav>
+
+        {/* Desktop CTA */}
+        <a
+          href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary hidden shrink-0 text-sm md:inline-flex"
+        >
+          Beratungstermin
+        </a>
 
         {/* Mobile Menu Button */}
         <button
