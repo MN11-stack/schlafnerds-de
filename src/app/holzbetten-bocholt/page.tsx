@@ -60,8 +60,8 @@ function HeroHolzbetten() {
           <div className="relative">
             <div className="overflow-hidden rounded-2xl">
               <Image
-                src="/images/products/holzbett.png"
-                alt="Massivholzbett aus Eiche bei Schlafnerds in Bocholt"
+                src="/images/products/holzbett-hero.png"
+                alt="Massivholzbett aus Eiche mit zwei Matratzen – Frontansicht"
                 width={800}
                 height={600}
                 className="h-auto w-full object-contain bg-white p-4"
