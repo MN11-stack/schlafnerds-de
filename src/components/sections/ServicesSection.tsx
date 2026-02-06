@@ -10,7 +10,7 @@ const services = [
       external: true,
     },
     secondaryCta: {
-      label: "Laden besuchen",
+      label: "Direkt vorbeikommen",
       href: "#laden",
       external: false,
     },
