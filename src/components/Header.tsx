@@ -44,8 +44,8 @@ export default function Header() {
               priority
             />
           </a>
-          <a href="/" className="ml-2 no-underline">
-            <span className="font-heading text-lg font-bold text-tagline sm:text-xl">Schlaf</span>
+          <a href="https://slaapnerds.nl/" className="ml-2 no-underline">
+            <span className="font-heading text-lg font-bold text-tagline sm:text-xl">Slaap</span>
             <span className="font-heading text-lg font-bold text-primary sm:text-xl">nerds</span>
           </a>
         </div>
