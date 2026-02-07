@@ -97,7 +97,7 @@ export default function Header() {
           href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-lg bg-primary px-3 py-1.5 text-xs font-medium text-white lg:hidden"
+          className="rounded-lg bg-primary px-3 py-1.5 text-xs font-medium !text-white lg:hidden"
         >
           Termin
         </a>
@@ -163,7 +163,7 @@ export default function Header() {
               href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary mt-2 text-center"
+              className="btn-primary mt-2 text-center !text-white"
               onClick={() => setMenuOpen(false)}
             >
               Beratungstermin vereinbaren
