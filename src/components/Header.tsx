@@ -32,17 +32,23 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.08)]">
       {/* Main Header Bar */}
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        {/* Logo */}
-        <a href="/" className="shrink-0">
-          <Image
-            src="/images/logo.svg"
-            alt="Schlafnerds"
-            width={180}
-            height={48}
-            className="h-auto w-[120px] sm:w-[140px] md:w-[180px]"
-            priority
-          />
-        </a>
+        {/* Logo + Brand Text */}
+        <div className="flex items-center shrink-0">
+          <a href="/" className="shrink-0">
+            <Image
+              src="/images/logo.svg"
+              alt="Schlafnerds"
+              width={180}
+              height={48}
+              className="h-auto w-[120px] sm:w-[140px] md:w-[180px]"
+              priority
+            />
+          </a>
+          <a href="/" className="ml-2 no-underline">
+            <span className="font-heading text-lg font-bold text-tagline sm:text-xl">Schlaf</span>
+            <span className="font-heading text-lg font-bold text-primary sm:text-xl">nerds</span>
+          </a>
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden flex-1 justify-center gap-8 lg:flex">
