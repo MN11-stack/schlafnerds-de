@@ -14,6 +14,13 @@ export const metadata: Metadata = {
     locale: "de_DE",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.schlafnerds.de/boxspringbetten-bocholt",
+    languages: {
+      "de-DE": "https://www.schlafnerds.de/boxspringbetten-bocholt",
+      "nl-NL": "https://slaapnerds.nl/boxspringbedden",
+    },
+  },
 };
 
 /* ─────────────────────────────────────────────

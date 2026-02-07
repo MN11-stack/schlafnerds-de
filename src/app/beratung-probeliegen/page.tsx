@@ -14,6 +14,13 @@ export const metadata: Metadata = {
     locale: "de_DE",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.schlafnerds.de/beratung-probeliegen",
+    languages: {
+      "de-DE": "https://www.schlafnerds.de/beratung-probeliegen",
+      "nl-NL": "https://slaapnerds.nl/service-en-advies",
+    },
+  },
 };
 
 /* ─────────────────────────────────────────────

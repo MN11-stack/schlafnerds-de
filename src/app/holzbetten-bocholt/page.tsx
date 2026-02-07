@@ -14,6 +14,13 @@ export const metadata: Metadata = {
     locale: "de_DE",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.schlafnerds.de/holzbetten-bocholt",
+    languages: {
+      "de-DE": "https://www.schlafnerds.de/holzbetten-bocholt",
+      "nl-NL": "https://slaapnerds.nl/houten-bedden",
+    },
+  },
 };
 
 /* ─────────────────────────────────────────────
