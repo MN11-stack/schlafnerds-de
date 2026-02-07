@@ -102,7 +102,7 @@ export default function ClosingSection() {
           </div>
 
           {/* Card B: Laden besuchen */}
-          <div id="laden" className="flex h-full flex-col rounded-2xl bg-white p-8">
+          <div id="laden" className="scroll-mt-24 flex h-full flex-col rounded-2xl bg-white p-8">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                 <svg
