@@ -64,7 +64,7 @@ function HeroKissen() {
           <div className="relative">
             <div className="overflow-hidden rounded-2xl">
               <Image
-                src="/images/products/nackenstuetzkissen.png"
+                src="/images/products/nackenstuetzkissen-hero.png"
                 alt="Ergonomisches Nackenstützkissen mit Tencel-Bezug bei Schlafnerds in Bocholt"
                 width={800}
                 height={500}
@@ -111,17 +111,13 @@ function WarumAnpassung() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-8">
-            <div className="flex items-center justify-center rounded-2xl bg-white p-8 shadow-sm w-full">
-              <div className="text-center">
-                <p className="font-heading text-5xl font-normal text-primary">2</p>
-                <p className="mt-2 text-lg text-tagline">
-                  ergonomische Schlafnerds-Kissenserien
-                </p>
-                <p className="mt-1 text-sm text-tagline/70">
-                  Zentimetergenaue Anpassung an Ihre Körperstatik
-                </p>
-              </div>
-            </div>
+            <Image
+              src="/images/products/nackenstuetzkissen-detail.png"
+              alt="Ergonomisches Nackenstützkissen – Seitenansicht mit Tencel-Bezug"
+              width={600}
+              height={375}
+              className="h-auto w-full max-w-lg object-contain"
+            />
             <div className="flex flex-col gap-4 sm:flex-row">
               <a
                 href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
