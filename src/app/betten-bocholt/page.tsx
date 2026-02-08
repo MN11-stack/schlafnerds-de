@@ -73,8 +73,8 @@ function HeroBetten() {
           <div className="relative">
             <div className="overflow-hidden rounded-2xl">
               <Image
-                src="/images/store/ladenlokal-betten.jpeg"
-                alt="Betten-Showroom bei Schlafnerds in Bocholt"
+                src="/images/store/ladenlokal.jpeg"
+                alt="Showroom bei Schlafnerds in Bocholt – Betten, Beratung und Probeliegen"
                 width={800}
                 height={600}
                 className="h-auto w-full object-cover"
