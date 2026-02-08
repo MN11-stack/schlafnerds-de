@@ -24,6 +24,24 @@ function NlFlag() {
   );
 }
 
+function ChevronDown({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  );
+}
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -59,23 +77,38 @@ export default function Header() {
           >
             Beratung
           </a>
-          <a
-            href="/boxspringbetten-bocholt"
-            className="text-sm font-medium text-tagline transition-colors hover:text-primary"
-          >
-            Boxspringbetten
-          </a>
+
+          {/* Betten Dropdown */}
+          <div className="group relative">
+            <button
+              className="flex items-center gap-1 text-sm font-medium text-tagline transition-colors hover:text-primary"
+            >
+              Betten
+              <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" />
+            </button>
+            <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-2 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100">
+              <div className="min-w-[180px] rounded-lg bg-white py-2 shadow-lg ring-1 ring-black/5">
+                <a
+                  href="/boxspringbetten-bocholt"
+                  className="block px-4 py-2 text-sm text-tagline transition-colors hover:bg-soft hover:text-primary"
+                >
+                  Boxspringbetten
+                </a>
+                <a
+                  href="/holzbetten-bocholt"
+                  className="block px-4 py-2 text-sm text-tagline transition-colors hover:bg-soft hover:text-primary"
+                >
+                  Holzbetten
+                </a>
+              </div>
+            </div>
+          </div>
+
           <a
             href="/matratzen-bocholt"
             className="text-sm font-medium text-tagline transition-colors hover:text-primary"
           >
             Matratzen
-          </a>
-          <a
-            href="/holzbetten-bocholt"
-            className="text-sm font-medium text-tagline transition-colors hover:text-primary"
-          >
-            Holzbetten
           </a>
           <a
             href="/nackenstuetzkissen-bocholt"
@@ -141,26 +174,36 @@ export default function Header() {
             >
               Beratung
             </a>
-            <a
-              href="/boxspringbetten-bocholt"
-              className="text-base text-tagline"
-              onClick={() => setMenuOpen(false)}
-            >
-              Boxspringbetten
-            </a>
+
+            {/* Betten group */}
+            <div>
+              <p className="text-xs font-semibold tracking-wide text-tagline/50 uppercase">
+                Betten
+              </p>
+              <div className="mt-2 flex flex-col gap-3 pl-3">
+                <a
+                  href="/boxspringbetten-bocholt"
+                  className="text-base text-tagline"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Boxspringbetten
+                </a>
+                <a
+                  href="/holzbetten-bocholt"
+                  className="text-base text-tagline"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Holzbetten
+                </a>
+              </div>
+            </div>
+
             <a
               href="/matratzen-bocholt"
               className="text-base text-tagline"
               onClick={() => setMenuOpen(false)}
             >
               Matratzen
-            </a>
-            <a
-              href="/holzbetten-bocholt"
-              className="text-base text-tagline"
-              onClick={() => setMenuOpen(false)}
-            >
-              Holzbetten
             </a>
             <a
               href="/nackenstuetzkissen-bocholt"
