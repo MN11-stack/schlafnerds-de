@@ -10,6 +10,7 @@ const deToNlMapping: Record<string, string> = {
   "/matratzen-bocholt": "https://slaapnerds.nl/matrassen",
   "/holzbetten-bocholt": "https://slaapnerds.nl/houten-bedden",
   "/beratung-probeliegen": "https://slaapnerds.nl/service-en-advies",
+  "/nackenstuetzkissen-bocholt": "https://slaapnerds.nl/",
   "/betten-bocholt": "https://slaapnerds.nl/",
 };
 
@@ -75,6 +76,12 @@ export default function Header() {
             className="text-sm font-medium text-tagline transition-colors hover:text-primary"
           >
             Holzbetten
+          </a>
+          <a
+            href="/nackenstuetzkissen-bocholt"
+            className="text-sm font-medium text-tagline transition-colors hover:text-primary"
+          >
+            Nackenstützkissen
           </a>
         </nav>
 
@@ -154,6 +161,13 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
             >
               Holzbetten
+            </a>
+            <a
+              href="/nackenstuetzkissen-bocholt"
+              className="text-base text-tagline"
+              onClick={() => setMenuOpen(false)}
+            >
+              Nackenstützkissen
             </a>
             <a
               href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
