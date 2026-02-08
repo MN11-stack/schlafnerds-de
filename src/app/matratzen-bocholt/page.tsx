@@ -108,7 +108,7 @@ function WarumBeratung() {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex flex-col items-center justify-center gap-8">
             <Image
               src="/images/products/matratze-freigestellt.jpg"
               alt="Frau liegend auf einer Matratze – ergonomische Liegeposition"
@@ -116,6 +116,19 @@ function WarumBeratung() {
               height={250}
               className="h-auto w-full max-w-lg object-contain"
             />
+            <div className="flex flex-col gap-4 sm:flex-row">
+              <a
+                href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Beratungstermin vereinbaren
+              </a>
+              <a href="#vorbeikommen" className="btn-outline">
+                Direkt vorbeikommen
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -619,13 +632,13 @@ function RuhigerAbschluss() {
             href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 font-body text-base font-semibold text-primary transition-colors hover:bg-white/90"
+            className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 font-body text-base font-semibold !text-primary transition-colors hover:bg-white/90"
           >
             Beratungstermin vereinbaren
           </a>
           <a
             href="#vorbeikommen"
-            className="inline-flex items-center justify-center rounded-md border-2 border-white px-8 py-4 font-body text-base font-semibold text-white transition-colors hover:bg-white/10"
+            className="inline-flex items-center justify-center rounded-md border-2 border-white px-8 py-4 font-body text-base font-semibold !text-white transition-colors hover:bg-white/10"
           >
             Direkt vorbeikommen
           </a>
