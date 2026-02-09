@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 
 export const metadata: Metadata = {
   title: "Boxspringbetten Bocholt – Beratung & Probeliegen | Schlafnerds",
@@ -586,6 +587,7 @@ export default function BoxspringbettenBocholt() {
         <PasstEsZuIhnen />
         <UnserWeg />
         <TerminOderVorbeikommen />
+        <WeitereLoesungen currentPath="/boxspringbetten-bocholt" />
         <RegionNaehe />
         <RuhigerAbschluss />
       </main>

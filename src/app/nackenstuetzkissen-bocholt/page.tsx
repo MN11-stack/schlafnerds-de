@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 
 export const metadata: Metadata = {
   title:
@@ -701,6 +702,7 @@ export default function NackenstuetzkissenBocholt() {
         <UnserWeg />
         <FaqSection />
         <TerminOderVorbeikommen />
+        <WeitereLoesungen currentPath="/nackenstuetzkissen-bocholt" />
         <RegionNaehe />
         <RuhigerAbschluss />
       </main>

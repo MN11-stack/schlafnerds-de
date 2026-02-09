@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 
 export const metadata: Metadata = {
   title: "Holzbetten Bocholt – Beratung & Probeliegen | Schlafnerds",
@@ -619,6 +620,7 @@ export default function HolzbettenBocholt() {
         <LiegepositionZusammenspiel />
         <UnserWeg />
         <TerminOderVorbeikommen />
+        <WeitereLoesungen currentPath="/holzbetten-bocholt" />
         <RegionNaehe />
         <RuhigerAbschluss />
       </main>

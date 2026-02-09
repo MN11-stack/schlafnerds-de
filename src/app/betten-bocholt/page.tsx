@@ -157,6 +157,14 @@ const schlaflösungen = [
     linkText: "Holzbetten in Bocholt entdecken",
     linkHref: "/holzbetten-bocholt",
   },
+  {
+    title: "Nackenstützkissen",
+    image: "/images/products/nackenstuetzkissen-hero.png",
+    alt: "Ergonomisches Nackenstützkissen",
+    text: "Zentimetergenaue Anpassung an Ihre Körperstatik – bei uns oder bei Ihnen zu Hause mit dem Kissentaxi.",
+    linkText: "Nackenstützkissen in Bocholt anpassen",
+    linkHref: "/nackenstuetzkissen-bocholt",
+  },
 ];
 
 function Schlafloesungen() {

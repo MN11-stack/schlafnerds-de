@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 
 export const metadata: Metadata = {
   title: "Matratzen Bocholt – Beratung, Vergleich & Probeliegen | Schlafnerds",
@@ -662,6 +663,7 @@ export default function MatratzenBocholt() {
         <PasstZuIhnen />
         <UnserWeg />
         <TerminOderVorbeikommen />
+        <WeitereLoesungen currentPath="/matratzen-bocholt" />
         <RegionNaehe />
         <RuhigerAbschluss />
       </main>
