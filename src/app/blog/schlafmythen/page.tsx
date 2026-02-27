@@ -170,6 +170,22 @@ export default function SchlafmythenPage() {
           </div>
         </section>
 
+        {/* Author */}
+        <section className="mx-auto max-w-3xl px-6 pb-16 md:pb-24">
+          <div className="flex items-center gap-4 rounded-xl bg-soft p-6">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10">
+              <span className="text-lg font-semibold text-primary">SN</span>
+            </div>
+            <div>
+              <p className="font-semibold text-tagline">Schlafnerds</p>
+              <p className="text-sm leading-relaxed text-tagline/60">
+                Fachgeschäft für Schlaflösungen in Bocholt. Persönliche
+                Beratung, Probeliegen und ehrliche Empfehlungen seit 2020.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="bg-soft">
           <div className="mx-auto max-w-3xl px-6 py-16 text-center md:py-24">
