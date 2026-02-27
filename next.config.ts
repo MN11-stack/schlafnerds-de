@@ -60,6 +60,21 @@ const nextConfig: NextConfig = {
         destination: "/nackenstuetzkissen-bocholt",
         permanent: true,
       },
+      {
+        source: "/genial-g%C3%BCnstig",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/schlafyogi",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/senioren",
+        destination: "/",
+        permanent: true,
+      },
       // Alte Sprachpfade
       {
         source: "/kids/:path*",
