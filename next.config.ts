@@ -31,11 +31,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/chronotypen-test",
-        destination: "/",
-        permanent: true,
-      },
-      {
         source: "/stores",
         destination: "/",
         permanent: true,
