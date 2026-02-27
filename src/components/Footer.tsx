@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-tagline text-white">
       <div className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-12 md:grid-cols-3">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Logo & Kontakt */}
           <div>
             <Image
@@ -85,7 +85,40 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Column 3: Rechtliches */}
+          {/* Column 3: Schlafwissen */}
+          <div>
+            <h3 className="mb-6 font-heading text-lg italic text-white">
+              Schlafwissen
+            </h3>
+            <nav className="flex flex-col gap-3">
+              <a
+                href="/blog"
+                className="text-white/70 transition-colors hover:!text-primary"
+              >
+                Alle Artikel
+              </a>
+              <a
+                href="/blog/schlafhygiene"
+                className="text-white/70 transition-colors hover:!text-primary"
+              >
+                Schlafhygiene-Regeln
+              </a>
+              <a
+                href="/blog/schlafmythen"
+                className="text-white/70 transition-colors hover:!text-primary"
+              >
+                7 Schlafmythen
+              </a>
+              <a
+                href="/chronotypen-test"
+                className="text-white/70 transition-colors hover:!text-primary"
+              >
+                Chronotypen-Test
+              </a>
+            </nav>
+          </div>
+
+          {/* Column 4: Rechtliches */}
           <div>
             <h3 className="mb-6 font-heading text-lg italic text-white">
               Rechtliches
