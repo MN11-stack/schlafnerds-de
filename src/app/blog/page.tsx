@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -23,6 +24,8 @@ interface Article {
   label: string;
   title: string;
   description: string;
+  image: string;
+  imageAlt: string;
 }
 
 const articles: Article[] = [
@@ -32,6 +35,8 @@ const articles: Article[] = [
     title: "Besser einschlafen: 10 Schlafhygiene-Regeln, die wirklich helfen",
     description:
       "Kleine Gewohnheiten, große Wirkung: 10 wissenschaftlich fundierte Regeln für besseres Einschlafen und erholsamere Nächte.",
+    image: "/images/blog/schlafhygiene.png",
+    imageAlt: "Gemütliches Schlafzimmer mit warmem Licht und aufgeräumtem Nachttisch",
   },
   {
     href: "/blog/schlafmythen",
@@ -39,6 +44,8 @@ const articles: Article[] = [
     title: "7 Schlafmythen – was wirklich stimmt",
     description:
       "Schlaf vor Mitternacht ist der beste? 8 Stunden sind Pflicht? 7 verbreitete Überzeugungen im Faktencheck.",
+    image: "/images/blog/schlafmythen.png",
+    imageAlt: "Helles Schlafzimmer mit Sonnenlicht",
   },
   {
     href: "/chronotypen-test",
@@ -46,6 +53,8 @@ const articles: Article[] = [
     title: "Welcher Chronotyp bist du – Lerche oder Eule?",
     description:
       "Finde in 5 Fragen heraus, ob du ein Morgentyp, Abendtyp oder Neutraltyp bist – mit persönlicher Auswertung und Schlaftipps.",
+    image: "/images/blog/chronotypen.png",
+    imageAlt: "Sonnenaufgang und Abenddämmerung – Lerche oder Eule",
   },
 ];
 
@@ -71,20 +80,31 @@ export default function BlogPage() {
               <a
                 key={article.href}
                 href={article.href}
-                className="group rounded-xl border-2 border-gray-100 p-6 transition-all hover:border-primary/30 hover:shadow-md"
+                className="group flex flex-col overflow-hidden rounded-xl border-2 border-gray-100 transition-all hover:border-primary/30 hover:shadow-md"
               >
-                <p className="text-sm font-semibold tracking-wide text-primary uppercase">
-                  {article.label}
-                </p>
-                <h2 className="mt-2 font-heading text-lg font-normal leading-snug">
-                  {article.title}
-                </h2>
-                <p className="mt-3 text-sm leading-relaxed text-tagline/70">
-                  {article.description}
-                </p>
-                <span className="mt-4 inline-block text-sm font-medium text-primary transition-colors group-hover:text-primary/80">
-                  Weiterlesen &rarr;
-                </span>
+                <div className="relative h-48 w-full overflow-hidden">
+                  <Image
+                    src={article.image}
+                    alt={article.imageAlt}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-6">
+                  <p className="text-sm font-semibold tracking-wide text-primary uppercase">
+                    {article.label}
+                  </p>
+                  <h2 className="mt-2 font-heading text-lg font-normal leading-snug">
+                    {article.title}
+                  </h2>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-tagline/70">
+                    {article.description}
+                  </p>
+                  <span className="mt-4 inline-block text-sm font-medium text-primary transition-colors group-hover:text-primary/80">
+                    Weiterlesen &rarr;
+                  </span>
+                </div>
               </a>
             ))}
           </div>

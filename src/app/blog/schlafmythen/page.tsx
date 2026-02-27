@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -136,6 +137,16 @@ export default function SchlafmythenPage() {
             kursieren viele Überzeugungen – einige davon stimmen, andere führen
             in die Irre. Wir räumen auf.
           </p>
+          <div className="relative mt-10 h-64 w-full overflow-hidden rounded-xl md:h-80">
+            <Image
+              src="/images/blog/schlafmythen.png"
+              alt="Helles Schlafzimmer mit Sonnenlicht"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+              priority
+            />
+          </div>
         </section>
 
         {/* Myths */}

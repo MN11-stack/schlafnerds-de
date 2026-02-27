@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ChronotypenTest from "./ChronotypenTest";
@@ -36,6 +37,16 @@ export default function ChronotypenTestPage() {
             kurzen Test (5 Fragen) findest du heraus, ob du eher ein Morgentyp
             (Lerche), ein Abendtyp (Eule) oder ein Neutraltyp bist.
           </p>
+          <div className="relative mt-10 h-64 w-full overflow-hidden rounded-xl md:h-80">
+            <Image
+              src="/images/blog/chronotypen.png"
+              alt="Sonnenaufgang und Abenddämmerung – Lerche oder Eule"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+              priority
+            />
+          </div>
 
           <ChronotypenTest />
         </div>
