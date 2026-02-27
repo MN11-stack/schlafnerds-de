@@ -82,7 +82,7 @@ export default function Header() {
           {/* Betten Dropdown */}
           <div className="group relative">
             <button
-              className="flex items-center gap-1 text-sm font-medium text-tagline transition-colors hover:text-primary"
+              className="flex items-center gap-1 font-[inherit] text-sm font-medium text-tagline transition-colors hover:text-primary"
             >
               Betten
               <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" />
@@ -121,7 +121,7 @@ export default function Header() {
           {/* Zubehör Dropdown */}
           <div className="group relative">
             <button
-              className="flex items-center gap-1 text-sm font-medium text-tagline transition-colors hover:text-primary"
+              className="flex items-center gap-1 font-[inherit] text-sm font-medium text-tagline transition-colors hover:text-primary"
             >
               Zubehör
               <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" />
