@@ -12,6 +12,10 @@
   --color-secondary-dark: #8f3569;
   --color-tagline: #474749;
   --color-soft: #F5F5F5;
+
+  /* Erdung page accent */
+  --color-earth: #708357;
+  --color-earth-dark: #5a6b46;
 }
 
 /* ============================================ */

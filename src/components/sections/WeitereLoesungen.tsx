@@ -29,6 +29,13 @@ const allProducts = [
     alt: "Ergonomisches Nackenstützkissen",
     text: "Zentimetergenaue Anpassung an Ihre Körperstatik und Schlafsituation.",
   },
+  {
+    title: "Erdungsspanntücher",
+    href: "/erdungsspanntuecher-bocholt",
+    image: "/images/products/erdungsspanntuch.jpg",
+    alt: "Erdungsspanntuch mit Silberfäden",
+    text: "Ein Schlaf-Ritual mit Erdverbindung – physikalisch nachweisbar, persönlich beraten.",
+  },
 ];
 
 export default function WeitereLoesungen({

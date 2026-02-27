@@ -12,6 +12,7 @@ const deToNlMapping: Record<string, string> = {
   "/beratung-probeliegen": "https://slaapnerds.nl/service-en-advies",
   "/nackenstuetzkissen-bocholt": "https://slaapnerds.nl/",
   "/betten-bocholt": "https://slaapnerds.nl/",
+  "/erdungsspanntuecher-bocholt": "https://slaapnerds.nl/",
 };
 
 function NlFlag() {
@@ -116,6 +117,26 @@ export default function Header() {
           >
             Nackenstützkissen
           </a>
+
+          {/* Zubehör Dropdown */}
+          <div className="group relative">
+            <button
+              className="flex items-center gap-1 text-sm font-medium text-tagline transition-colors hover:text-primary"
+            >
+              Zubehör
+              <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" />
+            </button>
+            <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-2 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100">
+              <div className="min-w-[200px] rounded-lg bg-white py-2 shadow-lg ring-1 ring-black/5">
+                <a
+                  href="/erdungsspanntuecher-bocholt"
+                  className="block px-4 py-2 text-sm text-tagline transition-colors hover:bg-soft hover:text-primary"
+                >
+                  Erdungsspanntücher
+                </a>
+              </div>
+            </div>
+          </div>
         </nav>
 
         {/* Desktop CTA - only visible on lg screens */}
@@ -212,6 +233,23 @@ export default function Header() {
             >
               Nackenstützkissen
             </a>
+
+            {/* Zubehör group */}
+            <div>
+              <p className="text-xs font-semibold tracking-wide text-tagline/50 uppercase">
+                Zubehör
+              </p>
+              <div className="mt-2 flex flex-col gap-3 pl-3">
+                <a
+                  href="/erdungsspanntuecher-bocholt"
+                  className="text-base text-tagline"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Erdungsspanntücher
+                </a>
+              </div>
+            </div>
+
             <a
               href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
               target="_blank"

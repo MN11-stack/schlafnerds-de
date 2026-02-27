@@ -27,7 +27,7 @@ const nextConfig: NextConfig = {
       // Alte Content-Seiten → Startseite
       {
         source: "/erdungsspanntücher",
-        destination: "/",
+        destination: "/erdungsspanntuecher-bocholt",
         permanent: true,
       },
       {
