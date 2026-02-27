@@ -115,7 +115,7 @@ function WasIstErdung() {
               src="/images/products/erdungsspanntuch.jpg"
               alt="Erdungsspanntuch mit sichtbarem Silberfaden-Gitter – bei Schlafnerds in Bocholt"
               width={400}
-              height={394}
+              height={400}
               className="h-auto w-full object-cover"
             />
           </div>
