@@ -75,6 +75,21 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/datenschutzerkl%C3%A4rung",
+        destination: "/datenschutz",
+        permanent: true,
+      },
+      {
+        source: "/schlafcoaching",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/zimmerservice",
+        destination: "/",
+        permanent: true,
+      },
       // Alte Sprachpfade
       {
         source: "/kids/:path*",
