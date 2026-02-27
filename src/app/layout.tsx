@@ -17,7 +17,7 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "Schlafnerds – Fachgeschäft für Schlaflösungen in Bocholt",
   description:
-    "Persönliche Schlafberatung & Probeliegen in Bocholt. Matratzen, Boxspringbetten und Holzbetten – Di, Do, Fr & Sa geöffnet. Schlafnerds.",
+    "Betten Bocholt: Persönliche Schlafberatung & Probeliegen bei den Schlafnerds. Matratzen, Boxspringbetten, Holzbetten und Nackenstützkissen – Di, Do, Fr & Sa geöffnet.",
   openGraph: {
     title: "Schlafnerds – Fachgeschäft für Schlaflösungen in Bocholt",
     description:

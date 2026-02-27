@@ -7,7 +7,7 @@ import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 export const metadata: Metadata = {
   title: "Erdungsspanntücher Bocholt – Beratung | Schlafnerds",
   description:
-    "Erdungsspanntücher bei Schlafnerds in Bocholt. Persönliche Beratung, ehrliche Einordnung und ein Schlaf-Ritual, das neugierig macht. Jetzt Termin vereinbaren.",
+    "Erdungsspanntücher in Bocholt: 100% Baumwolle, 10% Silber. Erdung beim Schlafen – persönliche Beratung und ehrliche Einordnung bei den Schlafnerds. Jetzt Termin vereinbaren.",
   openGraph: {
     title: "Erdungsspanntücher Bocholt – Beratung | Schlafnerds",
     description:
