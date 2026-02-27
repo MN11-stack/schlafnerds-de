@@ -3,6 +3,30 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
+import FaqSection from "@/components/sections/FaqSection";
+
+const matratzenFaqs = [
+  {
+    question: "Welche Matratzenarten kann ich bei Schlafnerds vergleichen?",
+    answer:
+      "Naturlatex, Naturlatex mit Kokosplatten, Taschenfederkern, Kaltschaum und Viscogelschaum. Wir führen bewusst mehrere Materialien, weil kein Material für alle Menschen gleich gut funktioniert.",
+  },
+  {
+    question: "Wie läuft eine Matratzenberatung bei Schlafnerds ab?",
+    answer:
+      "Wir beginnen mit einer Analyse Ihrer Körperstatik – Schulter, Becken, Wirbelsäule. Dann vergleichen Sie verschiedene Materialien im Probeliegen. Wir ordnen das Liegegefühl gemeinsam ein und geben eine transparente Empfehlung. Die Entscheidung liegt bei Ihnen.",
+  },
+  {
+    question: "Brauche ich einen Termin für eine Matratzenberatung?",
+    answer:
+      "Empfohlen, aber nicht zwingend. Mit Termin nehmen wir uns 45–60 Minuten exklusiv Zeit für Sie. Termine sind auch außerhalb der regulären Öffnungszeiten möglich. Ohne Termin sind wir Di + Do 14–18 Uhr, Fr 10–18 Uhr und Sa 10–14 Uhr erreichbar.",
+  },
+  {
+    question: "Ist Lieferung und Entsorgung der alten Matratze inklusive?",
+    answer:
+      "Ja. Lieferung, Aufbau und die Entsorgung Ihrer alten Matratze sind bei uns inklusive.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Matratzen Bocholt – Beratung, Vergleich & Probeliegen | Schlafnerds",
@@ -663,6 +687,7 @@ export default function MatratzenBocholt() {
         <PasstZuIhnen />
         <UnserWeg />
         <TerminOderVorbeikommen />
+        <FaqSection faqs={matratzenFaqs} />
         <WeitereLoesungen currentPath="/matratzen-bocholt" />
         <RegionNaehe />
         <RuhigerAbschluss />

@@ -2,6 +2,30 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FaqSection from "@/components/sections/FaqSection";
+
+const beratungFaqs = [
+  {
+    question: "Was erwartet mich bei einer Beratung bei Schlafnerds?",
+    answer:
+      "Wir analysieren Ihre Körperstatik – Schulter, Becken, Wirbelsäule – und lassen Sie verschiedene Schlafsysteme im Probeliegen vergleichen. Anschließend ordnen wir ein und geben eine transparente Empfehlung.",
+  },
+  {
+    question: "Brauche ich einen Termin?",
+    answer:
+      "Empfohlen, aber nicht zwingend. Mit Termin nehmen wir uns 45–60 Minuten exklusiv Zeit. Termine sind auch außerhalb der regulären Öffnungszeiten möglich.",
+  },
+  {
+    question: "Was unterscheidet Schlafnerds von anderen Fachhändlern?",
+    answer:
+      "Wir sind zertifizierte Schlafcoaches und Ergopraktiker und bringen profunde Perspektiven in jede Beratung ein. Im Mittelpunkt stehen Körperstatik und Liegegefühl – nicht Verkaufszahlen.",
+  },
+  {
+    question: "Welche Produkte kann ich bei Schlafnerds vergleichen?",
+    answer:
+      "Boxspringbetten, Holzbetten, Matratzen (Naturlatex, Kaltschaum, Taschenfederkern, Viscogelschaum) und Nackenstützkissen. Alles vor Ort, alles zum Probeliegen.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Beratung & Probeliegen – Schlafnerds Bocholt",
@@ -583,6 +607,7 @@ export default function BeratungProbeliegen() {
         <WasProbeliegenBedeutet />
         <Beratungsprozess />
         <TerminOderVorbeikommen />
+        <FaqSection faqs={beratungFaqs} />
         <BeratungImAlltag />
         <RegionNaehe />
         <RuhigerAbschluss />

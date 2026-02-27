@@ -3,6 +3,30 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
+import FaqSection from "@/components/sections/FaqSection";
+
+const holzbettenFaqs = [
+  {
+    question: "Welche Holzarten bietet Schlafnerds an?",
+    answer:
+      "Wir führen Betten aus Eiche, Buche und Kernbuche. Jede Holzart hat eigene Eigenschaften in Maserung, Härte und Optik. Wir zeigen Ihnen die Unterschiede vor Ort.",
+  },
+  {
+    question: "Ist ein Holzbett auch ergonomisch sinnvoll?",
+    answer:
+      "Ja – wenn das Gesamtsystem stimmt. Entscheidend ist das Zusammenspiel aus Bettrahmen, Lattenrost und Matratze. Genau das klären wir bei der Beratung.",
+  },
+  {
+    question: "Kann ich Lattenrost und Matratze frei wählen?",
+    answer:
+      "Ja. Wir stimmen Lattenrost und Matratze individuell auf Ihre Körperstatik und Ihr Liegegefühl ab. Das Holzbett ist die Basis – das System entsteht gemeinsam.",
+  },
+  {
+    question: "Sind Lieferung und Aufbau inklusive?",
+    answer:
+      "Ja. Lieferung, Aufbau im Schlafzimmer und die Entsorgung Ihres alten Betts sind bei uns inklusive.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Holzbetten Bocholt – Beratung & Probeliegen | Schlafnerds",
@@ -620,6 +644,7 @@ export default function HolzbettenBocholt() {
         <LiegepositionZusammenspiel />
         <UnserWeg />
         <TerminOderVorbeikommen />
+        <FaqSection faqs={holzbettenFaqs} />
         <WeitereLoesungen currentPath="/holzbetten-bocholt" />
         <RegionNaehe />
         <RuhigerAbschluss />

@@ -3,6 +3,30 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
+import FaqSection from "@/components/sections/FaqSection";
+
+const boxspringFaqs = [
+  {
+    question: "Was unterscheidet ein Boxspringbett von einem klassischen Bett?",
+    answer:
+      "Ein Boxspringbett besteht aus einer gefederten Unterbox, einer darauf abgestimmten Matratze und meist einem Topper. Es bietet eine hohe Einstiegshöhe und ein spürbar anderes Liegegefühl.",
+  },
+  {
+    question: "Kann ich beim Boxspringbett die Matratze frei wählen?",
+    answer:
+      "Ja. Bei Schlafnerds stimmen wir Unterbox und Matratze individuell auf Ihre Körperstatik ab. Wir erklären Ihnen die Unterschiede und begleiten die Entscheidung.",
+  },
+  {
+    question: "Für wen eignet sich ein Boxspringbett besonders?",
+    answer:
+      "Für Menschen, die eine hohe Einstiegshöhe und ein weiches bis mittelfestes Liegegefühl bevorzugen. Ob ein Boxspringbett zu Ihnen passt, klären wir beim Probeliegen.",
+  },
+  {
+    question: "Sind Lieferung und Aufbau inklusive?",
+    answer:
+      "Ja. Lieferung, Aufbau im Schlafzimmer und die Entsorgung Ihres alten Betts sind bei uns inklusive.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Boxspringbetten Bocholt – Beratung & Probeliegen | Schlafnerds",
@@ -587,6 +611,7 @@ export default function BoxspringbettenBocholt() {
         <PasstEsZuIhnen />
         <UnserWeg />
         <TerminOderVorbeikommen />
+        <FaqSection faqs={boxspringFaqs} />
         <WeitereLoesungen currentPath="/boxspringbetten-bocholt" />
         <RegionNaehe />
         <RuhigerAbschluss />
