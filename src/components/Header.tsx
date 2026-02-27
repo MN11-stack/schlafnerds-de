@@ -51,7 +51,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.08)]">
       {/* Main Header Bar */}
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4">
         {/* Logo + Brand Text */}
         <div className="flex items-center shrink-0">
           <a href="/" className="shrink-0">
@@ -60,7 +60,7 @@ export default function Header() {
               alt="Schlafnerds"
               width={180}
               height={48}
-              className="h-auto w-[120px] sm:w-[140px] md:w-[180px]"
+              className="h-auto w-[100px] sm:w-[120px] md:w-[140px]"
               priority
             />
           </a>
@@ -71,7 +71,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden flex-1 justify-center gap-8 lg:flex">
+        <nav className="hidden flex-1 items-center justify-evenly lg:flex">
           <a
             href="/beratung-probeliegen"
             className="text-sm font-medium text-tagline transition-colors hover:text-primary"
