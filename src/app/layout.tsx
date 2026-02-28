@@ -15,13 +15,13 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Schlafnerds – Fachgeschäft für Schlaflösungen in Bocholt",
+  title: "Bettengeschäft Bocholt | Persönliche Schlafberatung bei Schlafnerds",
   description:
-    "Betten Bocholt: Persönliche Schlafberatung & Probeliegen bei den Schlafnerds. Matratzen, Boxspringbetten, Holzbetten und Nackenstützkissen – Di, Do, Fr & Sa geöffnet.",
+    "Ihr Bettengeschäft in Bocholt: Individuelle Matratzen-Beratung mit Körperstatik-Check & Probeliegen. Kostenlos & unverbindlich – Di, Do, Fr & Sa geöffnet. Jetzt Termin buchen!",
   openGraph: {
-    title: "Schlafnerds – Fachgeschäft für Schlaflösungen in Bocholt",
+    title: "Bettengeschäft Bocholt | Persönliche Schlafberatung bei Schlafnerds",
     description:
-      "Persönliche Schlafberatung & Probeliegen in Bocholt. Matratzen, Boxspringbetten und Holzbetten für die Region.",
+      "Ihr Bettengeschäft in Bocholt: Individuelle Matratzen-Beratung mit Körperstatik-Check & Probeliegen. Kostenlos & unverbindlich.",
     locale: "de_DE",
     type: "website",
   },
@@ -135,6 +135,13 @@ const localBusinessSchema = {
     "https://slaapnerds.nl",
     "https://www.instagram.com/schlafnerds/",
   ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: "47",
+    bestRating: "5",
+    worstRating: "1",
+  },
   parentOrganization: {
     "@id": "https://www.schlafnerds.de/#organization",
   },
