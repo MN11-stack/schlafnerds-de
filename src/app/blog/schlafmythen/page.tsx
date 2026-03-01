@@ -13,6 +13,14 @@ export const metadata: Metadata = {
       "7 verbreitete Schlafmythen im Faktencheck. Wissenschaftlich fundiert, verständlich erklärt – von den Schlafnerds aus Bocholt.",
     locale: "de_DE",
     type: "article",
+    images: [
+      {
+        url: "https://www.schlafnerds.de/images/blog/schlafmythen.png",
+        width: 1200,
+        height: 630,
+        alt: "7 Schlafmythen – was wirklich stimmt",
+      },
+    ],
   },
   alternates: {
     canonical: "https://www.schlafnerds.de/blog/schlafmythen",

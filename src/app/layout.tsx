@@ -24,6 +24,23 @@ export const metadata: Metadata = {
       "Ihr Bettengeschäft in Bocholt: Individuelle Matratzen-Beratung mit Körperstatik-Check & Probeliegen. Kostenlos & unverbindlich.",
     locale: "de_DE",
     type: "website",
+    url: "https://www.schlafnerds.de",
+    siteName: "Schlafnerds",
+    images: [
+      {
+        url: "https://www.schlafnerds.de/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Schlafnerds – Persönliche Schlafberatung in Bocholt",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bettengeschäft Bocholt | Persönliche Schlafberatung bei Schlafnerds",
+    description:
+      "Ihr Bettengeschäft in Bocholt: Individuelle Matratzen-Beratung mit Körperstatik-Check & Probeliegen. Kostenlos & unverbindlich.",
+    images: ["https://www.schlafnerds.de/images/og-image.png"],
   },
   alternates: {
     canonical: "https://www.schlafnerds.de",

@@ -13,6 +13,14 @@ export const metadata: Metadata = {
       "10 Schlafhygiene-Regeln aus der Schlafforschung – verständlich erklärt und einfach umsetzbar. Von den Schlafnerds aus Bocholt.",
     locale: "de_DE",
     type: "article",
+    images: [
+      {
+        url: "https://www.schlafnerds.de/images/blog/schlafhygiene.png",
+        width: 1200,
+        height: 630,
+        alt: "Schlafhygiene: 10 Regeln für besseren Schlaf",
+      },
+    ],
   },
   alternates: {
     canonical: "https://www.schlafnerds.de/blog/schlafhygiene",
