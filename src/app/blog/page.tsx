@@ -56,6 +56,15 @@ const articles: Article[] = [
     image: "/images/blog/chronotypen.png",
     imageAlt: "Sonnenaufgang und Abenddämmerung – Lerche oder Eule",
   },
+  {
+    href: "/blog/matratze-kaufen",
+    label: "Produkt & Ratgeber",
+    title: "Matratze kaufen: Worauf du wirklich achten musst",
+    description:
+      "Härtegrad, Material, Schlafsystem – 7 Dinge, die beim Matratzenkauf wirklich entscheiden. Und warum sich das nicht googeln lässt.",
+    image: "/images/blog/matratze-kaufen.png",
+    imageAlt: "Hand drückt auf Matratze im Schlafnerds Showroom",
+  },
 ];
 
 export default function BlogPage() {
