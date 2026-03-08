@@ -115,6 +115,12 @@ export default function Footer() {
               >
                 Chronotypen-Test
               </a>
+              <a
+                href="/blog/matratze-kaufen"
+                className="text-white/70 transition-colors hover:!text-primary"
+              >
+                Matratze kaufen
+              </a>
             </nav>
           </div>
 

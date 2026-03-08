@@ -192,8 +192,8 @@ export default function SchlafmythenPage() {
         {/* Author */}
         <section className="mx-auto max-w-3xl px-6 pb-16 md:pb-24">
           <div className="flex items-center gap-4 rounded-xl bg-soft p-6">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10">
-              <span className="text-lg font-semibold text-primary">SN</span>
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 overflow-hidden p-1">
+              <Image src="/images/logo.svg" alt="Schlafnerds" width={36} height={36} className="object-contain" />
             </div>
             <div>
               <p className="font-semibold text-tagline">Schlafnerds</p>
