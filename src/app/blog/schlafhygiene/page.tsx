@@ -427,8 +427,8 @@ export default function SchlafhygienePage() {
         {/* Author */}
         <section className="mx-auto max-w-3xl px-6 py-16 md:py-24">
           <div className="flex items-center gap-4 rounded-xl bg-soft p-6">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 overflow-hidden p-1">
-              <Image src="/images/logo.svg" alt="Schlafnerds" width={36} height={36} className="object-contain" />
+            <div className="flex h-12 w-12 shrink-0 overflow-hidden rounded-full">
+              <Image src="/images/icon.png" alt="Schlafnerds" width={48} height={48} className="object-cover" />
             </div>
             <div>
               <p className="font-semibold text-tagline">Schlafnerds</p>
