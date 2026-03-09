@@ -218,7 +218,7 @@ export default function MatratzekaufenPage() {
         {/* Intro */}
         <section className="mx-auto max-w-3xl px-6 pb-12">
           <h2 className="font-heading text-2xl font-normal md:text-3xl">
-            Warum landet man beim Matratzenkauf so oft daneben?
+            Warum man beim Matratzenkauf schnell daneben liegen kann
           </h2>
           <p className="mt-4 leading-relaxed text-tagline/80">
             Eine Matratze kaufst du für die nächsten 8–10 Jahre – und du liegst
