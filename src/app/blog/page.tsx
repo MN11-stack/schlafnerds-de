@@ -65,6 +65,15 @@ const articles: Article[] = [
     image: "/images/blog/matratze-kaufen.png",
     imageAlt: "Hand drückt auf Matratze im Schlafnerds Showroom",
   },
+  {
+    href: "/blog/schlaf-im-alter",
+    label: "Schlafwissen",
+    title: "Schlaf im Alter: Wie sich unser Schlaf verändert",
+    description:
+      "Weniger Tiefschlaf, häufigeres Aufwachen, früheres Erwachen – was sich biologisch verändert, was normal ist und was wirklich hilft.",
+    image: "/images/blog/schlaf-im-alter.png",
+    imageAlt: "Älteres Paar schläft in einem gemütlichen Bett mit warmem Licht",
+  },
 ];
 
 export default function BlogPage() {
