@@ -26,7 +26,12 @@ const nextConfig: NextConfig = {
       },
       // Alte Content-Seiten → Startseite
       {
-        source: "/erdungsspanntücher",
+        source: "/erdungsspannt%C3%BCcher",
+        destination: "/erdungsspanntuecher-bocholt",
+        permanent: true,
+      },
+      {
+        source: "/erdungsspanntuecher",
         destination: "/erdungsspanntuecher-bocholt",
         permanent: true,
       },

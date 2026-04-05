@@ -752,9 +752,37 @@ const breadcrumbSchema = {
 /* ─────────────────────────────────────────────
    PAGE
    ───────────────────────────────────────────── */
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.schlafnerds.de/erdungsspanntuecher-bocholt#service",
+  name: "Erdungsspanntücher Bocholt",
+  description:
+    "Persönliche Beratung zu Erdungsspanntüchern in Bocholt. Einordnung, Technik und ehrliche Empfehlung bei den Schlafnerds.",
+  url: "https://www.schlafnerds.de/erdungsspanntuecher-bocholt",
+  provider: {
+    "@id": "https://www.schlafnerds.de/#localbusiness",
+  },
+  areaServed: [
+    { "@type": "City", name: "Bocholt" },
+    { "@type": "AdministrativeArea", name: "Kreis Borken" },
+  ],
+  serviceType: "Schlafzubehör-Beratung",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR",
+    description: "Kostenlose Beratung ohne Kaufzwang",
+  },
+};
+
 export default function ErdungsspanntucherBocholt() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <Header />
       <main>
         <HeroErdung />
