@@ -633,9 +633,37 @@ function RuhigerAbschluss() {
 /* ─────────────────────────────────────────────
    PAGE
    ───────────────────────────────────────────── */
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.schlafnerds.de/holzbetten-bocholt#service",
+  name: "Holzbetten Bocholt",
+  description:
+    "Beratung und Auswahl von Holzbetten in Bocholt. Verschiedene Holzarten, freie Wahl von Lattenrost und Matratze, Lieferung und Aufbau inklusive.",
+  url: "https://www.schlafnerds.de/holzbetten-bocholt",
+  provider: {
+    "@id": "https://www.schlafnerds.de/#localbusiness",
+  },
+  areaServed: [
+    { "@type": "City", name: "Bocholt" },
+    { "@type": "AdministrativeArea", name: "Kreis Borken" },
+  ],
+  serviceType: "Holzbetten-Beratung",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR",
+    description: "Kostenlose Schlafberatung ohne Kaufzwang",
+  },
+};
+
 export default function HolzbettenBocholt() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <Header />
       <main>
         <HeroHolzbetten />

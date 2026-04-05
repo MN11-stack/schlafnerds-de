@@ -676,9 +676,37 @@ function RuhigerAbschluss() {
 /* ─────────────────────────────────────────────
    PAGE
    ───────────────────────────────────────────── */
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.schlafnerds.de/matratzen-bocholt#service",
+  name: "Matratzenberatung Bocholt",
+  description:
+    "Persönliche Matratzenberatung mit Körperstatik-Check, Probeliegen und Materialvergleich. Inklusive Lieferung, Aufbau und Entsorgung der alten Matratze.",
+  url: "https://www.schlafnerds.de/matratzen-bocholt",
+  provider: {
+    "@id": "https://www.schlafnerds.de/#localbusiness",
+  },
+  areaServed: [
+    { "@type": "City", name: "Bocholt" },
+    { "@type": "AdministrativeArea", name: "Kreis Borken" },
+  ],
+  serviceType: "Matratzenberatung",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR",
+    description: "Kostenlose Schlafberatung ohne Kaufzwang",
+  },
+};
+
 export default function MatratzenBocholt() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <Header />
       <main>
         <HeroMatratzen />

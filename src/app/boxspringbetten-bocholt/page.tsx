@@ -601,9 +601,37 @@ function RuhigerAbschluss() {
 /* ─────────────────────────────────────────────
    PAGE
    ───────────────────────────────────────────── */
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.schlafnerds.de/boxspringbetten-bocholt#service",
+  name: "Boxspringbetten Bocholt",
+  description:
+    "Persönliche Beratung und Auswahl von Boxspringbetten in Bocholt. Probeliegen, individuelle Konfiguration und Lieferung inklusive Aufbau.",
+  url: "https://www.schlafnerds.de/boxspringbetten-bocholt",
+  provider: {
+    "@id": "https://www.schlafnerds.de/#localbusiness",
+  },
+  areaServed: [
+    { "@type": "City", name: "Bocholt" },
+    { "@type": "AdministrativeArea", name: "Kreis Borken" },
+  ],
+  serviceType: "Boxspringbetten-Beratung",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR",
+    description: "Kostenlose Schlafberatung ohne Kaufzwang",
+  },
+};
+
 export default function BoxspringbettenBocholt() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <Header />
       <main>
         <HeroBoxspring />
