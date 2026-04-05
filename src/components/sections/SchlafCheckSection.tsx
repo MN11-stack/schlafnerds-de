@@ -245,9 +245,14 @@ export default function SchlafCheckSection() {
                   <button
                     key={opt.value}
                     onClick={() => handleAnswer(opt.value)}
-                    className="w-full rounded-xl border-2 border-gray-200 bg-white px-6 py-4 text-left font-[inherit] text-base text-tagline transition-all hover:border-primary/50 hover:bg-primary/5 active:scale-[0.99]"
+                    className="group w-full rounded-xl border-2 border-gray-200 bg-white px-6 py-4 text-left font-[inherit] text-base text-tagline transition-all hover:border-primary hover:bg-primary hover:text-white active:scale-[0.99]"
                   >
-                    {opt.label}
+                    <span className="flex items-center justify-between gap-4">
+                      <span>{opt.label}</span>
+                      <svg className="h-4 w-4 shrink-0 text-primary transition-colors group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </span>
                   </button>
                 ))}
               </div>
