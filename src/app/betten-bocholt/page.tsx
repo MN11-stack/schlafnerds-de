@@ -543,12 +543,34 @@ function RuhigerAbschluss() {
   );
 }
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.schlafnerds.de/betten-bocholt#service",
+  name: "Bettenberatung Bocholt",
+  provider: { "@id": "https://www.schlafnerds.de/#localbusiness" },
+  areaServed: [
+    { "@type": "City", name: "Bocholt" },
+    { "@type": "AdministrativeArea", name: "Kreis Borken" },
+  ],
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR",
+    description: "Kostenlose Schlafberatung ohne Kaufzwang",
+  },
+};
+
 /* ─────────────────────────────────────────────
    PAGE
    ───────────────────────────────────────────── */
 export default function BettenBocholt() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <Header />
       <main>
         <HeroBetten />

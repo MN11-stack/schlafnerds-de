@@ -2,6 +2,13 @@ import Image from "next/image";
 
 const allProducts = [
   {
+    title: "Betten in Bocholt",
+    href: "/betten-bocholt",
+    image: "/images/store/ladenlokal.jpeg",
+    alt: "Bettenfachgeschäft Schlafnerds Bocholt",
+    text: "Boxspringbetten, Matratzen, Holzbetten – persönliche Beratung und Probeliegen.",
+  },
+  {
     title: "Matratzen",
     href: "/matratzen-bocholt",
     image: "/images/products/matratze.png",

@@ -133,6 +133,19 @@ export default function SolutionsSection() {
           ))}
         </div>
 
+        {/* Übersichtslink */}
+        <div className="mt-8 text-center">
+          <a
+            href="/betten-bocholt"
+            className="inline-flex items-center gap-1 text-sm font-medium text-primary transition-colors hover:text-primary-dark"
+          >
+            Alle Schlaflösungen im Überblick: Betten in Bocholt
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
         {/* Trust Visual + CTA */}
         <div className="mt-14 grid items-center gap-10 md:grid-cols-2">
           <div className="overflow-hidden rounded-2xl">

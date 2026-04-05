@@ -90,6 +90,13 @@ export default function Header() {
             <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-2 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100">
               <div className="min-w-[180px] rounded-lg bg-white py-2 shadow-lg ring-1 ring-black/5">
                 <a
+                  href="/betten-bocholt"
+                  className="block px-4 py-2 text-sm font-medium text-tagline transition-colors hover:bg-soft hover:text-primary"
+                >
+                  Betten in Bocholt
+                </a>
+                <div className="mx-4 my-1 border-t border-gray-100" />
+                <a
                   href="/boxspringbetten-bocholt"
                   className="block px-4 py-2 text-sm text-tagline transition-colors hover:bg-soft hover:text-primary"
                 >
@@ -202,6 +209,13 @@ export default function Header() {
                 Betten
               </p>
               <div className="mt-2 flex flex-col gap-3 pl-3">
+                <a
+                  href="/betten-bocholt"
+                  className="text-base font-medium text-tagline"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Betten in Bocholt
+                </a>
                 <a
                   href="/boxspringbetten-bocholt"
                   className="text-base text-tagline"
