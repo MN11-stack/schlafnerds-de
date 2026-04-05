@@ -4,7 +4,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import DecisionSection from "@/components/sections/DecisionSection";
 import ConsultationSection from "@/components/sections/ConsultationSection";
 import SolutionsSection from "@/components/sections/SolutionsSection";
-import OrientationSection from "@/components/sections/OrientationSection";
+import SchlafCheckSection from "@/components/sections/SchlafCheckSection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import PeopleRegionSection from "@/components/sections/PeopleRegionSection";
@@ -53,8 +53,8 @@ export default function Home() {
         {/* 4. Lösungsräume (ohne Shop-Logik) */}
         <SolutionsSection />
 
-        {/* 5. Orientierung – Micro-Commitment */}
-        <OrientationSection />
+        {/* 5. Schlaf-Check */}
+        <SchlafCheckSection />
 
         {/* 6. Chronotyp-Teaser */}
         <ChronotypSection />

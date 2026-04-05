@@ -235,24 +235,21 @@ export default function SchlafImAlterPage() {
             </p>
             <p>
               Laut einer umfassenden Studie zur Schlafentwicklung im
-              Altersverlauf (Ohayon et\u00A0al., 2004) steigt die nächtliche
+              Altersverlauf (Ohayon et&nbsp;al., 2004) steigt die nächtliche
               Wachzeit vom 30. bis zum 70. Lebensjahr um etwa{" "}
               <strong>10 Minuten pro Lebensdekade</strong> an.
             </p>
             <p>Gleichzeitig nimmt pro Lebensdekade ab:</p>
             <ul className="ml-4 list-disc space-y-1 pl-2">
               <li>
-                die <strong>Schlafeffizienz</strong> um ca. <strong>3\u00A0%</strong>,
+                <strong>Schlafeffizienz</strong> und{" "}
+                <strong>Tiefschlafanteil (N3)</strong> je um etwa 2–3&nbsp;%
               </li>
               <li>
-                der <strong>Tiefschlafanteil (Schlafstadium N3)</strong> um ca.{" "}
-                <strong>2\u00A0%</strong>,
+                der <strong>REM-Schlaf</strong> geht ebenfalls zurück
               </li>
               <li>
-                der <strong>REM-Schlaf</strong> ebenfalls,
-              </li>
-              <li>
-                der <strong>Leichtschlaf</strong> hingegen zu.
+                der <strong>Leichtschlaf</strong> nimmt zu
               </li>
             </ul>
             <p>
@@ -313,7 +310,7 @@ export default function SchlafImAlterPage() {
                 erweitert. Über dieses{" "}
                 <strong>glymphatische System</strong> werden
                 Stoffwechselabbauprodukte abtransportiert, die sich tagsüber im
-                Gehirn ansammeln (Iliff et\u00A0al., 2013). Guter Schlaf ist also
+                Gehirn ansammeln (Iliff et&nbsp;al., 2013). Guter Schlaf ist also
                 mehr als Erholung – er ist aktive Hirnpflege.
               </p>
               <p>
