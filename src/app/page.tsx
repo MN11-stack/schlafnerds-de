@@ -5,6 +5,7 @@ import DecisionSection from "@/components/sections/DecisionSection";
 import ConsultationSection from "@/components/sections/ConsultationSection";
 import SolutionsSection from "@/components/sections/SolutionsSection";
 import OrientationSection from "@/components/sections/OrientationSection";
+import ReviewsSection from "@/components/sections/ReviewsSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import PeopleRegionSection from "@/components/sections/PeopleRegionSection";
 import ClosingSection from "@/components/sections/ClosingSection";
@@ -58,7 +59,10 @@ export default function Home() {
         {/* 6. Chronotyp-Teaser */}
         <ChronotypSection />
 
-        {/* 7. Besondere Services (mit Videos) */}
+        {/* 7. Google Bewertungen */}
+        <ReviewsSection />
+
+        {/* 8. Besondere Services (mit Videos) */}
         <ServicesSection />
 
         {/* 8. Menschen & Region */}
