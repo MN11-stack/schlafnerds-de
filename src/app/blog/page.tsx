@@ -66,6 +66,15 @@ const articles: Article[] = [
     imageAlt: "Hand drückt auf Matratze im Schlafnerds Showroom",
   },
   {
+    href: "/blog/nackenstuetzkissen-finden",
+    label: "Produkt & Ratgeber",
+    title: "Das passende Nackenstützkissen finden: Worauf es wirklich ankommt",
+    description:
+      "Material, Schlafposition, Anpassung – was ein gutes Nackenstützkissen leisten muss und warum Online-Kauf oft scheitert.",
+    image: "/images/products/nackenstuetzkissen-hero.png",
+    imageAlt: "Ergonomisches Nackenstützkissen mit Tencel-Bezug bei Schlafnerds",
+  },
+  {
     href: "/blog/schlaf-im-alter",
     label: "Schlafwissen",
     title: "Schlaf im Alter: Wie sich unser Schlaf verändert",

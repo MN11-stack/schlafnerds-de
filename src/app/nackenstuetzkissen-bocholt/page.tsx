@@ -6,14 +6,14 @@ import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 
 export const metadata: Metadata = {
   title:
-    "Nackenstützkissen Bocholt – Beratung, Anpassung & Probeliegen | Schlafnerds",
+    "Nackenstützkissen Bocholt – Beratung bei Nackenschmerzen & Anpassung | Schlafnerds",
   description:
-    "Nackenstützkissen individuell anpassen in Bocholt. Körperstatik-Analyse, Probeliegen und zentimetergenaue Empfehlung. Kissentaxi – Beratung auch bei Ihnen zu Hause.",
+    "Das richtige Kissen bei Nackenschmerzen finden: Körperstatik-Analyse, Probeliegen und zentimetergenaue Anpassung. Kissentaxi – Beratung auch bei Ihnen zu Hause in Bocholt.",
   openGraph: {
     title:
-      "Nackenstützkissen Bocholt – Beratung, Anpassung & Probeliegen | Schlafnerds",
+      "Nackenstützkissen Bocholt – Beratung bei Nackenschmerzen & Anpassung | Schlafnerds",
     description:
-      "Nackenstützkissen individuell anpassen in Bocholt. Körperstatik-Analyse und zentimetergenaue Empfehlung.",
+      "Das richtige Kissen bei Nackenschmerzen finden – Körperstatik-Analyse, Probeliegen und zentimetergenaue Anpassung in Bocholt.",
     locale: "de_DE",
     type: "website",
   },
@@ -134,6 +134,77 @@ function WarumAnpassung() {
             </div>
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────
+   2b. WANN EIN NACKENSTÜTZKISSEN HILFT
+   ───────────────────────────────────────────── */
+const signale = [
+  {
+    title: "Morgens verspannter Nacken und Kopfschmerzen",
+    text: "Wer regelmäßig mit einem steifen Nacken aufwacht, schläft auf einem Kissen, das nicht passt. Oft stimmen Höhe oder Festigkeit nicht zur individuellen Schlafposition – Kopf und Nacken werden nicht richtig gestützt.",
+  },
+  {
+    title: "Druckstellen an Wange oder Schulter beim Seitenschlaf",
+    text: "Seitenschläfer brauchen ein Kissen, das die Lücke zwischen Kopf und Matratze exakt ausfüllt. Zu flach belastet die Schulter, zu hoch knickt die Halswirbelsäule ab.",
+  },
+  {
+    title: "Unruhiges Drehen und Kissen-Stapeln in der Nacht",
+    text: 'Wenn du im Schlaf das Kissen faltest, ein zweites darunterlegst oder ein kleines Zusatzkissen („Fritzi") brauchst, ist das ein Signal: Die Höhe oder Festigkeit passt nicht zu deiner Schlafposition.',
+  },
+];
+
+function WannEsHilft() {
+  return (
+    <section className="bg-white">
+      <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+        <div className="text-center">
+          <h2 className="font-heading text-3xl leading-snug font-normal md:text-4xl md:leading-snug">
+            Wann ein Nackenstützkissen hilft.
+          </h2>
+          <p className="mt-4 text-lg leading-relaxed text-tagline">
+            Drei Signale, bei denen das Kissen meist die Ursache ist – nicht die
+            Matratze und nicht das Alter.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {signale.map((signal, i) => (
+            <div
+              key={i}
+              className="flex h-full flex-col rounded-xl border-2 border-gray-100 bg-white p-6 transition-all hover:border-primary/30 hover:shadow-md"
+            >
+              <h3 className="font-heading text-lg leading-snug font-normal text-tagline">
+                {signal.title}
+              </h3>
+              <p className="mt-4 leading-relaxed text-tagline/80">
+                {signal.text}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <p className="mt-10 text-center leading-relaxed text-tagline/70">
+          Tiefer einsteigen:{" "}
+          <a
+            href="/blog/nackenstuetzkissen-finden"
+            className="font-medium !text-primary underline underline-offset-2 hover:!text-primary-dark"
+          >
+            Das passende Nackenstützkissen finden &rarr;
+          </a>
+        </p>
+        <p className="mt-2 text-center leading-relaxed text-tagline/70">
+          Unsicher, welcher Schlaftyp du bist?{" "}
+          <a
+            href="/chronotypen-test"
+            className="font-medium !text-primary underline underline-offset-2 hover:!text-primary-dark"
+          >
+            Chronotyp in 5 Fragen bestimmen &rarr;
+          </a>
+        </p>
       </div>
     </section>
   );
@@ -352,6 +423,68 @@ function UnserWeg() {
           Nicht die Kissenhöhe allein entscheidet – sondern wie Kissen,
           Schulter und Matratze zusammenarbeiten.
         </p>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────
+   4b. STIMMEN VON KUNDEN
+   ───────────────────────────────────────────── */
+const stimmen = [
+  {
+    zitat:
+      "Ich bin jahrelang mit Nackenschmerzen aufgewacht. Mit der Unterstützung der Schlafnerds habe ich endlich das richtige Kissen gefunden. Die Beratung war gründlich und hat sich Zeit genommen.",
+    person: "Kundin, 52, aus Bocholt",
+  },
+  {
+    zitat:
+      "Das Probeliegen hat den Unterschied gemacht. Drei Kissen getestet, am Ende war es nicht das, was ich vorher online gekauft hätte. Mein Nacken dankt es mir.",
+    person: "Kunde, 41, aus Rhede",
+  },
+  {
+    zitat:
+      "Dass ich das Kissen zuhause testen konnte, war entscheidend. Die erste Nacht war ungewohnt – schon wenige Tage später bin ich morgens entspannt aufgewacht und freue mich abends aufs Zubettgehen.",
+    person: "Kundin, 58, aus Borken",
+  },
+];
+
+function StimmenVonKunden() {
+  return (
+    <section className="bg-soft">
+      <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+        <div className="text-center">
+          <h2 className="font-heading text-3xl leading-snug font-normal md:text-4xl md:leading-snug">
+            Stimmen von Kunden.
+          </h2>
+          <p className="mt-4 text-lg leading-relaxed text-tagline">
+            Rückmeldungen aus Beratungsgesprächen – anonymisiert.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {stimmen.map((s, i) => (
+            <figure
+              key={i}
+              className="flex h-full flex-col rounded-xl bg-white p-6 shadow-sm"
+            >
+              <svg
+                className="h-6 w-6 text-primary/40"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
+              </svg>
+              <blockquote className="mt-4 flex-1 leading-relaxed text-tagline/90">
+                {s.zitat}
+              </blockquote>
+              <figcaption className="mt-6 text-sm font-medium text-tagline/70">
+                {s.person}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -689,6 +822,47 @@ function FaqSection() {
 }
 
 /* ─────────────────────────────────────────────
+   PRODUCT SCHEMA
+   ───────────────────────────────────────────── */
+function ProductSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Nackenstützkissen mit individueller Anpassung",
+    description:
+      "Ergonomisches Nackenstützkissen mit Körperstatik-Analyse, Probeliegen und zentimetergenauer Höhenanpassung im Schlafnerds Fachgeschäft in Bocholt.",
+    brand: { "@type": "Brand", name: "Schlafnerds" },
+    image:
+      "https://www.schlafnerds.de/images/products/nackenstuetzkissen-hero.png",
+    category: "Nackenstützkissen",
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      url: "https://www.schlafnerds.de/nackenstuetzkissen-bocholt",
+      priceCurrency: "EUR",
+      seller: {
+        "@type": "LocalBusiness",
+        name: "Schlafnerds",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Nordstraße 39",
+          postalCode: "46395",
+          addressLocality: "Bocholt",
+          addressCountry: "DE",
+        },
+        telephone: "+49 2871 3492862",
+      },
+    },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+/* ─────────────────────────────────────────────
    PAGE
    ───────────────────────────────────────────── */
 export default function NackenstuetzkissenBocholt() {
@@ -698,8 +872,10 @@ export default function NackenstuetzkissenBocholt() {
       <main>
         <HeroKissen />
         <WarumAnpassung />
+        <WannEsHilft />
         <Kissentaxi />
         <UnserWeg />
+        <StimmenVonKunden />
         <FaqSection />
         <TerminOderVorbeikommen />
         <WeitereLoesungen currentPath="/nackenstuetzkissen-bocholt" />
@@ -707,6 +883,7 @@ export default function NackenstuetzkissenBocholt() {
         <RuhigerAbschluss />
       </main>
       <Footer />
+      <ProductSchema />
     </>
   );
 }
