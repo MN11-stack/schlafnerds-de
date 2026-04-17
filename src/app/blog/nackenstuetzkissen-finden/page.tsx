@@ -59,6 +59,66 @@ const articleSchema = {
     "https://www.schlafnerds.de/images/products/nackenstuetzkissen-hero.png",
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Startseite",
+      item: "https://www.schlafnerds.de/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Schlafwissen",
+      item: "https://www.schlafnerds.de/blog",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Das passende Nackenstützkissen finden",
+      item: "https://www.schlafnerds.de/blog/nackenstuetzkissen-finden",
+    },
+  ],
+};
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "So findest du das passende Nackenstützkissen",
+  description:
+    "In vier Schritten zum richtigen Nackenstützkissen – der Beratungsablauf bei den Schlafnerds in Bocholt.",
+  totalTime: "PT60M",
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "Körperstatik-Analyse",
+      text: "Schulterbreite, Nackenform und Haltung im Stehen und Liegen werden betrachtet. Individuelle Besonderheiten fließen direkt in die Empfehlung ein.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "Schlafsituation erfassen",
+      text: "Matratze, Alter, Härte, Schlafposition und Vorerkrankungen werden erfasst – all das beeinflusst die Kissenwahl.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "Probeliegen mit verschiedenen Modellen",
+      text: "Drei bis fünf Kissen werden nebeneinander getestet, die Höhe zentimetergenau angepasst. Unterschiede werden direkt spürbar.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 4,
+      name: "Gemeinsame Empfehlung",
+      text: "Fachliche Einschätzung und persönliches Liegegefühl werden zusammengeführt. Die Entscheidung trifft der Kunde. Bei Bedarf kommt das Kissentaxi direkt zu ihm nach Hause.",
+    },
+  ],
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -214,6 +274,14 @@ export default function NackenstuetzkissenFindenPage() {
         />
         <script
           type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+        <script
+          type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
 
@@ -250,8 +318,130 @@ export default function NackenstuetzkissenFindenPage() {
           </div>
         </section>
 
+        {/* Kurzfassung + Inhaltsverzeichnis */}
+        <section className="mx-auto max-w-3xl px-6 pb-12">
+          <div className="rounded-xl bg-soft p-6 md:p-8">
+            <h2 className="font-heading text-lg font-normal text-tagline">
+              Das Wichtigste in Kürze
+            </h2>
+            <ul className="mt-4 space-y-2 text-tagline/80">
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                <span>
+                  Das passende Kissen hängt von Schlafposition, Schulterbreite
+                  und Matratze ab – nicht vom Material allein.
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                <span>
+                  Seitenschläfer brauchen meist 7–12 cm Kissenhöhe,
+                  Rückenschläfer flachere ergonomische Kissen.
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                <span>
+                  Online-Kauf scheitert meist am fehlenden Probeliegen auf der
+                  eigenen Matratze.
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                <span>
+                  Eine Beratung bei den Schlafnerds dauert 45–60 Min:
+                  Körperstatik-Analyse, Probeliegen, gemeinsame Empfehlung.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <nav aria-label="Inhaltsverzeichnis" className="mt-8">
+            <p className="text-sm font-semibold tracking-wide text-primary uppercase">
+              In diesem Artikel
+            </p>
+            <ol className="mt-3 space-y-1.5 text-tagline/80">
+              <li>
+                1.{" "}
+                <a
+                  href="#anatomie"
+                  className="underline decoration-primary/30 hover:decoration-primary"
+                >
+                  Anatomie: Was muss ein Nackenstützkissen leisten?
+                </a>
+              </li>
+              <li>
+                2.{" "}
+                <a
+                  href="#fehler"
+                  className="underline decoration-primary/30 hover:decoration-primary"
+                >
+                  Drei häufige Fehler beim Kissenkauf
+                </a>
+              </li>
+              <li>
+                3.{" "}
+                <a
+                  href="#material"
+                  className="underline decoration-primary/30 hover:decoration-primary"
+                >
+                  Material: Die wichtigsten Füllungen im Überblick
+                </a>
+              </li>
+              <li>
+                4.{" "}
+                <a
+                  href="#schlafposition"
+                  className="underline decoration-primary/30 hover:decoration-primary"
+                >
+                  Schlafposition: Der wichtigste Faktor
+                </a>
+              </li>
+              <li>
+                5.{" "}
+                <a
+                  href="#online-kauf"
+                  className="underline decoration-primary/30 hover:decoration-primary"
+                >
+                  Warum Online-Kauf bei Kissen oft scheitert
+                </a>
+              </li>
+              <li>
+                6.{" "}
+                <a
+                  href="#matratze-oder-kissen"
+                  className="underline decoration-primary/30 hover:decoration-primary"
+                >
+                  Matratze oder Kissen – was ist die Ursache?
+                </a>
+              </li>
+              <li>
+                7.{" "}
+                <a
+                  href="#beratung"
+                  className="underline decoration-primary/30 hover:decoration-primary"
+                >
+                  Schritt für Schritt zum richtigen Kissen
+                </a>
+              </li>
+              <li>
+                8.{" "}
+                <a
+                  href="#faq"
+                  className="underline decoration-primary/30 hover:decoration-primary"
+                >
+                  Häufige Fragen
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </section>
+
         {/* 1. Anatomie */}
-        <section className="mx-auto max-w-3xl px-6 pb-16">
+        <section
+          id="anatomie"
+          className="mx-auto max-w-3xl px-6 pb-16 scroll-mt-28"
+        >
           <h2 className="font-heading text-2xl font-normal md:text-3xl">
             Anatomie: Was muss ein Nackenstützkissen leisten?
           </h2>
@@ -293,7 +483,7 @@ export default function NackenstuetzkissenFindenPage() {
         </section>
 
         {/* 2. Häufige Fehler */}
-        <section className="bg-soft">
+        <section id="fehler" className="scroll-mt-28 bg-soft">
           <div className="mx-auto max-w-3xl px-6 py-16 md:py-20">
             <h2 className="font-heading text-2xl font-normal md:text-3xl">
               Drei häufige Fehler beim Kissenkauf
@@ -317,7 +507,10 @@ export default function NackenstuetzkissenFindenPage() {
         </section>
 
         {/* 3. Material */}
-        <section className="mx-auto max-w-3xl px-6 py-16 md:py-20">
+        <section
+          id="material"
+          className="mx-auto max-w-3xl scroll-mt-28 px-6 py-16 md:py-20"
+        >
           <h2 className="font-heading text-2xl font-normal md:text-3xl">
             Material: Die wichtigsten Kissen-Füllungen im Überblick
           </h2>
@@ -339,7 +532,7 @@ export default function NackenstuetzkissenFindenPage() {
         </section>
 
         {/* 4. Schlafposition */}
-        <section className="bg-soft">
+        <section id="schlafposition" className="scroll-mt-28 bg-soft">
           <div className="mx-auto max-w-3xl px-6 py-16 md:py-20">
             <h2 className="font-heading text-2xl font-normal md:text-3xl">
               Schlafposition: Der wichtigste Faktor
@@ -363,7 +556,10 @@ export default function NackenstuetzkissenFindenPage() {
         </section>
 
         {/* 5. Online-Kauf */}
-        <section className="mx-auto max-w-3xl px-6 py-16 md:py-20">
+        <section
+          id="online-kauf"
+          className="mx-auto max-w-3xl scroll-mt-28 px-6 py-16 md:py-20"
+        >
           <h2 className="font-heading text-2xl font-normal md:text-3xl">
             Warum Online-Kauf bei Kissen oft scheitert
           </h2>
@@ -389,7 +585,7 @@ export default function NackenstuetzkissenFindenPage() {
         </section>
 
         {/* 6. Matratze oder Kissen */}
-        <section className="bg-soft">
+        <section id="matratze-oder-kissen" className="scroll-mt-28 bg-soft">
           <div className="mx-auto max-w-3xl px-6 py-16 md:py-20">
             <h2 className="font-heading text-2xl font-normal md:text-3xl">
               Matratze oder Kissen – was ist die Ursache?
@@ -417,7 +613,10 @@ export default function NackenstuetzkissenFindenPage() {
         </section>
 
         {/* 7. Schritt für Schritt */}
-        <section className="mx-auto max-w-3xl px-6 py-16 md:py-20">
+        <section
+          id="beratung"
+          className="mx-auto max-w-3xl scroll-mt-28 px-6 py-16 md:py-20"
+        >
           <h2 className="font-heading text-2xl font-normal md:text-3xl">
             Schritt für Schritt zum richtigen Kissen – so läuft die Beratung ab
           </h2>
@@ -459,7 +658,7 @@ export default function NackenstuetzkissenFindenPage() {
         </section>
 
         {/* FAQ */}
-        <section className="bg-soft">
+        <section id="faq" className="scroll-mt-28 bg-soft">
           <div className="mx-auto max-w-3xl px-6 py-16 md:py-20">
             <h2 className="font-heading text-2xl font-normal md:text-3xl">
               Häufige Fragen rund ums Nackenstützkissen
