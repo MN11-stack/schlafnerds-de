@@ -5,6 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: "/_next/static/media/*.woff2$",
     },
     sitemap: "https://www.schlafnerds.de/sitemap.xml",
   };

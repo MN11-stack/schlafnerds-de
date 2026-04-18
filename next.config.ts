@@ -103,8 +103,9 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/nl/:path*",
-        destination: "/",
+        destination: "https://www.slaapnerds.nl/",
         permanent: true,
+        basePath: false,
       },
     ];
   },
