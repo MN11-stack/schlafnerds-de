@@ -5,13 +5,13 @@ import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 
 export const metadata: Metadata = {
-  title: "Erdungsspanntücher Bocholt – Beratung | Schlafnerds",
+  title: "Wie erdet man sich? Erdungsspanntücher erklärt – Schlafnerds Bocholt",
   description:
-    "Erdungsspanntücher in Bocholt: 100% Baumwolle, 10% Silber. Erdung beim Schlafen – persönliche Beratung und ehrliche Einordnung bei den Schlafnerds. Jetzt Termin vereinbaren.",
+    "Wie erdet man sich? Erdungsspanntücher verbinden Ihren Körper über die Steckdose mit der Erde – wissenschaftlich erklärt, bei Schlafnerds Bocholt in Ruhe ausprobieren.",
   openGraph: {
-    title: "Erdungsspanntücher Bocholt – Beratung | Schlafnerds",
+    title: "Wie erdet man sich? Erdungsspanntücher erklärt – Schlafnerds Bocholt",
     description:
-      "Erdungsspanntücher bei Schlafnerds in Bocholt. Persönliche Beratung und ein Schlaf-Ritual mit Erdverbindung.",
+      "Erdung beim Schlafen einfach erklärt: wie ein Erdungsspanntuch funktioniert, was es bewirkt – mit Beratung und Probeliegen bei Schlafnerds in Bocholt.",
     locale: "de_DE",
     type: "website",
   },
