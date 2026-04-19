@@ -312,9 +312,10 @@ export default function DatenschutzPage() {
               Servern von Calendly aufgebaut. Dabei werden technische
               Verbindungsdaten (u.&nbsp;a. IP-Adresse, Browser-Kennung,
               Zeitpunkt des Zugriffs) an Calendly übermittelt. Bei der
-              tatsächlichen Buchung eines Termins werden zusätzlich die von
-              Ihnen angegebenen Daten (Name, E-Mail-Adresse, ggf. Telefonnummer,
-              Anliegen) an Calendly übermittelt und dort verarbeitet.
+              tatsächlichen Buchung eines Termins geben Sie Ihre Daten (Name,
+              E-Mail-Adresse, ggf. Telefonnummer, Anliegen) in das
+              Calendly-Buchungsformular ein; diese werden durch Calendly an uns
+              übermittelt, damit wir den Termin organisieren können.
             </p>
             <p>
               (3) Rechtsgrundlage für die Einbindung des Buchungs-Widgets ist
