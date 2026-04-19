@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.schlafnerds.de/blog/nackenstuetzkissen-finden",
+    languages: {
+      "de-DE": "https://www.schlafnerds.de/blog/nackenstuetzkissen-finden",
+      "nl-NL": "https://www.slaapnerds.nl/blog/nekkussen-vinden",
+    },
   },
 };
 
