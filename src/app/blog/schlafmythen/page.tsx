@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.schlafnerds.de/blog/schlafmythen",
+    languages: {
+      "de-DE": "https://www.schlafnerds.de/blog/schlafmythen",
+      "nl-NL": "https://www.slaapnerds.nl/blog/slaapmythes",
+    },
   },
 };
 

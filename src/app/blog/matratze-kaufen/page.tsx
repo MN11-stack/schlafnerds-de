@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.schlafnerds.de/blog/matratze-kaufen",
+    languages: {
+      "de-DE": "https://www.schlafnerds.de/blog/matratze-kaufen",
+      "nl-NL": "https://www.slaapnerds.nl/blog/matras-kopen",
+    },
   },
 };
 

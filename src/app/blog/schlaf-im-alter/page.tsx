@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.schlafnerds.de/blog/schlaf-im-alter",
+    languages: {
+      "de-DE": "https://www.schlafnerds.de/blog/schlaf-im-alter",
+      "nl-NL": "https://www.slaapnerds.nl/blog/slaap-en-ouder-worden",
+    },
   },
 };
 

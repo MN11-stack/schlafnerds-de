@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.schlafnerds.de/blog/schlafhygiene",
+    languages: {
+      "de-DE": "https://www.schlafnerds.de/blog/schlafhygiene",
+      "nl-NL": "https://www.slaapnerds.nl/blog/slaaphygiene",
+    },
   },
 };
 
