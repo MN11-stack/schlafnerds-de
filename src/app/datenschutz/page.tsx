@@ -299,7 +299,49 @@ export default function DatenschutzPage() {
               zugesicherten Rechte durchsetzen können.
             </p>
 
-            <h2>§ 9 Einbindung von YouTube-Videos</h2>
+            <h2>§ 9 Einbindung von Calendly</h2>
+            <p>
+              (1) Auf unserer Website binden wir Calendly ein, einen
+              Online-Terminvereinbarungsdienst der Calendly, LLC, 271 17th
+              Street NW, Suite 1000, Atlanta, GA 30363, USA. Calendly ermöglicht
+              Ihnen, Beratungstermine direkt über unsere Website zu vereinbaren.
+            </p>
+            <p>
+              (2) Sobald Sie auf einen Calendly-Buchungslink klicken oder das
+              eingebettete Calendly-Widget nutzen, wird eine Verbindung zu den
+              Servern von Calendly aufgebaut. Dabei werden technische
+              Verbindungsdaten (u.&nbsp;a. IP-Adresse, Browser-Kennung,
+              Zeitpunkt des Zugriffs) an Calendly übermittelt. Bei der
+              tatsächlichen Buchung eines Termins werden zusätzlich die von
+              Ihnen angegebenen Daten (Name, E-Mail-Adresse, ggf. Telefonnummer,
+              Anliegen) an Calendly übermittelt und dort verarbeitet.
+            </p>
+            <p>
+              (3) Rechtsgrundlage für die Einbindung des Buchungs-Widgets ist
+              Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer
+              effizienten Terminorganisation). Für die Datenverarbeitung im
+              Zusammenhang mit der eigentlichen Terminbuchung dient Art. 6
+              Abs. 1 lit. b DSGVO (Durchführung vorvertraglicher Maßnahmen) als
+              Rechtsgrundlage.
+            </p>
+            <p>
+              (4) Calendly verarbeitet Daten auch in den USA. Die Übermittlung
+              erfolgt auf Grundlage des EU-US Data Privacy Framework sowie
+              ergänzend auf Grundlage der Standardvertragsklauseln der
+              EU-Kommission. Weitere Informationen zur Datenverarbeitung durch
+              Calendly und zu Ihren Rechten finden Sie in der
+              Datenschutzerklärung von Calendly:{" "}
+              <a
+                href="https://calendly.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://calendly.com/privacy
+              </a>
+              .
+            </p>
+
+            <h2>§ 10 Einbindung von YouTube-Videos</h2>
             <p>
               (1) Wir haben YouTube-Videos in unser Online-Angebot eingebunden,
               die auf{" "}
