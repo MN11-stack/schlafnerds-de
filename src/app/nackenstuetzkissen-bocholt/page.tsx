@@ -693,7 +693,7 @@ function RegionNaehe() {
         <p className="mt-4 text-sm text-tagline/70">
           Informationen auf Niederländisch finden Sie auf{" "}
           <a
-            href="https://slaapnerds.nl"
+            href="https://www.slaapnerds.nl"
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium !text-primary underline underline-offset-2 transition-colors hover:!text-primary-dark"

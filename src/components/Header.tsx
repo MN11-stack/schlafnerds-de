@@ -5,14 +5,14 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 const deToNlMapping: Record<string, string> = {
-  "/": "https://slaapnerds.nl/",
-  "/boxspringbetten-bocholt": "https://slaapnerds.nl/boxspringbedden",
-  "/matratzen-bocholt": "https://slaapnerds.nl/matrassen",
-  "/holzbetten-bocholt": "https://slaapnerds.nl/houten-bedden",
-  "/beratung-probeliegen": "https://slaapnerds.nl/service-en-advies",
-  "/nackenstuetzkissen-bocholt": "https://slaapnerds.nl/",
-  "/betten-bocholt": "https://slaapnerds.nl/",
-  "/erdungsspanntuecher-bocholt": "https://slaapnerds.nl/",
+  "/": "https://www.slaapnerds.nl/",
+  "/boxspringbetten-bocholt": "https://www.slaapnerds.nl/boxspringbedden",
+  "/matratzen-bocholt": "https://www.slaapnerds.nl/matrassen",
+  "/holzbetten-bocholt": "https://www.slaapnerds.nl/houten-bedden",
+  "/beratung-probeliegen": "https://www.slaapnerds.nl/service-en-advies",
+  "/nackenstuetzkissen-bocholt": "https://www.slaapnerds.nl/",
+  "/betten-bocholt": "https://www.slaapnerds.nl/",
+  "/erdungsspanntuecher-bocholt": "https://www.slaapnerds.nl/",
 };
 
 function NlFlag() {
@@ -46,7 +46,7 @@ function ChevronDown({ className }: { className?: string }) {
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-  const nlUrl = deToNlMapping[pathname] || "https://slaapnerds.nl/";
+  const nlUrl = deToNlMapping[pathname] || "https://www.slaapnerds.nl/";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.08)]">
@@ -64,7 +64,7 @@ export default function Header() {
               priority
             />
           </a>
-          <a href="https://slaapnerds.nl/" className="ml-2 no-underline">
+          <a href="https://www.slaapnerds.nl/" className="ml-2 no-underline">
             <span className="font-heading text-lg font-bold text-tagline sm:text-xl">Slaap</span>
             <span className="font-heading text-lg font-bold text-primary sm:text-xl">nerds</span>
           </a>

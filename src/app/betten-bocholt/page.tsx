@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: "https://www.schlafnerds.de/betten-bocholt",
     languages: {
       "de-DE": "https://www.schlafnerds.de/betten-bocholt",
-      "nl-NL": "https://slaapnerds.nl/",
+      "nl-NL": "https://www.slaapnerds.nl/",
     },
   },
 };
@@ -492,7 +492,7 @@ function RegionEinzugsgebiet() {
         <p className="mt-4 text-sm text-tagline/70">
           Für Informationen auf Niederländisch besuchen Sie{" "}
           <a
-            href="https://slaapnerds.nl"
+            href="https://www.slaapnerds.nl"
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium !text-primary underline underline-offset-2 transition-colors hover:!text-primary-dark"

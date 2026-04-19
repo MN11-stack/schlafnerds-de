@@ -149,7 +149,7 @@ export default function Footer() {
                 Für unsere niederländischen Gäste
               </h3>
               <a
-                href="https://slaapnerds.nl"
+                href="https://www.slaapnerds.nl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-white/70 transition-colors hover:!text-primary"

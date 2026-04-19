@@ -86,7 +86,7 @@ export default function PeopleRegionSection() {
                 Schlafnerds adviseert in Bocholt – in het Duits, ter plaatse.
                 Voor onze Nederlandse gasten hebben we{" "}
                 <a
-                  href="https://slaapnerds.nl"
+                  href="https://www.slaapnerds.nl"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold !text-primary underline underline-offset-2 transition-colors hover:!text-primary-dark"

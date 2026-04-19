@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     canonical: "https://www.schlafnerds.de",
     languages: {
       "de-DE": "https://www.schlafnerds.de",
-      "nl-NL": "https://slaapnerds.nl",
+      "nl-NL": "https://www.slaapnerds.nl",
     },
   },
 };
@@ -65,7 +65,7 @@ const organizationSchema = {
     height: 48,
   },
   sameAs: [
-    "https://slaapnerds.nl",
+    "https://www.slaapnerds.nl",
     "https://www.instagram.com/schlafnerds/",
   ],
 };
@@ -149,7 +149,7 @@ const localBusinessSchema = {
     },
   ],
   sameAs: [
-    "https://slaapnerds.nl",
+    "https://www.slaapnerds.nl",
     "https://www.instagram.com/schlafnerds/",
   ],
   aggregateRating: {
