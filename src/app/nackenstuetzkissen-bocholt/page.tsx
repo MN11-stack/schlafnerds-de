@@ -821,46 +821,6 @@ function FaqSection() {
   );
 }
 
-/* ─────────────────────────────────────────────
-   PRODUCT SCHEMA
-   ───────────────────────────────────────────── */
-function ProductSchema() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: "Nackenstützkissen mit individueller Anpassung",
-    description:
-      "Ergonomisches Nackenstützkissen mit Körperstatik-Analyse, Probeliegen und zentimetergenauer Höhenanpassung im Schlafnerds Fachgeschäft in Bocholt.",
-    brand: { "@type": "Brand", name: "Schlafnerds" },
-    image:
-      "https://www.schlafnerds.de/images/products/nackenstuetzkissen-hero.png",
-    category: "Nackenstützkissen",
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/InStock",
-      url: "https://www.schlafnerds.de/nackenstuetzkissen-bocholt",
-      priceCurrency: "EUR",
-      seller: {
-        "@type": "LocalBusiness",
-        name: "Schlafnerds",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "Nordstraße 39",
-          postalCode: "46395",
-          addressLocality: "Bocholt",
-          addressCountry: "DE",
-        },
-        telephone: "+49 2871 3492862",
-      },
-    },
-  };
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
-  );
-}
 
 /* ─────────────────────────────────────────────
    PAGE
@@ -883,7 +843,6 @@ export default function NackenstuetzkissenBocholt() {
         <RuhigerAbschluss />
       </main>
       <Footer />
-      <ProductSchema />
     </>
   );
 }
