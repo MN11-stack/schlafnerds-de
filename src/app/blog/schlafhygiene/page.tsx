@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import InlineCTA from "@/components/InlineCTA";
+import StickyCTA from "@/components/StickyCTA";
 
 export const metadata: Metadata = {
   title: "Schlafhygiene: 10 Regeln für besseren Schlaf | Schlafnerds",
@@ -352,6 +354,11 @@ export default function SchlafhygienePage() {
           </div>
         </section>
 
+        <InlineCTA
+          headline="Wenn Hygiene nicht reicht: persönliche Beratung."
+          subline="Manche Schlafprobleme liegen an Matratze, Lattenrost oder Kissen – nicht am Ritual. Wir finden mit dir den Unterschied."
+        />
+
         {/* When hygiene is not enough */}
         <section className="mx-auto max-w-3xl px-6 py-16 md:py-24">
           <h2 className="font-heading text-2xl font-normal md:text-3xl">
@@ -474,6 +481,7 @@ export default function SchlafhygienePage() {
         </section>
       </main>
       <Footer />
+      <StickyCTA />
     </>
   );
 }

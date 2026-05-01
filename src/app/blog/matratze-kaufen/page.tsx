@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import InlineCTA from "@/components/InlineCTA";
+import StickyCTA from "@/components/StickyCTA";
 
 export const metadata: Metadata = {
   title: "Matratze kaufen: Worauf du wirklich achten musst | Schlafnerds",
@@ -296,6 +298,11 @@ export default function MatratzekaufenPage() {
           </div>
         </section>
 
+        <InlineCTA
+          headline="Probeliegen statt grübeln."
+          subline="Härtegrad, Material und Stützzonen lassen sich nur durch Liegen erspüren. 45 Minuten Beratung, kostenlos und unverbindlich."
+        />
+
         {/* When online is not enough */}
         <section className="mx-auto max-w-3xl px-6 py-16 md:py-24">
           <h2 className="font-heading text-2xl font-normal md:text-3xl">
@@ -423,6 +430,7 @@ export default function MatratzekaufenPage() {
         </section>
       </main>
       <Footer />
+      <StickyCTA />
     </>
   );
 }

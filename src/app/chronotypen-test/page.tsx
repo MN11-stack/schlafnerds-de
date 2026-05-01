@@ -3,6 +3,8 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqSection from "@/components/sections/FaqSection";
+import InlineCTA from "@/components/InlineCTA";
+import StickyCTA from "@/components/StickyCTA";
 import ChronotypenTest from "./ChronotypenTest";
 
 export const metadata: Metadata = {
@@ -219,9 +221,15 @@ export default function ChronotypenTestPage() {
 
         <ChronotypenErklaerung />
 
+        <InlineCTA
+          headline="Bring deinen Chronotyp in deine Schlafumgebung."
+          subline="Im persönlichen Termin zeigen wir dir, welche Matratze, welches Kissen und welche Lichtumgebung zu deinem Typ passen – mit Probeliegen vor Ort."
+        />
+
         <FaqSection faqs={chronotypFaqs} />
       </main>
       <Footer />
+      <StickyCTA />
     </>
   );
 }
