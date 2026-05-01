@@ -8,13 +8,13 @@ import StickyCTA from "@/components/StickyCTA";
 import ChronotypenTest from "./ChronotypenTest";
 
 export const metadata: Metadata = {
-  title: "Chronotypen-Test: Bist du Lerche oder Eule? | Schlafnerds",
+  title: "Eule oder Lerche? Chronotyp-Test in 5 Fragen | Schlafnerds",
   description:
-    "Finde in 5 Fragen heraus, ob du ein Morgentyp (Lerche), Abendtyp (Eule) oder Neutraltyp bist. Kostenloser Chronotyp-Test mit persönlicher Auswertung und Schlaftipps.",
+    "Eule oder Lerche? Mach den 5-Fragen-Test (MEQ-basiert) und erfahre, wie deine innere Uhr tickt – mit Tipps für die passende Schlafumgebung.",
   openGraph: {
-    title: "Chronotypen-Test: Bist du Lerche oder Eule? | Schlafnerds",
+    title: "Eule oder Lerche? Chronotyp-Test in 5 Fragen | Schlafnerds",
     description:
-      "5 Fragen, dein Schlaftyp. Finde heraus, ob du Lerche, Eule oder Neutraltyp bist – mit Tipps für besseren Schlaf.",
+      "5 Fragen, dein Schlaftyp. MEQ-basierter Test mit Auswertung und Tipps für die passende Schlafumgebung.",
     locale: "de_DE",
     type: "website",
   },
@@ -27,9 +27,9 @@ const quizSchema = {
   "@context": "https://schema.org",
   "@type": "Quiz",
   "@id": "https://www.schlafnerds.de/chronotypen-test#quiz",
-  name: "Chronotypen-Test: Bist du Lerche oder Eule?",
+  name: "Eule oder Lerche? Chronotyp-Test in 5 Fragen",
   description:
-    "Finde in 5 Fragen heraus, ob du ein Morgentyp (Lerche), Abendtyp (Eule) oder Neutraltyp bist.",
+    "5-Fragen-Test (MEQ-basiert): Bist du ein Morgentyp (Lerche), Abendtyp (Eule) oder Neutraltyp?",
   url: "https://www.schlafnerds.de/chronotypen-test",
   educationalLevel: "beginner",
   provider: {
@@ -192,8 +192,8 @@ export default function ChronotypenTestPage() {
         <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
           <p className="accent-text mb-4 text-lg">Schlaftyp-Test</p>
           <h1 className="font-heading text-3xl leading-tight font-normal md:text-4xl md:leading-tight">
-            Welcher Chronotyp bist du –<br />
-            Lerche oder Eule?
+            Eule oder Lerche?<br />
+            Der Chronotyp-Test.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-tagline/80">
             Unser innerer Rhythmus bestimmt, wann wir am besten schlafen, wann
