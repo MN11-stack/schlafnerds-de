@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import InlineCTA from "@/components/InlineCTA";
+import StickyCTA from "@/components/StickyCTA";
 
 export const metadata: Metadata = {
   title:
@@ -127,6 +129,14 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    {
+      "@type": "Question",
+      name: "Welches Kissen ist das beste bei Nackenschmerzen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pauschal lässt sich das nicht sagen – entscheidend sind Schlafposition, Schulterbreite und Härte der eigenen Matratze. Seitenschläfer brauchen meist ein höheres Kissen (7–12 cm), Rückenschläfer ein flacheres mit ergonomischer Kontur. Wenn Nackenschmerzen morgens stärker sind als abends, ist das Kissen häufig zu hoch oder zu flach – ein Probeliegen mit verschiedenen Modellen klärt das schnell.",
+      },
+    },
     {
       "@type": "Question",
       name: "Wie finde ich das richtige Nackenstützkissen bei Nackenschmerzen?",
@@ -298,11 +308,13 @@ export default function NackenstuetzkissenFindenPage() {
             Worauf es wirklich ankommt.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-tagline/80">
-            Wer morgens mit Nackenschmerzen aufwacht, sucht die Ursache oft an
-            der falschen Stelle. Mal ist das Kissen zu hoch oder zu flach, mal
-            fehlt der Matratze die passende Stützung. Häufig liegt es am
-            Zusammenspiel aus beidem – und genau deshalb lässt sich das
-            passende Nackenstützkissen nicht online bestimmen.
+            <strong className="text-tagline">Welches Kissen bei Nackenschmerzen?</strong>{" "}
+            Pauschal lässt sich das nicht beantworten – und genau das ist das
+            Problem mit Online-Tipps. Wer morgens mit Nackenschmerzen aufwacht,
+            sucht die Ursache oft an der falschen Stelle. Mal ist das Kissen zu
+            hoch oder zu flach, mal fehlt der Matratze die passende Stützung.
+            Häufig liegt es am Zusammenspiel aus beidem – und genau deshalb
+            lässt sich das passende Nackenstützkissen nicht online bestimmen.
           </p>
           <p className="mt-4 leading-relaxed text-tagline/80">
             Dieser Leitfaden erklärt, worauf es beim Kissen wirklich ankommt:
@@ -616,6 +628,11 @@ export default function NackenstuetzkissenFindenPage() {
           </div>
         </section>
 
+        <InlineCTA
+          headline="Welches Kissen bei dir das richtige ist? Finden wir gemeinsam heraus."
+          subline="45 Minuten Probeliegen, Körperstatik-Check, Empfehlung – kostenlos und unverbindlich."
+        />
+
         {/* 7. Schritt für Schritt */}
         <section
           id="beratung"
@@ -743,6 +760,7 @@ export default function NackenstuetzkissenFindenPage() {
         </section>
       </main>
       <Footer />
+      <StickyCTA />
     </>
   );
 }
