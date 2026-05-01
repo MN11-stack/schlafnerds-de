@@ -153,8 +153,8 @@ export default function BlogPage() {
               Du hast eine Frage zu deinem Schlaf?
             </h2>
             <p className="mx-auto mt-6 max-w-xl leading-relaxed text-tagline/80">
-              Wir beraten dich persönlich – ehrlich, strukturiert und ohne
-              Verkaufsdruck.
+              Wir beraten dich persönlich – mit Zeit, Struktur und
+              Probeliegen vor Ort.
             </p>
             <div className="mt-10">
               <a
