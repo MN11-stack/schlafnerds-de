@@ -4,13 +4,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Betten Bocholt – Beratung & Probeliegen | Schlafnerds",
+  title: "Bettengeschäft Bocholt – Beratung & Probeliegen | Schlafnerds",
   description:
-    "Bettenfachgeschäft in Bocholt mit persönlicher Beratung. Boxspringbetten, Matratzen und Holzbetten – Probeliegen und Körperstatik-Check. Di, Do, Fr & Sa geöffnet.",
+    "Bettengeschäft in Bocholt mit persönlicher Beratung. Boxspringbetten, Matratzen und Holzbetten – Probeliegen und Körperstatik-Check. Di, Do, Fr & Sa geöffnet.",
   openGraph: {
-    title: "Betten Bocholt – Beratung & Probeliegen | Schlafnerds",
+    title: "Bettengeschäft Bocholt – Beratung & Probeliegen | Schlafnerds",
     description:
-      "Bettenfachgeschäft in Bocholt. Persönliche Beratung für Boxspringbetten, Matratzen und Holzbetten.",
+      "Bettengeschäft in Bocholt. Persönliche Beratung für Boxspringbetten, Matratzen und Holzbetten.",
     locale: "de_DE",
     type: "website",
   },
@@ -33,10 +33,10 @@ function HeroBetten() {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div>
             <p className="accent-text mb-4 text-lg">
-              Schlafnerds Fachgeschäft in Bocholt
+              Schlafnerds Bettengeschäft in Bocholt
             </p>
             <h1 className="font-heading text-4xl leading-tight font-normal md:text-5xl md:leading-tight">
-              Betten in Bocholt –<br />
+              Bettengeschäft Bocholt –<br />
               Beratung & Probeliegen bei den Schlafnerds.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-tagline">
@@ -103,9 +103,9 @@ function Entscheidung() {
             </h2>
             <div className="mt-8 space-y-5 text-lg leading-relaxed text-tagline">
               <p>
-                Viele Menschen suchen nach &bdquo;Betten Bocholt&ldquo;, weil
-                sie nicht einfach ein Bett kaufen möchten, sondern eine Lösung,
-                die langfristig passt.
+                Viele Menschen suchen nach &bdquo;Bettengeschäft Bocholt&ldquo;,
+                weil sie nicht einfach ein Bett kaufen möchten, sondern eine
+                Lösung, die langfristig passt.
               </p>
               <p>
                 Deshalb verstehen wir uns nicht als Verkäufer einzelner Produkte,
@@ -547,7 +547,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://www.schlafnerds.de/betten-bocholt#service",
-  name: "Bettenberatung Bocholt",
+  name: "Bettengeschäft Bocholt – Schlafnerds",
   provider: { "@id": "https://www.schlafnerds.de/#localbusiness" },
   areaServed: [
     { "@type": "City", name: "Bocholt" },
