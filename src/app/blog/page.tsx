@@ -83,6 +83,15 @@ const articles: Article[] = [
     image: "/images/blog/schlaf-im-alter.png",
     imageAlt: "Älteres Paar schläft in einem gemütlichen Bett mit warmem Licht",
   },
+  {
+    href: "/blog/erdungsspanntuecher",
+    label: "Schlafwissen",
+    title: "Erdungsspanntücher: Mit Earthing aufladen im Schlaf?",
+    description:
+      "Was bringt Earthing wirklich? Wie Erdungsspanntücher funktionieren, was Studien zeigen und unsere Empfehlung zum Ausprobieren.",
+    image: "/images/products/erdung-hero.jpg",
+    imageAlt: "Erdungsspanntuch auf einer Matratze im Schlafnerds Showroom",
+  },
 ];
 
 export default function BlogPage() {

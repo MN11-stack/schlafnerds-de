@@ -27,12 +27,12 @@ const nextConfig: NextConfig = {
       // Alte Content-Seiten → Startseite
       {
         source: "/erdungsspannt%C3%BCcher",
-        destination: "/erdungsspanntuecher-bocholt",
+        destination: "/blog/erdungsspanntuecher",
         permanent: true,
       },
       {
         source: "/erdungsspanntuecher",
-        destination: "/erdungsspanntuecher-bocholt",
+        destination: "/blog/erdungsspanntuecher",
         permanent: true,
       },
       {
