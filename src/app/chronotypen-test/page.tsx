@@ -8,13 +8,13 @@ import StickyCTA from "@/components/StickyCTA";
 import ChronotypenTest from "./ChronotypenTest";
 
 export const metadata: Metadata = {
-  title: "Eule oder Lerche? Chronotyp-Test in 5 Fragen | Schlafnerds",
+  title: "Bin ich Eule oder Lerche? Schlaftyp-Test in 5 Fragen",
   description:
-    "Eule oder Lerche? Mach den 5-Fragen-Test (MEQ-basiert) und erfahre, wie deine innere Uhr tickt – mit Tipps für die passende Schlafumgebung.",
+    "Eule, Lerche oder Neutraltyp? 5-Fragen-Test (MEQ) mit persönlicher Auswertung – erfahre, wie deine innere Uhr tickt und wie deine Schlafumgebung dazu passt.",
   openGraph: {
-    title: "Eule oder Lerche? Chronotyp-Test in 5 Fragen | Schlafnerds",
+    title: "Bin ich Eule oder Lerche? Schlaftyp-Test in 5 Fragen",
     description:
-      "5 Fragen, dein Schlaftyp. MEQ-basierter Test mit Auswertung und Tipps für die passende Schlafumgebung.",
+      "5 Fragen, dein Schlaftyp – mit persönlicher Auswertung und Tipps für deine Schlafumgebung.",
     locale: "de_DE",
     type: "website",
   },
@@ -27,7 +27,7 @@ const quizSchema = {
   "@context": "https://schema.org",
   "@type": "Quiz",
   "@id": "https://www.schlafnerds.de/chronotypen-test#quiz",
-  name: "Eule oder Lerche? Chronotyp-Test in 5 Fragen",
+  name: "Bin ich Eule oder Lerche? Schlaftyp-Test in 5 Fragen",
   description:
     "5-Fragen-Test (MEQ-basiert): Bist du ein Morgentyp (Lerche), Abendtyp (Eule) oder Neutraltyp?",
   url: "https://www.schlafnerds.de/chronotypen-test",
