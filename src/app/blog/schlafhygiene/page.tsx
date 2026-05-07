@@ -315,6 +315,20 @@ export default function SchlafhygienePage() {
                       .
                     </p>
                   )}
+                  {i === 7 && (
+                    <p className="leading-relaxed text-tagline/80">
+                      Auch die Matratze ist Teil der Schlafumgebung. Worauf es
+                      beim Matratzenkauf wirklich ankommt, haben wir hier
+                      zusammengefasst:{" "}
+                      <a
+                        href="/blog/matratze-kaufen"
+                        className="text-primary underline decoration-primary/30 hover:decoration-primary"
+                      >
+                        Matratze kaufen – Worauf du wirklich achten musst
+                      </a>
+                      .
+                    </p>
+                  )}
                 </div>
               </article>
             ))}

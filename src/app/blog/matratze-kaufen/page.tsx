@@ -8,7 +8,7 @@ import StickyCTA from "@/components/StickyCTA";
 export const metadata: Metadata = {
   title: "Matratze kaufen: Worauf du wirklich achten musst | Schlafnerds",
   description:
-    "Härtegrad, Material, Probeliegen, Testphase: Was beim Matratzenkauf wirklich zählt – und warum Online-Filter allein nicht ausreichen. Ehrliche Beratung aus Bocholt.",
+    "Härtegrad, Material, Probeliegen, Testphase: Was beim Matratzenkauf wirklich zählt – und warum Online-Filter allein nicht ausreichen. Strukturierte Beratung mit Probeliegen aus Bocholt.",
   openGraph: {
     title: "Matratze kaufen: Worauf du wirklich achten musst | Schlafnerds",
     description:
@@ -351,6 +351,17 @@ export default function MatratzekaufenPage() {
               </a>{" "}
               ist entscheidend – und das lässt sich am besten vor Ort
               herausfinden.
+            </p>
+            <p>
+              Liegt es vielleicht gar nicht an der Matratze? Dann lohnt sich ein
+              Blick auf{" "}
+              <a
+                href="/blog/schlafhygiene"
+                className="text-primary underline decoration-primary/30 hover:decoration-primary"
+              >
+                10 Schlafhygiene-Regeln, die wirklich helfen
+              </a>{" "}
+              – manche Schlafprobleme lassen sich ohne neuen Kauf lösen.
             </p>
           </div>
         </section>

@@ -536,6 +536,17 @@ function Vertiefung() {
             . Persönliche Beratung im Laden kostet nichts und verpflichtet zu
             nichts.
           </p>
+          <p>
+            Earthing ersetzt keine gute Schlafhygiene. Wer die Basics zuerst
+            sauber haben will, findet hier die wichtigsten Regeln:{" "}
+            <a
+              href="/blog/schlafhygiene"
+              className="font-medium underline hover:text-primary"
+            >
+              10 Schlafhygiene-Regeln, die wirklich helfen
+            </a>
+            .
+          </p>
         </div>
       </div>
     </section>

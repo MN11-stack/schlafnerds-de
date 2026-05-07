@@ -175,6 +175,17 @@ function ChronotypenErklaerung() {
             </div>
           </div>
         </div>
+
+        <p className="mt-10 text-center leading-relaxed text-tagline/80">
+          Egal welcher Typ du bist: Die Basis ist immer dieselbe.{" "}
+          <a
+            href="/blog/schlafhygiene"
+            className="font-medium text-primary underline decoration-primary/30 hover:decoration-primary"
+          >
+            10 Schlafhygiene-Regeln, die wirklich helfen
+          </a>{" "}
+          – kompakt erklärt.
+        </p>
       </div>
     </section>
   );

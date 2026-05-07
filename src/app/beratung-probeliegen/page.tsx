@@ -607,6 +607,27 @@ export default function BeratungProbeliegen() {
         <WasProbeliegenBedeutet />
         <Beratungsprozess />
         <TerminOderVorbeikommen />
+        <section className="bg-soft">
+          <div className="mx-auto max-w-3xl px-6 py-12 text-center md:py-16">
+            <p className="text-lg leading-relaxed text-tagline">
+              Vor dem Termin ein paar Grundlagen lesen:{" "}
+              <a
+                href="/blog/matratze-kaufen"
+                className="font-medium text-primary underline decoration-primary/30 hover:decoration-primary"
+              >
+                Matratze kaufen – Worauf Sie wirklich achten müssen
+              </a>
+              {" "}oder{" "}
+              <a
+                href="/blog/schlafhygiene"
+                className="font-medium text-primary underline decoration-primary/30 hover:decoration-primary"
+              >
+                10 Schlafhygiene-Regeln, die wirklich helfen
+              </a>
+              .
+            </p>
+          </div>
+        </section>
         <FaqSection faqs={beratungFaqs} />
         <BeratungImAlltag />
         <RegionNaehe />

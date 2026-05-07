@@ -715,6 +715,21 @@ export default function MatratzenBocholt() {
         <PasstZuIhnen />
         <UnserWeg />
         <TerminOderVorbeikommen />
+        <section className="bg-soft">
+          <div className="mx-auto max-w-3xl px-6 py-12 text-center md:py-16">
+            <p className="text-lg leading-relaxed text-tagline">
+              Bevor Sie in den Showroom kommen, lohnt sich ein Blick in
+              unseren Ratgeber:{" "}
+              <a
+                href="/blog/matratze-kaufen"
+                className="font-medium text-primary underline decoration-primary/30 hover:decoration-primary"
+              >
+                Matratze kaufen – Worauf Sie wirklich achten müssen
+              </a>
+              .
+            </p>
+          </div>
+        </section>
         <FaqSection faqs={matratzenFaqs} />
         <WeitereLoesungen currentPath="/matratzen-bocholt" />
         <RegionNaehe />
