@@ -490,6 +490,16 @@ function RegionEinzugsgebiet() {
           Borken sowie aus Wesel, Hamminkeln, Dorsten, Schermbeck und der
           niederländischen Grenzregion.
         </p>
+        <p className="mt-4 text-base leading-relaxed text-tagline">
+          Aus dem Münsterland?{" "}
+          <a
+            href="/bettengeschaeft-muensterland"
+            className="font-medium text-primary underline decoration-primary/30 hover:decoration-primary"
+          >
+            Anfahrt und Erreichbarkeit aus Borken, Coesfeld, Münster
+          </a>
+          .
+        </p>
         <p className="mt-4 text-sm text-tagline/70">
           Für Informationen auf Niederländisch besuchen Sie{" "}
           <a
