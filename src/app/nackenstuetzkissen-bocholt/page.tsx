@@ -3,6 +3,31 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
+import { getAggregateRating } from "@/lib/google-reviews";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.schlafnerds.de/nackenstuetzkissen-bocholt#service",
+  name: "Nackenstützkissen Bocholt",
+  description:
+    "Persönliche Nackenstützkissen-Beratung mit zentimetergenauer Anpassung an Körperstatik und Schlafposition. Probeliegen vor Ort, herstellerunabhängig.",
+  url: "https://www.schlafnerds.de/nackenstuetzkissen-bocholt",
+  provider: {
+    "@id": "https://www.schlafnerds.de/#localbusiness",
+  },
+  areaServed: [
+    { "@type": "City", name: "Bocholt" },
+    { "@type": "AdministrativeArea", name: "Kreis Borken" },
+  ],
+  serviceType: "Nackenstützkissen-Beratung",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR",
+    description: "Beratung ohne Kaufzwang",
+  },
+};
 
 export const metadata: Metadata = {
   title:
@@ -825,9 +850,16 @@ function FaqSection() {
 /* ─────────────────────────────────────────────
    PAGE
    ───────────────────────────────────────────── */
-export default function NackenstuetzkissenBocholt() {
+export default async function NackenstuetzkissenBocholt() {
+  const aggregateRating = await getAggregateRating();
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({ ...serviceSchema, aggregateRating }),
+        }}
+      />
       <Header />
       <main>
         <HeroKissen />

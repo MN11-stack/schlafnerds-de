@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Newsreader, Nunito } from "next/font/google";
 import "./globals.css";
+import { aggregateRatingSchema, getGoogleReviews } from "@/lib/google-reviews";
 
 const newsreader = Newsreader({
   variable: "--font-newsreader",
@@ -70,105 +71,103 @@ const organizationSchema = {
   ],
 };
 
-// LocalBusiness Schema
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://www.schlafnerds.de/#localbusiness",
-  name: "Schlafnerds",
-  description:
-    "Fachgeschäft für Schlaflösungen in Bocholt. Persönliche Beratung für Matratzen, Boxspringbetten und Holzbetten.",
-  url: "https://www.schlafnerds.de",
-  telephone: "+4928713492862",
-  email: "info@schlafnerds.de",
-  image: "https://www.schlafnerds.de/images/store/ladenlokal-betten.jpeg",
-  priceRange: "€€",
-  currenciesAccepted: "EUR",
-  paymentAccepted: "Cash, Credit Card, Debit Card, Bank Transfer",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Nordstraße 39",
-    addressLocality: "Bocholt",
-    postalCode: "46395",
-    addressRegion: "Nordrhein-Westfalen",
-    addressCountry: "DE",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 51.8386,
-    longitude: 6.6161,
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Tuesday", "Thursday"],
-      opens: "14:00",
-      closes: "18:00",
+// LocalBusiness Schema (Reviews dynamisch aus Places API)
+function buildLocalBusinessSchema(reviews: Awaited<ReturnType<typeof getGoogleReviews>>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.schlafnerds.de/#localbusiness",
+    name: "Schlafnerds",
+    description:
+      "Fachgeschäft für Schlaflösungen in Bocholt. Persönliche Beratung für Matratzen, Boxspringbetten und Holzbetten.",
+    url: "https://www.schlafnerds.de",
+    telephone: "+4928713492862",
+    email: "info@schlafnerds.de",
+    image: "https://www.schlafnerds.de/images/store/ladenlokal-betten.jpeg",
+    priceRange: "€€",
+    currenciesAccepted: "EUR",
+    paymentAccepted: "Cash, Credit Card, Debit Card, Bank Transfer",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Nordstraße 39",
+      addressLocality: "Bocholt",
+      postalCode: "46395",
+      addressRegion: "Nordrhein-Westfalen",
+      addressCountry: "DE",
     },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Friday",
-      opens: "10:00",
-      closes: "18:00",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 51.8386,
+      longitude: 6.6161,
     },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Saturday",
-      opens: "10:00",
-      closes: "14:00",
-    },
-  ],
-  areaServed: [
-    {
-      "@type": "State",
-      name: "Nordrhein-Westfalen",
-      containedInPlace: {
-        "@type": "Country",
-        name: "Germany",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Tuesday", "Thursday"],
+        opens: "14:00",
+        closes: "18:00",
       },
-    },
-    {
-      "@type": "AdministrativeArea",
-      name: "Kreis Borken",
-    },
-    {
-      "@type": "AdministrativeArea",
-      name: "Achterhoek",
-      containedInPlace: {
-        "@type": "Country",
-        name: "Netherlands",
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Friday",
+        opens: "10:00",
+        closes: "18:00",
       },
-    },
-    {
-      "@type": "AdministrativeArea",
-      name: "Twente",
-      containedInPlace: {
-        "@type": "Country",
-        name: "Netherlands",
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "10:00",
+        closes: "14:00",
       },
+    ],
+    areaServed: [
+      {
+        "@type": "State",
+        name: "Nordrhein-Westfalen",
+        containedInPlace: {
+          "@type": "Country",
+          name: "Germany",
+        },
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Kreis Borken",
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Achterhoek",
+        containedInPlace: {
+          "@type": "Country",
+          name: "Netherlands",
+        },
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Twente",
+        containedInPlace: {
+          "@type": "Country",
+          name: "Netherlands",
+        },
+      },
+    ],
+    sameAs: [
+      "https://www.slaapnerds.nl",
+      "https://www.instagram.com/schlafnerds/",
+    ],
+    aggregateRating: aggregateRatingSchema(reviews),
+    parentOrganization: {
+      "@id": "https://www.schlafnerds.de/#organization",
     },
-  ],
-  sameAs: [
-    "https://www.slaapnerds.nl",
-    "https://www.instagram.com/schlafnerds/",
-  ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "8",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  parentOrganization: {
-    "@id": "https://www.schlafnerds.de/#organization",
-  },
-};
+  };
+}
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const reviews = await getGoogleReviews();
+  const localBusinessSchema = buildLocalBusinessSchema(reviews);
   return (
     <html lang="de">
       <head>

@@ -3,6 +3,31 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqSection from "@/components/sections/FaqSection";
+import { getAggregateRating } from "@/lib/google-reviews";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.schlafnerds.de/beratung-probeliegen#service",
+  name: "Schlafberatung mit Probeliegen Bocholt",
+  description:
+    "Strukturierte Schlafberatung in Bocholt: Körperstatik-Analyse, Probeliegen verschiedener Schlafsysteme, fachliche Einordnung und transparente Empfehlung.",
+  url: "https://www.schlafnerds.de/beratung-probeliegen",
+  provider: {
+    "@id": "https://www.schlafnerds.de/#localbusiness",
+  },
+  areaServed: [
+    { "@type": "City", name: "Bocholt" },
+    { "@type": "AdministrativeArea", name: "Kreis Borken" },
+  ],
+  serviceType: "Schlafberatung",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR",
+    description: "Beratung ohne Kaufzwang, 45–60 Minuten",
+  },
+};
 
 const beratungFaqs = [
   {
@@ -597,9 +622,16 @@ function RuhigerAbschluss() {
 /* ─────────────────────────────────────────────
    PAGE
    ───────────────────────────────────────────── */
-export default function BeratungProbeliegen() {
+export default async function BeratungProbeliegen() {
+  const aggregateRating = await getAggregateRating();
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({ ...serviceSchema, aggregateRating }),
+        }}
+      />
       <Header />
       <main>
         <HeroBeratung />

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { getAggregateRating } from "@/lib/google-reviews";
 
 export const metadata: Metadata = {
   title: "Bettengeschäft Bocholt – Beratung & Probeliegen | Schlafnerds",
@@ -564,12 +565,15 @@ const serviceSchema = {
 /* ─────────────────────────────────────────────
    PAGE
    ───────────────────────────────────────────── */
-export default function BettenBocholt() {
+export default async function BettenBocholt() {
+  const aggregateRating = await getAggregateRating();
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({ ...serviceSchema, aggregateRating }),
+        }}
       />
       <Header />
       <main>
