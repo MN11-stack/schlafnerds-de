@@ -152,7 +152,7 @@ function Hero() {
               Matratzen, Holzbetten und Nackenstützkissen – mit Schwerpunkt
               auf persönlicher Beratung und Probeliegen.
             </p>
-            <p className="mt-4 max-w-lg leading-relaxed text-tagline">
+            <p className="mt-4 max-w-lg text-lg leading-relaxed text-tagline">
               Aus dem Münsterland sind Sie in 15 bis 50 Minuten bei uns – und
               gehen mit einem Schlafsystem nach Hause, das wirklich zu Ihnen
               passt.
@@ -295,7 +295,7 @@ function Sortiment() {
               <li>
                 <a
                   href="/matratzen-bocholt"
-                  className="font-medium text-primary underline decoration-primary/30 hover:decoration-primary"
+                  className="font-semibold text-primary underline decoration-2 decoration-primary/70 hover:decoration-primary"
                 >
                   Matratzen
                 </a>
@@ -305,7 +305,7 @@ function Sortiment() {
               <li>
                 <a
                   href="/boxspringbetten-bocholt"
-                  className="font-medium text-primary underline decoration-primary/30 hover:decoration-primary"
+                  className="font-semibold text-primary underline decoration-2 decoration-primary/70 hover:decoration-primary"
                 >
                   Boxspringbetten
                 </a>
@@ -315,7 +315,7 @@ function Sortiment() {
               <li>
                 <a
                   href="/holzbetten-bocholt"
-                  className="font-medium text-primary underline decoration-primary/30 hover:decoration-primary"
+                  className="font-semibold text-primary underline decoration-2 decoration-primary/70 hover:decoration-primary"
                 >
                   Holzbetten
                 </a>
@@ -325,7 +325,7 @@ function Sortiment() {
               <li>
                 <a
                   href="/nackenstuetzkissen-bocholt"
-                  className="font-medium text-primary underline decoration-primary/30 hover:decoration-primary"
+                  className="font-semibold text-primary underline decoration-2 decoration-primary/70 hover:decoration-primary"
                 >
                   Nackenstützkissen
                 </a>
@@ -335,7 +335,7 @@ function Sortiment() {
               <li>
                 <a
                   href="/erdungsspanntuecher-bocholt"
-                  className="font-medium text-primary underline decoration-primary/30 hover:decoration-primary"
+                  className="font-semibold text-primary underline decoration-2 decoration-primary/70 hover:decoration-primary"
                 >
                   Erdungsspanntücher
                 </a>
