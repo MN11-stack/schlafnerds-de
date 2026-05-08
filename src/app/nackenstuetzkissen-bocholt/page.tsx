@@ -49,7 +49,7 @@ function HeroKissen() {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+                href="https://calendly.com/schlafnerds/45min?back=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -121,7 +121,7 @@ function WarumAnpassung() {
             />
             <div className="flex flex-col gap-4 sm:flex-row">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+                href="https://calendly.com/schlafnerds/45min?back=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -594,7 +594,7 @@ function TerminOderVorbeikommen() {
 
             <div className="mt-auto pt-6">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+                href="https://calendly.com/schlafnerds/45min?back=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full text-center"
@@ -721,7 +721,7 @@ function RuhigerAbschluss() {
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+            href="https://calendly.com/schlafnerds/45min?back=1"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 font-body text-base font-semibold !text-primary transition-colors hover:bg-white/90"

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const DISMISS_KEY = "stickyCTADismissedUntil";
 const DISMISS_DAYS = 7;
 const SCROLL_THRESHOLD = 400;
-const CALENDLY_URL = "https://calendly.com/schlafnerds/45min?back=1&month=2026-02";
+const CALENDLY_URL = "https://calendly.com/schlafnerds/45min?back=1";
 
 export default function StickyCTA() {
   const [visible, setVisible] = useState(false);

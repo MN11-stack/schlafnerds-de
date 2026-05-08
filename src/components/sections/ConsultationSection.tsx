@@ -158,7 +158,7 @@ export default function ConsultationSection() {
           </ul>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
-              href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+              href="https://calendly.com/schlafnerds/45min?back=1"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"

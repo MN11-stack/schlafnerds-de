@@ -6,7 +6,7 @@ const services = [
       "Markus und Dirk – zwei Menschen, die guten Schlaf persönlich nehmen. In diesem Video lernen Sie uns kennen: wie wir beraten, worauf wir achten und warum Transparenz für uns kein Schlagwort ist, sondern Arbeitsweise.",
     primaryCta: {
       label: "Beratungstermin vereinbaren",
-      href: "https://calendly.com/schlafnerds/45min?back=1&month=2026-02",
+      href: "https://calendly.com/schlafnerds/45min?back=1",
       external: true,
     },
     secondaryCta: {
@@ -34,7 +34,7 @@ const services = [
       "Immer wieder finden wir Stücke, die herausragen: besondere Betten, Matratzen oder Accessoires in begrenzter Verfügbarkeit. Wer Lust hat auf Besonderes, schaut regelmäßig bei uns vorbei.",
     primaryCta: {
       label: "Beratungstermin vereinbaren",
-      href: "https://calendly.com/schlafnerds/45min?back=1&month=2026-02",
+      href: "https://calendly.com/schlafnerds/45min?back=1",
       external: true,
     },
     secondaryCta: {

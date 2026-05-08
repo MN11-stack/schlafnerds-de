@@ -225,7 +225,7 @@ export default function SchlafmythenPage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+                href="https://calendly.com/schlafnerds/45min?back=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"

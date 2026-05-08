@@ -4,7 +4,7 @@ type InlineCTAProps = {
   buttonLabel?: string;
 };
 
-const CALENDLY_URL = "https://calendly.com/schlafnerds/45min?back=1&month=2026-02";
+const CALENDLY_URL = "https://calendly.com/schlafnerds/45min?back=1";
 
 export default function InlineCTA({
   headline = "Bereit für persönliche Schlafberatung?",

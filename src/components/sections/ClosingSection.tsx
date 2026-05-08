@@ -91,7 +91,7 @@ export default function ClosingSection() {
             </ul>
             <div className="mt-auto pt-6">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1&month=2026-02"
+                href="https://calendly.com/schlafnerds/45min?back=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full text-center"
