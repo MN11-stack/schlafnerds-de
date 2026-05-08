@@ -35,14 +35,14 @@ export const metadata: Metadata = {
 
 const muensterlandFaqs = [
   {
-    question: "Wo genau liegt Schlafnerds im Münsterland?",
+    question: "Wo genau befindet sich Euer Laden?",
     answer:
       "Schlafnerds liegt in der Nordstraße 39 in Bocholt – am Westrand des Münsterlandes, direkt am Übergang zum Achterhoek (Niederlande). Aus dem Westmünsterland (Borken, Stadtlohn, Vreden, Ahaus, Velen, Heiden) sind wir in unter 30 Minuten erreichbar. Aus Coesfeld rund 35 Minuten, aus Münster etwa 50 Minuten.",
   },
   {
     question: "Lohnt sich die Anfahrt aus dem Münsterland?",
     answer:
-      "Wir sind zertifizierte Schlafcoaches und Ergopraktiker und beraten herstellerunabhängig. Wir nehmen uns 45–60 Minuten exklusiv für jede Beratung – inklusive Körperstatik-Analyse und Probeliegen verschiedener Schlafsysteme. Das findet sich nicht in jedem Bettengeschäft. Wer im Münsterland wohnt und eine fundierte Schlafberatung sucht, für den ist die Anfahrt oft sinnvoll.",
+      "Wir sind zertifizierte Schlafcoaches und Ergopraktiker und beraten herstellerunabhängig. Wir nehmen uns 45–60 Minuten exklusiv für jede Beratung – inklusive Körperstatik-Analyse und Probeliegen verschiedener Schlafsysteme. Das finden Sie nicht in jedem Bettengeschäft. Wer im Münsterland wohnt und eine fundierte Schlafberatung sucht, für den ist die Anfahrt oft sinnvoll.",
   },
   {
     question: "Liefern Sie auch ins Münsterland?",
@@ -148,8 +148,9 @@ function Hero() {
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-tagline">
               Im Westmünsterland gelegen, am Übergang zum Achterhoek: Wir sind
-              ein inhabergeführtes Bettenfachgeschäft mit Schwerpunkt auf
-              Schlafberatung, Probeliegen und Körperstatik.
+              ein inhabergeführtes Bettenfachgeschäft für Boxspringbetten,
+              Matratzen, Holzbetten und Nackenstützkissen – mit Schwerpunkt
+              auf persönlicher Beratung und Probeliegen.
             </p>
             <p className="mt-4 max-w-lg leading-relaxed text-tagline">
               Aus dem Münsterland sind Sie in 15 bis 50 Minuten bei uns – und
@@ -162,11 +163,11 @@ function Hero() {
                 href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary"
+                className="btn-primary text-center"
               >
                 Beratungstermin vereinbaren
               </a>
-              <a href="#anfahrt" className="btn-outline">
+              <a href="#anfahrt" className="btn-outline text-center">
                 Anfahrt aus dem Münsterland
               </a>
             </div>
@@ -208,10 +209,10 @@ function WarumAnreise() {
           </p>
           <p>
             Das bedeutet: Im Mittelpunkt stehen Ihre Körperstatik, Ihre
-            Schlafposition und Ihr Liegegefühl – nicht ein bestimmtes Produkt
-            oder eine Verkaufsmarge. Wir erklären, warum sich Materialien
-            unterschiedlich anfühlen, ordnen Ihre Eindrücke fachlich ein und
-            geben eine transparente Empfehlung.
+            Schlafposition und Ihr Liegegefühl. Auf dieser Basis empfehlen
+            wir das Schlafsystem, das zu Ihnen passt – wir erklären, warum
+            sich Materialien unterschiedlich anfühlen, ordnen Ihre Eindrücke
+            fachlich ein und geben eine transparente Empfehlung.
           </p>
         </div>
       </div>
@@ -470,15 +471,14 @@ function Team() {
             <div className="mt-8 space-y-5 text-lg leading-relaxed text-tagline">
               <p>
                 Wir sind zertifizierte Schlafcoaches und Ergopraktiker und
-                betreiben Schlafnerds in Bocholt seit 2020 als
-                inhabergeführtes Fachgeschäft. Unsere Kundinnen und Kunden
-                kommen aus Bocholt, dem Kreis Borken, dem westlichen
-                Münsterland und der niederländischen Grenzregion.
+                betreiben Schlafnerds in Bocholt als inhabergeführtes
+                Fachgeschäft. Unsere Kundinnen und Kunden kommen aus
+                Bocholt, dem Kreis Borken, dem westlichen Münsterland und
+                der niederländischen Grenzregion.
               </p>
               <p>
                 Unsere Beratung ist persönlich, strukturiert und auf Ihre
-                Schlafsituation zugeschnitten – nicht auf einen
-                Verkaufskatalog.
+                Schlafsituation zugeschnitten.
               </p>
             </div>
           </div>
