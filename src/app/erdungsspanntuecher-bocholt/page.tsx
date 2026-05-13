@@ -3,7 +3,6 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
-import { getAggregateRating } from "@/lib/google-reviews";
 
 export const metadata: Metadata = {
   title: "Wie erdet man sich? Erdungsspanntücher erklärt – Schlafnerds Bocholt",
@@ -769,23 +768,14 @@ const serviceSchema = {
     { "@type": "AdministrativeArea", name: "Kreis Borken" },
   ],
   serviceType: "Schlafzubehör-Beratung",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "EUR",
-    description: "Kostenlose Beratung ohne Kaufzwang",
-  },
 };
 
-export default async function ErdungsspanntucherBocholt() {
-  const aggregateRating = await getAggregateRating();
+export default function ErdungsspanntucherBocholt() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({ ...serviceSchema, aggregateRating }),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <Header />
       <main>

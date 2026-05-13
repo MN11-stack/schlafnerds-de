@@ -3,7 +3,6 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
-import { getAggregateRating } from "@/lib/google-reviews";
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -21,12 +20,6 @@ const serviceSchema = {
     { "@type": "AdministrativeArea", name: "Kreis Borken" },
   ],
   serviceType: "Nackenstützkissen-Beratung",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "EUR",
-    description: "Beratung ohne Kaufzwang",
-  },
 };
 
 export const metadata: Metadata = {
@@ -850,15 +843,12 @@ function FaqSection() {
 /* ─────────────────────────────────────────────
    PAGE
    ───────────────────────────────────────────── */
-export default async function NackenstuetzkissenBocholt() {
-  const aggregateRating = await getAggregateRating();
+export default function NackenstuetzkissenBocholt() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({ ...serviceSchema, aggregateRating }),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <Header />
       <main>

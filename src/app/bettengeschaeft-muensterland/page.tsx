@@ -3,7 +3,6 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqSection from "@/components/sections/FaqSection";
-import { getAggregateRating } from "@/lib/google-reviews";
 
 const URL = "https://www.schlafnerds.de/bettengeschaeft-muensterland";
 const CALENDLY_URL = "https://calendly.com/schlafnerds/45min?back=1";
@@ -125,12 +124,6 @@ const serviceSchema = {
     { "@type": "AdministrativeArea", name: "Kreis Coesfeld" },
   ],
   serviceType: "Schlafberatung & Bettengeschäft",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "EUR",
-    description: "Beratung mit Probeliegen, ohne Kaufzwang",
-  },
 };
 
 function Hero() {
@@ -518,15 +511,12 @@ function Schluss() {
   );
 }
 
-export default async function BettengeschaeftMuensterland() {
-  const aggregateRating = await getAggregateRating();
+export default function BettengeschaeftMuensterland() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({ ...serviceSchema, aggregateRating }),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <script
         type="application/ld+json"

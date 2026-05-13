@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 import FaqSection from "@/components/sections/FaqSection";
-import { getAggregateRating } from "@/lib/google-reviews";
 
 const boxspringFaqs = [
   {
@@ -618,23 +617,14 @@ const serviceSchema = {
     { "@type": "AdministrativeArea", name: "Kreis Borken" },
   ],
   serviceType: "Boxspringbetten-Beratung",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "EUR",
-    description: "Kostenlose Schlafberatung ohne Kaufzwang",
-  },
 };
 
-export default async function BoxspringbettenBocholt() {
-  const aggregateRating = await getAggregateRating();
+export default function BoxspringbettenBocholt() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({ ...serviceSchema, aggregateRating }),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <Header />
       <main>
