@@ -1,3 +1,5 @@
+import { getGoogleReviews } from "@/lib/google-reviews";
+
 const reviews = [
   {
     text: "Toller Laden. Man hat sich Zeit genommen und ich hatte nie das Gefühl, dass mir was aufgeschwatzt werden soll. Einfach ehrliche Beratung.",
@@ -33,7 +35,9 @@ function Stars({ count }: { count: number }) {
   );
 }
 
-export default function ReviewsSection() {
+export default async function ReviewsSection() {
+  const { rating, userRatingCount } = await getGoogleReviews();
+  const ratingLabel = rating.toFixed(1).replace(".", ",");
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
@@ -52,7 +56,7 @@ export default function ReviewsSection() {
             ))}
           </div>
           <p className="font-heading text-3xl font-normal leading-tight md:text-4xl">
-            4,9 von 5 Sternen
+            {ratingLabel} von 5 Sternen
           </p>
           <a
             href="https://www.google.com/maps/search/Schlafnerds+Bocholt/"
@@ -66,7 +70,7 @@ export default function ReviewsSection() {
               <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
               <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
             </svg>
-            8 Bewertungen auf Google
+            {userRatingCount} Bewertungen auf Google
           </a>
         </div>
 
