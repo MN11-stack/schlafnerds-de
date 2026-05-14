@@ -1,23 +1,5 @@
 import { getGoogleReviews } from "@/lib/google-reviews";
 
-const reviews = [
-  {
-    text: "Toller Laden. Man hat sich Zeit genommen und ich hatte nie das Gefühl, dass mir was aufgeschwatzt werden soll. Einfach ehrliche Beratung.",
-    name: "Susanne Stockhorst",
-    rating: 5,
-  },
-  {
-    text: "Unschlagbares Preis/Leistungsverhältnis, eine wirklich tolle Beratung, bei der sich mal wirklich Zeit genommen wird und auf die persönlichen Bedürfnisse eingegangen wird.",
-    name: "Oliver Erlemann",
-    rating: 5,
-  },
-  {
-    text: "Tolle Beratung – wir haben uns einen neuen Topper und Kissen gekauft. Sehr kompetente Beratung und toller Service.",
-    name: "Gudrun Welling",
-    rating: 5,
-  },
-];
-
 function Stars({ count }: { count: number }) {
   return (
     <div className="flex gap-0.5">
@@ -36,7 +18,7 @@ function Stars({ count }: { count: number }) {
 }
 
 export default async function ReviewsSection() {
-  const { rating, userRatingCount } = await getGoogleReviews();
+  const { rating, userRatingCount, reviews } = await getGoogleReviews();
   const ratingLabel = rating.toFixed(1).replace(".", ",");
   return (
     <section className="bg-white">
@@ -83,7 +65,7 @@ export default async function ReviewsSection() {
                 &ldquo;{review.text}&rdquo;
               </p>
               <p className="mt-6 text-sm font-medium text-tagline">
-                {review.name}
+                {review.authorName}
               </p>
             </div>
           ))}
