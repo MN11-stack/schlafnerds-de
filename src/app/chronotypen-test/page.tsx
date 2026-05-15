@@ -6,6 +6,7 @@ import FaqSection from "@/components/sections/FaqSection";
 import InlineCTA from "@/components/InlineCTA";
 import StickyCTA from "@/components/StickyCTA";
 import ChronotypenTest from "./ChronotypenTest";
+import { calendlyUrl } from "@/lib/calendly";
 
 export const metadata: Metadata = {
   title: "Bin ich Eule oder Lerche? Schlaftyp-Test in 5 Fragen",
@@ -98,7 +99,7 @@ function ChronotypenErklaerung() {
             </p>
             <div className="mt-6">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1"
+                href={calendlyUrl("chronotypen-test")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -132,7 +133,7 @@ function ChronotypenErklaerung() {
             </p>
             <div className="mt-6">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1"
+                href={calendlyUrl("chronotypen-test")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -165,7 +166,7 @@ function ChronotypenErklaerung() {
             </p>
             <div className="mt-6">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1"
+                href={calendlyUrl("chronotypen-test")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"

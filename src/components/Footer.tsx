@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { calendlyUrl } from "@/lib/calendly";
 
 export default function Footer() {
   return (
@@ -69,7 +70,7 @@ export default function Footer() {
                 Menschen & Region
               </a>
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1"
+                href={calendlyUrl("footer")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 transition-colors hover:!text-primary"

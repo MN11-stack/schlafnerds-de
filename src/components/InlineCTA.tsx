@@ -1,15 +1,17 @@
+import { calendlyUrl } from "@/lib/calendly";
+
 type InlineCTAProps = {
   headline?: string;
   subline?: string;
   buttonLabel?: string;
+  utmSource?: string;
 };
-
-const CALENDLY_URL = "https://calendly.com/schlafnerds/45min?back=1";
 
 export default function InlineCTA({
   headline = "Bereit für persönliche Schlafberatung?",
   subline = "45 Minuten Probeliegen mit Beratung – kostenlos und unverbindlich.",
   buttonLabel = "Beratungstermin vereinbaren",
+  utmSource = "inline",
 }: InlineCTAProps) {
   return (
     <section className="my-12 px-6">
@@ -21,7 +23,7 @@ export default function InlineCTA({
           {subline}
         </p>
         <a
-          href={CALENDLY_URL}
+          href={calendlyUrl(utmSource)}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-primary mt-6 inline-flex"

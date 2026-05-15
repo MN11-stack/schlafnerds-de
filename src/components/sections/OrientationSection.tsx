@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { calendlyUrl } from "@/lib/calendly";
 
 const questions = [
   {
@@ -91,7 +92,7 @@ export default function OrientationSection() {
           </p>
           <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="https://calendly.com/schlafnerds/45min?back=1"
+              href={calendlyUrl("homepage-orientation")}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"

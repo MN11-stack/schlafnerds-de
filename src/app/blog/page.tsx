@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { calendlyUrl } from "@/lib/calendly";
 
 export const metadata: Metadata = {
   title: "Schlafwissen – Blog & Ratgeber | Schlafnerds",
@@ -158,7 +159,7 @@ export default function BlogPage() {
             </p>
             <div className="mt-10">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1"
+                href={calendlyUrl("blog-overview")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"

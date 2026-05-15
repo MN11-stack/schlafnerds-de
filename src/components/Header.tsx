@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { calendlyUrl } from "@/lib/calendly";
 
 const deToNlMapping: Record<string, string> = {
   "/": "https://www.slaapnerds.nl/",
@@ -148,7 +149,7 @@ export default function Header() {
 
         {/* Desktop CTA - only visible on lg screens */}
         <a
-          href="https://calendly.com/schlafnerds/45min?back=1"
+          href={calendlyUrl("header")}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-primary !hidden shrink-0 text-sm lg:!inline-flex"
@@ -265,7 +266,7 @@ export default function Header() {
             </div>
 
             <a
-              href="https://calendly.com/schlafnerds/45min?back=1"
+              href={calendlyUrl("header")}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary mt-2 text-center !text-white"

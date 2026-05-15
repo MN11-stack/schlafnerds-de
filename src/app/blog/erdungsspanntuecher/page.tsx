@@ -5,10 +5,11 @@ import Footer from "@/components/Footer";
 import FaqSection from "@/components/sections/FaqSection";
 import InlineCTA from "@/components/InlineCTA";
 import StickyCTA from "@/components/StickyCTA";
+import { calendlyUrl } from "@/lib/calendly";
 
 const PUBLISHED = "2026-05-01";
 const URL = "https://www.schlafnerds.de/blog/erdungsspanntuecher";
-const CALENDLY_URL = "https://calendly.com/schlafnerds/45min?back=1";
+const CALENDLY_URL = calendlyUrl("blog-erdungsspanntuecher");
 
 export const metadata: Metadata = {
   title: "Erdungsspanntücher: Mit Earthing aufladen im Schlaf?",

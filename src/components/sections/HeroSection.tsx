@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { calendlyUrl } from "@/lib/calendly";
 
 export default function HeroSection() {
   return (
@@ -23,7 +24,7 @@ export default function HeroSection() {
 
             <div className="mt-10">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1"
+                href={calendlyUrl("homepage-hero")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"

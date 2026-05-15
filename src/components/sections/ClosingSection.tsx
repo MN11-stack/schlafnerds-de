@@ -1,3 +1,5 @@
+import { calendlyUrl } from "@/lib/calendly";
+
 export default function ClosingSection() {
   return (
     <section id="termin" className="bg-primary">
@@ -91,7 +93,7 @@ export default function ClosingSection() {
             </ul>
             <div className="mt-auto pt-6">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1"
+                href={calendlyUrl("homepage-closing")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full text-center"

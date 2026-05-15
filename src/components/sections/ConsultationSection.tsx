@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { calendlyUrl } from "@/lib/calendly";
 
 const steps = [
   {
@@ -158,7 +159,7 @@ export default function ConsultationSection() {
           </ul>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
-              href="https://calendly.com/schlafnerds/45min?back=1"
+              href={calendlyUrl("homepage-consultation")}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"

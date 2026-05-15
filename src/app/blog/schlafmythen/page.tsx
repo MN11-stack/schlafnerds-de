@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { calendlyUrl } from "@/lib/calendly";
 
 export const metadata: Metadata = {
   title: "7 Schlafmythen – was wirklich stimmt | Schlafnerds",
@@ -225,7 +226,7 @@ export default function SchlafmythenPage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1"
+                href={calendlyUrl("blog-schlafmythen")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"

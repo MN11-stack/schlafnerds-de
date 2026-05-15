@@ -3,9 +3,10 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqSection from "@/components/sections/FaqSection";
+import { calendlyUrl } from "@/lib/calendly";
 
 const URL = "https://www.schlafnerds.de/bettengeschaeft-muensterland";
-const CALENDLY_URL = "https://calendly.com/schlafnerds/45min?back=1";
+const CALENDLY_URL = calendlyUrl("bettengeschaeft-muensterland");
 
 export const metadata: Metadata = {
   title: "Bettengeschäft im Münsterland | Schlafnerds Bocholt",

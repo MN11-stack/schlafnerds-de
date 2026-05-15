@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InlineCTA from "@/components/InlineCTA";
 import StickyCTA from "@/components/StickyCTA";
+import { calendlyUrl } from "@/lib/calendly";
 
 export const metadata: Metadata = {
   title: "Schlafhygiene: 10 Regeln für besseren Schlaf | Schlafnerds",
@@ -480,7 +481,7 @@ export default function SchlafhygienePage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1"
+                href={calendlyUrl("blog-schlafhygiene")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"

@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InlineCTA from "@/components/InlineCTA";
 import StickyCTA from "@/components/StickyCTA";
+import { calendlyUrl } from "@/lib/calendly";
 
 export const metadata: Metadata = {
   title: "Matratze kaufen: Worauf du wirklich achten musst | Schlafnerds",
@@ -426,7 +427,7 @@ export default function MatratzekaufenPage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <a
-                href="https://calendly.com/schlafnerds/45min?back=1&month=2026-03"
+                href={calendlyUrl("blog-matratze-kaufen")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"

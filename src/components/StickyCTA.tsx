@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { calendlyUrl } from "@/lib/calendly";
 
 const DISMISS_KEY = "stickyCTADismissedUntil";
 const DISMISS_DAYS = 7;
 const SCROLL_THRESHOLD = 400;
-const CALENDLY_URL = "https://calendly.com/schlafnerds/45min?back=1";
 
 export default function StickyCTA() {
   const [visible, setVisible] = useState(false);
@@ -35,7 +35,7 @@ export default function StickyCTA() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 flex items-center gap-2 bg-primary px-4 py-3 text-white shadow-lg md:hidden">
       <a
-        href={CALENDLY_URL}
+        href={calendlyUrl("sticky")}
         target="_blank"
         rel="noopener noreferrer"
         className="flex-1 text-center font-medium"
