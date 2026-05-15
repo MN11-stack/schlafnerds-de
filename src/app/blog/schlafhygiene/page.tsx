@@ -372,6 +372,7 @@ export default function SchlafhygienePage() {
         <InlineCTA
           headline="Wenn Hygiene nicht reicht: persönliche Beratung."
           subline="Manche Schlafprobleme liegen an Matratze, Lattenrost oder Kissen – nicht am Ritual. Wir finden mit dir den Unterschied."
+          utmSource="blog-schlafhygiene-inline"
         />
 
         {/* When hygiene is not enough */}

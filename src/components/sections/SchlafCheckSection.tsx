@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { calendlyUrl } from "@/lib/calendly";
 
 // ─── Fragen ───────────────────────────────────────────────────────────────────
 
@@ -301,7 +302,7 @@ export default function SchlafCheckSection() {
 
               <div className="mt-10 flex flex-col items-center gap-4 border-t border-primary/20 pt-8 sm:flex-row sm:justify-center">
                 <a
-                  href="https://calendly.com/schlafnerds/45min"
+                  href={calendlyUrl("homepage-schlafcheck")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"

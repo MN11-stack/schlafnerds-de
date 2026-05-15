@@ -301,7 +301,8 @@ export default function MatratzekaufenPage() {
 
         <InlineCTA
           headline="Probeliegen statt grübeln."
-          subline="Härtegrad, Material und Stützzonen lassen sich nur durch Liegen erspüren. 45 Minuten Beratung, kostenlos und unverbindlich."
+          subline="Härtegrad, Material und Stützzonen lassen sich nur durch Liegen erspüren. 45 Minuten Beratung mit Probeliegen vor Ort."
+          utmSource="blog-matratze-kaufen-inline"
         />
 
         {/* When online is not enough */}

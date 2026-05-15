@@ -236,6 +236,7 @@ export default function ChronotypenTestPage() {
         <InlineCTA
           headline="Bring deinen Chronotyp in deine Schlafumgebung."
           subline="Im persönlichen Termin zeigen wir dir, welche Matratze, welches Kissen und welche Lichtumgebung zu deinem Typ passen – mit Probeliegen vor Ort."
+          utmSource="chronotypen-test-inline"
         />
 
         <FaqSection faqs={chronotypFaqs} />

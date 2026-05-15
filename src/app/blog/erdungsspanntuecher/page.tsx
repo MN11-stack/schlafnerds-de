@@ -628,7 +628,8 @@ export default function ErdungsspanntuecherBlog() {
         <WasWirBeobachten />
         <InlineCTA
           headline="Earthing einmal selbst probieren?"
-          subline="Im persönlichen Termin zeigen wir dir das Tuch, erklären die Technik und ordnen die Studienlage ein – ohne Verkaufsdruck."
+          subline="Im persönlichen Termin zeigen wir dir das Tuch, erklären die Technik und ordnen die Studienlage fachlich ein."
+          utmSource="blog-erdungsspanntuecher-inline"
         />
         <Anwendung />
         <WasEsNichtIst />

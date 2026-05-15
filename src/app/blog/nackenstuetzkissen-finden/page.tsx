@@ -631,7 +631,8 @@ export default function NackenstuetzkissenFindenPage() {
 
         <InlineCTA
           headline="Welches Kissen bei dir das richtige ist? Finden wir gemeinsam heraus."
-          subline="45 Minuten Probeliegen, Körperstatik-Check, Empfehlung – kostenlos und unverbindlich."
+          subline="45 Minuten Probeliegen, Körperstatik-Check, persönliche Empfehlung."
+          utmSource="blog-nackenstuetzkissen-finden-inline"
         />
 
         {/* 7. Schritt für Schritt */}
