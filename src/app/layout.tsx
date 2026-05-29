@@ -169,7 +169,7 @@ export default async function RootLayout({
   const reviews = await getGoogleReviews();
   const localBusinessSchema = buildLocalBusinessSchema(reviews);
   return (
-    <html lang="de">
+    <html lang="de" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"

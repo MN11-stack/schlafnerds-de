@@ -31,6 +31,15 @@ interface Article {
 
 const articles: Article[] = [
   {
+    href: "/blog/boxspringbett-oder-lattenrost",
+    label: "Schlafsystem",
+    title: "Boxspringbett oder Lattenrost? Was wirklich entscheidet",
+    description:
+      "Sechs Faktoren, die wirklich entscheiden, drei Mythen, die wir geraderücken – und warum Härtegrad H3 nicht gleich H3 ist.",
+    image: "/images/blog/boxspringbett-oder-lattenrost.png",
+    imageAlt: "Boxspringbett und klassisches Bett mit Lattenrost nebeneinander im Schlafnerds-Showroom",
+  },
+  {
     href: "/blog/schlafhygiene",
     label: "Schlafhygiene",
     title: "Besser einschlafen: 10 Schlafhygiene-Regeln, die wirklich helfen",
