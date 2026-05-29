@@ -2,16 +2,40 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FaqSection from "@/components/sections/FaqSection";
 import { calendlyUrl } from "@/lib/calendly";
 
+const bettenFaqs = [
+  {
+    question: "Welche Bett-Kategorien kann ich bei Schlafnerds probeliegen?",
+    answer:
+      "Boxspringbetten, Holzbetten, klassische Bettrahmen und passende Matratzen — jeweils in verschiedenen Modellen und Härtegraden. So erarbeiten wir vor Ort Ihre persönliche, optimale Konfiguration.",
+  },
+  {
+    question: "Wie unterscheidet sich Schlafnerds von einem klassischen Möbelhaus?",
+    answer:
+      "Wir denken vom Menschen aus — Ihrer Körperstatik, Schlafposition und individuellen Bedürfnissen. Bett, Lattenrost und Matratze stellen wir als zusammenhängendes Schlafsystem zusammen — nicht als drei einzelne Katalogartikel.",
+  },
+  {
+    question: "Kann ich Bett, Lattenrost und Matratze frei kombinieren?",
+    answer:
+      "Ja. Lattenrost und Matratze werden individuell auf Bettrahmen, Körperstatik und Liegegefühl abgestimmt. Das Bett ist die Basis — das System entsteht in der Beratung.",
+  },
+  {
+    question: "Sind Lieferung und Aufbau inklusive?",
+    answer:
+      "Ja. Lieferung im Bocholter Umkreis und Aufbau im Schlafzimmer sind bei uns inklusive.",
+  },
+];
+
 export const metadata: Metadata = {
-  title: "Bettengeschäft Bocholt – Beratung & Probeliegen | Schlafnerds",
+  title: "Bettenfachgeschäft Bocholt – probeliegen vor Ort | Schlafnerds",
   description:
-    "Bettengeschäft in Bocholt mit persönlicher Beratung. Boxspringbetten, Matratzen und Holzbetten – Probeliegen und Körperstatik-Check. Di, Do, Fr & Sa geöffnet.",
+    "Betten, Matratzen, Boxspring und Holz in Bocholt vor Ort vergleichen. Strukturierte Beratung im Fachgeschäft Nordstraße 39. Termin online buchen.",
   openGraph: {
-    title: "Bettengeschäft Bocholt – Beratung & Probeliegen | Schlafnerds",
+    title: "Bettenfachgeschäft Bocholt – probeliegen vor Ort | Schlafnerds",
     description:
-      "Bettengeschäft in Bocholt. Persönliche Beratung für Boxspringbetten, Matratzen und Holzbetten.",
+      "Betten, Matratzen, Boxspring und Holz in Bocholt vor Ort vergleichen. Strukturierte Beratung im Fachgeschäft Nordstraße 39. Termin online buchen.",
     locale: "de_DE",
     type: "website",
   },
@@ -583,6 +607,7 @@ export default function BettenBocholt() {
         <Schlafloesungen />
         <SoArbeitenWir />
         <TerminOderVorbeikommen />
+        <FaqSection faqs={bettenFaqs} />
         <RegionEinzugsgebiet />
         <RuhigerAbschluss />
       </main>

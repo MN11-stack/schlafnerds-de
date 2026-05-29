@@ -47,13 +47,13 @@ const beratungFaqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Beratung & Probeliegen – Schlafnerds Bocholt",
+  title: "Schlafberatung Bocholt: 45-Minuten-Diagnose | Schlafnerds",
   description:
-    "Strukturierte Schlafberatung in Bocholt. Wir analysieren Körperstatik und Liegegefühl, ordnen ein und begleiten Sie zu einer fundierten Entscheidung. Termin vereinbaren.",
+    "Strukturierte Schlafberatung in Bocholt — Anliegen erfassen, Körperstatik prüfen, Schlafsystem einordnen. 45 Minuten im Fachgeschäft. Termin online buchen.",
   openGraph: {
-    title: "Beratung & Probeliegen – Schlafnerds Bocholt",
+    title: "Schlafberatung Bocholt: 45-Minuten-Diagnose | Schlafnerds",
     description:
-      "Strukturierte Schlafberatung mit Probeliegen. Körperstatik-Analyse und fachliche Einordnung für Ihr ideales Schlafsystem.",
+      "Strukturierte Schlafberatung in Bocholt — Anliegen erfassen, Körperstatik prüfen, Schlafsystem einordnen. 45 Minuten im Fachgeschäft. Termin online buchen.",
     locale: "de_DE",
     type: "website",
   },

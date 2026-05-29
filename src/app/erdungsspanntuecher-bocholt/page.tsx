@@ -6,13 +6,13 @@ import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 import { calendlyUrl } from "@/lib/calendly";
 
 export const metadata: Metadata = {
-  title: "Wie erdet man sich? Erdungsspanntücher erklärt – Schlafnerds Bocholt",
+  title: "Erdungsspanntücher Bocholt – Test & Beratung | Schlafnerds",
   description:
-    "Wie erdet man sich? Erdungsspanntücher verbinden Ihren Körper über die Steckdose mit der Erde – wissenschaftlich erklärt, bei Schlafnerds Bocholt in Ruhe ausprobieren.",
+    "Erdungsspanntücher in Bocholt fundiert erklärt: Funktion, Materialien, Einsatzmöglichkeiten. Persönliche Beratung und Test im Fachgeschäft.",
   openGraph: {
-    title: "Wie erdet man sich? Erdungsspanntücher erklärt – Schlafnerds Bocholt",
+    title: "Erdungsspanntücher Bocholt – Test & Beratung | Schlafnerds",
     description:
-      "Erdung beim Schlafen einfach erklärt: wie ein Erdungsspanntuch funktioniert, was es bewirkt – mit Beratung und Probeliegen bei Schlafnerds in Bocholt.",
+      "Erdungsspanntücher in Bocholt fundiert erklärt: Funktion, Materialien, Einsatzmöglichkeiten. Persönliche Beratung und Test im Fachgeschäft.",
     locale: "de_DE",
     type: "website",
   },

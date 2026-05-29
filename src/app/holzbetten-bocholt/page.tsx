@@ -25,18 +25,18 @@ const holzbettenFaqs = [
   {
     question: "Sind Lieferung und Aufbau inklusive?",
     answer:
-      "Ja. Lieferung, Aufbau im Schlafzimmer und die Entsorgung Ihres alten Betts sind bei uns inklusive.",
+      "Ja. Lieferung im Bocholter Umkreis und Aufbau im Schlafzimmer sind bei uns inklusive.",
   },
 ];
 
 export const metadata: Metadata = {
-  title: "Holzbetten Bocholt – Beratung & Probeliegen | Schlafnerds",
+  title: "Holzbetten Bocholt – Massivholz im Schlafsystem | Schlafnerds",
   description:
-    "Holzbetten persönlich erleben in Bocholt. Massivholz, Lattenrost und Matratze als System verstehen – strukturierte Beratung mit Probeliegen. Di, Do, Fr & Sa geöffnet.",
+    "Massivholzbetten in Bocholt persönlich probeliegen. Eiche, Buche, Kernbuche — Holz, Lattenrost und Matratze als System erklärt. Termin online buchen.",
   openGraph: {
-    title: "Holzbetten Bocholt – Beratung & Probeliegen | Schlafnerds",
+    title: "Holzbetten Bocholt – Massivholz im Schlafsystem | Schlafnerds",
     description:
-      "Holzbetten persönlich erleben in Bocholt. Massivholz als Basis eines durchdachten Schlafsystems.",
+      "Massivholzbetten in Bocholt persönlich probeliegen. Eiche, Buche, Kernbuche — Holz, Lattenrost und Matratze als System erklärt. Termin online buchen.",
     locale: "de_DE",
     type: "website",
   },

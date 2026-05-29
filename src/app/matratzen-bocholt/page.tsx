@@ -30,13 +30,13 @@ const matratzenFaqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Matratzen Bocholt – Beratung, Vergleich & Probeliegen | Schlafnerds",
+  title: "Matratzen Bocholt — Probeliegen mit Körperstatik | Schlafnerds",
   description:
-    "Matratzen kaufen in Bocholt: Naturlatex, Kaltschaum, Taschenfederkern & Viscogelschaum persönlich vergleichen. Probeliegen mit Körperstatik-Check bei den Schlafnerds.",
+    "Matratzen in Bocholt unter realen Bedingungen testen — kombiniert mit Körperstatik-Analyse und Schlafsystem-Beratung. Termin online buchen.",
   openGraph: {
-    title: "Matratzen Bocholt – Beratung, Vergleich & Probeliegen | Schlafnerds",
+    title: "Matratzen Bocholt — Probeliegen mit Körperstatik | Schlafnerds",
     description:
-      "Matratzen persönlich vergleichen in Bocholt. Strukturierte Beratung mit Probeliegen und Körperstatik-Check.",
+      "Matratzen in Bocholt unter realen Bedingungen testen — kombiniert mit Körperstatik-Analyse und Schlafsystem-Beratung. Termin online buchen.",
     locale: "de_DE",
     type: "website",
   },

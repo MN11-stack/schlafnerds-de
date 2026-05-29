@@ -25,18 +25,18 @@ const boxspringFaqs = [
   {
     question: "Sind Lieferung und Aufbau inklusive?",
     answer:
-      "Ja. Lieferung, Aufbau im Schlafzimmer und die Entsorgung Ihres alten Betts sind bei uns inklusive.",
+      "Ja. Lieferung im Bocholter Umkreis und Aufbau im Schlafzimmer sind bei uns inklusive.",
   },
 ];
 
 export const metadata: Metadata = {
-  title: "Boxspringbetten Bocholt – Beratung & Probeliegen | Schlafnerds",
+  title: "Boxspringbetten Bocholt — System + Probeliegen | Schlafnerds",
   description:
-    "Boxspringbetten persönlich erleben in Bocholt. Strukturierte Beratung, Probeliegen und Körperstatik-Check. Di, Do, Fr & Sa geöffnet.",
+    "Boxspringbetten in Bocholt probeliegen. Taschenfederkern, Matratze und Topper im Zusammenhang erklärt — im Bettenfachgeschäft. Termin online buchen.",
   openGraph: {
-    title: "Boxspringbetten Bocholt – Beratung & Probeliegen | Schlafnerds",
+    title: "Boxspringbetten Bocholt — System + Probeliegen | Schlafnerds",
     description:
-      "Boxspringbetten persönlich erleben in Bocholt. Strukturierte Beratung, Probeliegen und Körperstatik-Check.",
+      "Boxspringbetten in Bocholt probeliegen. Taschenfederkern, Matratze und Topper im Zusammenhang erklärt — im Bettenfachgeschäft. Termin online buchen.",
     locale: "de_DE",
     type: "website",
   },
