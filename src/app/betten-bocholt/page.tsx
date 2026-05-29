@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqSection from "@/components/sections/FaqSection";
+import BlogTip from "@/components/BlogTip";
 import { calendlyUrl } from "@/lib/calendly";
 
 const bettenFaqs = [
@@ -607,6 +608,11 @@ export default function BettenBocholt() {
         <Schlafloesungen />
         <SoArbeitenWir />
         <TerminOderVorbeikommen />
+        <BlogTip
+          headline="Boxspring oder Lattenrost? Was wirklich entscheidet."
+          subline="Bevor du Boxspring oder klassisches Bett mit Lattenrost wählst: sechs Faktoren, drei Mythen — und warum das System gar nicht das Entscheidende ist."
+          href="/blog/boxspringbett-oder-lattenrost"
+        />
         <FaqSection faqs={bettenFaqs} />
         <RegionEinzugsgebiet />
         <RuhigerAbschluss />
