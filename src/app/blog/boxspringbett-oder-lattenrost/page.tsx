@@ -71,8 +71,7 @@ const faqs = [
   },
   {
     question: "Stimmt es, dass Boxspring grundsätzlich teurer ist?",
-    answer:
-      "Nein, das stimmt so pauschal nicht. Boxspringbetten beginnen oft höher, weil sie eine zusätzliche federnde Schicht (die Box) mitbringen. Aber: Ein hochwertiges Lattenrost-System mit Premium-Matratze kann genauso viel kosten wie eine mittelpreisige Boxspring-Konstruktion. Preis sagt wenig über Ergonomie aus.",
+    answer: "Nein, das stimmt so pauschal nicht.",
   },
   {
     question: "Wie oft muss ich eine Matratze wechseln?",
