@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 import FaqSection from "@/components/sections/FaqSection";
+import BlogTip from "@/components/BlogTip";
 import { calendlyUrl } from "@/lib/calendly";
 
 const holzbettenFaqs = [
@@ -667,6 +668,11 @@ export default function HolzbettenBocholt() {
         <LiegepositionZusammenspiel />
         <UnserWeg />
         <TerminOderVorbeikommen />
+        <BlogTip
+          headline="Boxspring oder Lattenrost? Was wirklich entscheidet."
+          subline="Holzbett mit Lattenrost oder Boxspring? Sechs Faktoren, drei Mythen und klare Faustregeln aus unserer Beratung."
+          href="/blog/boxspringbett-oder-lattenrost"
+        />
         <FaqSection faqs={holzbettenFaqs} />
         <WeitereLoesungen currentPath="/holzbetten-bocholt" />
         <RegionNaehe />

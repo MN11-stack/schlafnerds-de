@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 import FaqSection from "@/components/sections/FaqSection";
+import BlogTip from "@/components/BlogTip";
 import { calendlyUrl } from "@/lib/calendly";
 
 const matratzenFaqs = [
@@ -735,6 +736,11 @@ export default function MatratzenBocholt() {
             </p>
           </div>
         </section>
+        <BlogTip
+          headline="Boxspring oder Lattenrost? Was wirklich entscheidet."
+          subline="Warum Härtegrad H3 nicht gleich H3 ist — und welche sechs Faktoren wirklich entscheiden, ob Boxspring oder Lattenrost zu dir passt."
+          href="/blog/boxspringbett-oder-lattenrost"
+        />
         <FaqSection faqs={matratzenFaqs} />
         <WeitereLoesungen currentPath="/matratzen-bocholt" />
         <RegionNaehe />
