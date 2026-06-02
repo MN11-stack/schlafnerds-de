@@ -30,11 +30,11 @@ const boxspringFaqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Boxspringbetten Bocholt — System + Probeliegen | Schlafnerds",
+  title: "Boxspring Bocholt—Beratung, Probeliegen, System | Schlafnerds",
   description:
     "Boxspringbetten in Bocholt probeliegen. Taschenfederkern, Matratze und Topper im Zusammenhang erklärt — im Bettenfachgeschäft. Termin online buchen.",
   openGraph: {
-    title: "Boxspringbetten Bocholt — System + Probeliegen | Schlafnerds",
+    title: "Boxspring Bocholt—Beratung, Probeliegen, System | Schlafnerds",
     description:
       "Boxspringbetten in Bocholt probeliegen. Taschenfederkern, Matratze und Topper im Zusammenhang erklärt — im Bettenfachgeschäft. Termin online buchen.",
     locale: "de_DE",
