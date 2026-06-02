@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 import FaqSection from "@/components/sections/FaqSection";
+import SchlafversprechenSection from "@/components/sections/SchlafversprechenSection";
 import { calendlyUrl } from "@/lib/calendly";
 
 const boxspringFaqs = [
@@ -633,6 +634,7 @@ export default function BoxspringbettenBocholt() {
         <WasIstBoxspring />
         <PasstEsZuIhnen />
         <UnserWeg />
+        <SchlafversprechenSection />
         <TerminOderVorbeikommen />
         <FaqSection faqs={boxspringFaqs} />
         <WeitereLoesungen currentPath="/boxspringbetten-bocholt" />

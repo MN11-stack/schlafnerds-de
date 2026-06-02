@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
+import SchlafversprechenSection from "@/components/sections/SchlafversprechenSection";
 import { calendlyUrl } from "@/lib/calendly";
 
 const serviceSchema = {
@@ -860,6 +861,7 @@ export default function NackenstuetzkissenBocholt() {
         <UnserWeg />
         <StimmenVonKunden />
         <FaqSection />
+        <SchlafversprechenSection />
         <TerminOderVorbeikommen />
         <WeitereLoesungen currentPath="/nackenstuetzkissen-bocholt" />
         <RegionNaehe />

@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqSection from "@/components/sections/FaqSection";
 import BlogTip from "@/components/BlogTip";
+import SchlafversprechenSection from "@/components/sections/SchlafversprechenSection";
 import { calendlyUrl } from "@/lib/calendly";
 
 const bettenFaqs = [
@@ -607,6 +608,7 @@ export default function BettenBocholt() {
         <Entscheidung />
         <Schlafloesungen />
         <SoArbeitenWir />
+        <SchlafversprechenSection />
         <TerminOderVorbeikommen />
         <BlogTip
           headline="Boxspring oder Lattenrost? Was wirklich entscheidet."

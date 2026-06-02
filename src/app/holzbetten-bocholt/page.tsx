@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 import FaqSection from "@/components/sections/FaqSection";
+import SchlafversprechenSection from "@/components/sections/SchlafversprechenSection";
 import { calendlyUrl } from "@/lib/calendly";
 
 const holzbettenFaqs = [
@@ -666,6 +667,7 @@ export default function HolzbettenBocholt() {
         <HolzbettAlsBasis />
         <LiegepositionZusammenspiel />
         <UnserWeg />
+        <SchlafversprechenSection />
         <TerminOderVorbeikommen />
         <FaqSection faqs={holzbettenFaqs} />
         <WeitereLoesungen currentPath="/holzbetten-bocholt" />

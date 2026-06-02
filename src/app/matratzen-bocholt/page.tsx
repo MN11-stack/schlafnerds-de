@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import WeitereLoesungen from "@/components/sections/WeitereLoesungen";
 import FaqSection from "@/components/sections/FaqSection";
 import BlogTip from "@/components/BlogTip";
+import SchlafversprechenSection from "@/components/sections/SchlafversprechenSection";
 import { calendlyUrl } from "@/lib/calendly";
 
 const matratzenFaqs = [
@@ -720,6 +721,7 @@ export default function MatratzenBocholt() {
         <Sortiment />
         <PasstZuIhnen />
         <UnserWeg />
+        <SchlafversprechenSection />
         <TerminOderVorbeikommen />
         <section className="bg-soft">
           <div className="mx-auto max-w-3xl px-6 py-12 text-center md:py-16">

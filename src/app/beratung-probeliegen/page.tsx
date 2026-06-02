@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqSection from "@/components/sections/FaqSection";
 import BlogTip from "@/components/BlogTip";
+import SchlafversprechenSection from "@/components/sections/SchlafversprechenSection";
 import { calendlyUrl } from "@/lib/calendly";
 
 const serviceSchema = {
@@ -630,6 +631,7 @@ export default function BeratungProbeliegen() {
         <WarumBeratung />
         <WasProbeliegenBedeutet />
         <Beratungsprozess />
+        <SchlafversprechenSection />
         <TerminOderVorbeikommen />
         <section className="bg-soft">
           <div className="mx-auto max-w-3xl px-6 py-12 text-center md:py-16">
