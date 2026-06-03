@@ -176,7 +176,7 @@ const factors: Factor[] = [
     paragraphs: [
       <>Bist du ein Frostbeutel oder schwitzt du nachts? Brauchst du das Gefühl, „eingepackt“ zu liegen, oder wird dir das schnell zu warm?</>,
       <>
-        Im Klima zwischen Bett und Körper geht etwa ein Fünftel Liter Feuchtigkeit pro Nacht weg – durch dich, in die Matratze, weiter durch Lattenrost oder Federbox in den Raum. Welches System das besser ableitet, hängt weniger am Label als an den Materialien (Schaum, Federkern, Latex, Bezug, Topper) und an deinem Bettkasten. Ein offener Lattenrost lüftet besser durch – wenn der Raum unter dem Bett frei bleibt. Eine moderne Boxspring-Konstruktion kann das auch – wenn ihre Materialien atmungsaktiv sind.
+        Im Klima zwischen Bett und Körper geht etwa ein Fünftel Liter Feuchtigkeit pro Nacht weg – durch dich, in die Matratze, weiter durch Lattenrost oder Federbox in den Raum. Wie gut das abgeleitet wird, hängt weniger am Label als an den Materialien (Schaum, Federkern, Latex, Bezug, Topper) und an deinem Bettkasten. Ein offener Lattenrost lüftet gut durch, wenn der Raum unter dem Bett frei bleibt. Eine moderne Boxspring-Konstruktion lüftet genauso gut — Taschenfederkern arbeitet von Natur aus offen, und atmungsaktive Materialien in Matratze und Topper transportieren Feuchtigkeit zuverlässig ab.
       </>,
     ],
   },
@@ -210,7 +210,7 @@ const mythen: Mythos[] = [
     title: "„Boxspringbett ist automatisch ergonomischer.“",
     paragraphs: [
       <>
-        Nicht belegt. Boxspring ist eine Konstruktion, kein Ergonomie-Versprechen – die RAL-Definition beschreibt nur, <em>wie</em> das System aufgebaut ist, nicht <em>was</em> es leistet. Stiftung Warentest hat 2026 neun Boxspringbetten geprüft: Nur eins war insgesamt „gut“. Im direkten Vergleich der Liegeeigenschaften schnitten Standard-Matratzen aus dem Test ein Jahr vorher im Schnitt sogar besser ab. Das heißt nicht „Boxspring ist schlecht“. Das heißt: Auch beim Boxspring kommt es darauf an, was drin steckt – und ob es zu dir passt.
+        Nicht automatisch. Boxspring ist eine <strong>Konstruktion</strong> — was sie leistet, hängt von der Abstimmung zwischen Federbox, Matratze und Topper ab. Eine gut abgestimmte Boxspring ist hervorragend ergonomisch; eine schlecht abgestimmte nicht. Stiftung Warentest hat 2026 neun Boxspringbetten geprüft: Ein Modell war insgesamt „gut" — und genau das zeigt, wie entscheidend die Auswahl (und das Probeliegen) ist. Was drin steckt, macht den Unterschied — und ob es zu dir passt.
       </>,
     ],
   },
@@ -274,6 +274,10 @@ const faustregeln: Rule[] = [
   {
     intro: <>Du hast bewegliche Knie und Hüfte und schon einen Bandscheiben-Vorfall hinter dir:</>,
     detail: <>Höhere Liegehöhe (oft Boxspring) kann das Aufstehen leichter machen – wenn die Matratze ergonomisch passt.</>,
+  },
+  {
+    intro: <>Du magst das Hotelgefühl und ein festes Grundgefühl unter dir:</>,
+    detail: <>Eine Boxspring baut diese Kombination am leichtesten auf.</>,
   },
   {
     intro: <>Du sitzt morgens gern lang im Bett, liest, frühstückst:</>,
@@ -367,7 +371,7 @@ export default function BoxspringbettOderLattenrostPage() {
             Ein Boxspringbett ist nach RAL-Gütedefinition (RAL-RG 441) ein Bettsystem aus mindestens zwei federnden Teilen: einer Federbox unten (das ist die „Box“) und einer Matratze oben. Ein Topper ist optional. Du liegst also auf drei Lagen, die alle Federung haben: Box, Matratze und gegebenenfalls Topper.
           </p>
           <p className="mt-4 leading-relaxed text-tagline/80">
-            Funktional bedeutet das: Eine Boxspring-Konstruktion arbeitet wie eine mehrschichtige Feder-Kette. Dein Körpergewicht verformt zuerst den Topper, dann die Matratze, dann die Federbox. Wie weich oder fest das wirkt, hängt von der Abstimmung aller drei Schichten ab.
+            Funktional bedeutet das: Eine Boxspring-Konstruktion arbeitet wie eine mehrschichtige Feder-Kette. Dein Körpergewicht verformt zuerst den Topper, dann die Matratze, dann die Federbox. Wie weich oder fest das wirkt, hängt von der Abstimmung aller drei Schichten ab. Vorteil: Alle drei Schichten lassen sich gezielt aufeinander abstimmen — das gibt viel Raum für maßgeschneiderte Lösungen.
           </p>
 
           <h3 className="mt-8 font-heading text-xl font-normal">Das Lattenrost-System</h3>
