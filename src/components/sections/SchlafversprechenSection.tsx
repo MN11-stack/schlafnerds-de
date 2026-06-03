@@ -79,8 +79,8 @@ export default function SchlafversprechenSection() {
                 </svg>
               </span>
               <span className="leading-relaxed text-tagline/80">
-                Du gehst nicht allein raus mit deinem Schlafsystem. Auch
-                nach dem Kauf bleiben wir erreichbar.
+                Auch nach dem Kauf sind wir für dich da — bis du genial
+                schläfst.
               </span>
             </li>
           </ul>
