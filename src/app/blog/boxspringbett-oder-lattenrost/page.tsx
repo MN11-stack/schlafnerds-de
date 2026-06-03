@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     canonical: "https://www.schlafnerds.de/blog/boxspringbett-oder-lattenrost",
     languages: {
       "de-DE": "https://www.schlafnerds.de/blog/boxspringbett-oder-lattenrost",
+      "nl-NL": "https://www.slaapnerds.nl/blog/boxspring-of-lattenbodem",
     },
   },
 };
