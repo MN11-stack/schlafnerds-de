@@ -9,6 +9,7 @@ import ReviewsSection from "@/components/sections/ReviewsSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import PeopleRegionSection from "@/components/sections/PeopleRegionSection";
 import ClosingSection from "@/components/sections/ClosingSection";
+import SchlafversprechenSection from "@/components/sections/SchlafversprechenSection";
 
 function ChronotypSection() {
   return (
@@ -68,7 +69,10 @@ export default function Home() {
         {/* 8. Menschen & Region */}
         <PeopleRegionSection />
 
-        {/* 9. Abschluss – Nächster Schritt */}
+        {/* 9. Unser Versprechen */}
+        <SchlafversprechenSection />
+
+        {/* 10. Abschluss – Nächster Schritt */}
         <ClosingSection />
       </main>
       <Footer />
