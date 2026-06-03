@@ -209,7 +209,7 @@ export default function Header() {
               <p className="text-xs font-semibold tracking-wide text-tagline/50 uppercase">
                 Betten
               </p>
-              <div className="mt-2 flex flex-col gap-3 pl-3">
+              <div className="mt-2 flex flex-col gap-3">
                 <a
                   href="/betten-bocholt"
                   className="text-base font-medium text-tagline"
@@ -254,7 +254,7 @@ export default function Header() {
               <p className="text-xs font-semibold tracking-wide text-tagline/50 uppercase">
                 Zubehör
               </p>
-              <div className="mt-2 flex flex-col gap-3 pl-3">
+              <div className="mt-2 flex flex-col gap-3">
                 <a
                   href="/erdungsspanntuecher-bocholt"
                   className="text-base text-tagline"
