@@ -31,6 +31,15 @@ interface Article {
 
 const articles: Article[] = [
   {
+    href: "/blog/kuehl-schlafen-im-sommer",
+    label: "Schlafwissen",
+    title: "Kühl schlafen im Sommer: Kissen, Decke & Laken",
+    description:
+      "Warum Hitze den Schlaf stört – und welche drei Bausteine im Schlafsystem kühl durch den Sommer bringen: kühlendes Kissen, leichte Sommerdecke und kühlendes Spannbettlaken.",
+    image: "/images/blog/kuehl-schlafen-im-sommer.jpg",
+    imageAlt: "Helles, luftiges Schlafzimmer mit leichter Sommerdecke auf dem Bett",
+  },
+  {
     href: "/blog/boxspringbett-oder-lattenrost",
     label: "Schlafsystem",
     title: "Boxspringbett oder Lattenrost? Was wirklich entscheidet",
