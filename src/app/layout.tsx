@@ -16,13 +16,13 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Bettengeschäft Bocholt | Persönliche Schlafberatung bei Schlafnerds",
+  title: "Betten, Matratzen & Schlafberatung Bocholt | Schlafnerds",
   description:
-    "Ihr Bettengeschäft in Bocholt: Individuelle Matratzen-Beratung mit Körperstatik-Check & Probeliegen. Kostenlos & unverbindlich – Di, Do, Fr & Sa geöffnet. Jetzt Termin buchen!",
+    "Ihr Bettengeschäft in Bocholt: individuelle Matratzen-Beratung mit Körperstatik-Check und Probeliegen. Di, Do, Fr & Sa geöffnet – Termin online buchen.",
   openGraph: {
-    title: "Bettengeschäft Bocholt | Persönliche Schlafberatung bei Schlafnerds",
+    title: "Betten, Matratzen & Schlafberatung Bocholt | Schlafnerds",
     description:
-      "Ihr Bettengeschäft in Bocholt: Individuelle Matratzen-Beratung mit Körperstatik-Check & Probeliegen. Kostenlos & unverbindlich.",
+      "Ihr Bettengeschäft in Bocholt: individuelle Matratzen-Beratung mit Körperstatik-Check und Probeliegen.",
     locale: "de_DE",
     type: "website",
     url: "https://www.schlafnerds.de",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bettengeschäft Bocholt | Persönliche Schlafberatung bei Schlafnerds",
+    title: "Betten, Matratzen & Schlafberatung Bocholt | Schlafnerds",
     description:
-      "Ihr Bettengeschäft in Bocholt: Individuelle Matratzen-Beratung mit Körperstatik-Check & Probeliegen. Kostenlos & unverbindlich.",
+      "Ihr Bettengeschäft in Bocholt: individuelle Matratzen-Beratung mit Körperstatik-Check und Probeliegen.",
     images: ["https://www.schlafnerds.de/images/og-image.png"],
   },
   alternates: {
