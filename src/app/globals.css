@@ -26,6 +26,9 @@ body {
   font-family: var(--font-body);
   color: #000000;
   background: #ffffff;
+  /* Platz für das Hinweis-Banner (FerienBanner setzt --banner-h auf seine
+     gemessene Höhe). Ohne Banner: 0px — Layout wie zuvor. */
+  padding-top: var(--banner-h, 0px);
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Newsreader, Nunito } from "next/font/google";
 import "./globals.css";
 import { aggregateRatingSchema, getGoogleReviews } from "@/lib/google-reviews";
+import { specialOpeningHours } from "@/lib/betriebsferien";
+import FerienBanner from "@/components/FerienBanner";
 
 const newsreader = Newsreader({
   variable: "--font-newsreader",
@@ -120,6 +122,7 @@ function buildLocalBusinessSchema(reviews: Awaited<ReturnType<typeof getGoogleRe
         closes: "14:00",
       },
     ],
+    specialOpeningHoursSpecification: specialOpeningHours(),
     areaServed: [
       {
         "@type": "State",
@@ -187,6 +190,7 @@ export default async function RootLayout({
       <body
         className={`${newsreader.variable} ${nunito.variable} antialiased`}
       >
+        <FerienBanner />
         {children}
       </body>
     </html>

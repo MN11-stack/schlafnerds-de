@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import FaqSection from "@/components/sections/FaqSection";
 import BlogTip from "@/components/BlogTip";
 import SchlafversprechenSection from "@/components/sections/SchlafversprechenSection";
+import BetriebsferienSection from "@/components/sections/BetriebsferienSection";
 import { calendlyUrl } from "@/lib/calendly";
 
 const serviceSchema = {
@@ -628,6 +629,7 @@ export default function BeratungProbeliegen() {
       <Header />
       <main>
         <HeroBeratung />
+        <BetriebsferienSection />
         <WarumBeratung />
         <WasProbeliegenBedeutet />
         <Beratungsprozess />

@@ -50,7 +50,7 @@ export default function Header() {
   const nlUrl = deToNlMapping[pathname] || "https://www.slaapnerds.nl/";
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.08)]">
+    <header className="fixed top-[var(--banner-h,0px)] left-0 right-0 z-50 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.08)]">
       {/* Main Header Bar */}
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4">
         {/* Logo + Brand Text */}
