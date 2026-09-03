@@ -4,6 +4,7 @@ import "./globals.css";
 import { aggregateRatingSchema, getGoogleReviews } from "@/lib/google-reviews";
 import { specialOpeningHours } from "@/lib/betriebsferien";
 import FerienBanner from "@/components/FerienBanner";
+import GclidForwarder from "@/components/GclidForwarder";
 
 const newsreader = Newsreader({
   variable: "--font-newsreader",
@@ -190,6 +191,7 @@ export default async function RootLayout({
       <body
         className={`${newsreader.variable} ${nunito.variable} antialiased`}
       >
+        <GclidForwarder />
         <FerienBanner />
         {children}
       </body>
