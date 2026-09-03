@@ -395,6 +395,60 @@ export default function DatenschutzPage() {
               personenbezogenen Daten nehmen, noch Ihre durch die DS-GVO
               zugesicherten Rechte durchsetzen können.
             </p>
+
+            <h2>§ 11 Erfolgsmessung unserer Google-Ads-Anzeigen</h2>
+            <p>
+              (1) Wir schalten Anzeigen im Werbenetzwerk von Google, einem
+              Dienst der Google Ireland Limited, Gordon House, Barrow Street,
+              Dublin 4, Irland. Um beurteilen zu können, welche Anzeigen
+              tatsächlich zu Beratungsterminen führen, messen wir deren Erfolg.
+            </p>
+            <p>
+              (2) Klicken Sie auf eine unserer Anzeigen, hängt Google an die
+              Adresse unserer Website eine Klick-Kennung an (Parameter
+              „gclid&ldquo;, auf manchen Geräten „gbraid&ldquo; oder
+              „wbraid&ldquo;). Vereinbaren Sie anschließend einen
+              Beratungstermin, geben wir diese Kennung an unser Buchungssystem
+              weiter und speichern sie neben den Termindaten. In regelmäßigen
+              Abständen übermitteln wir Google eine Liste dieser Klick-Kennungen
+              mit den Zeitpunkten der zugehörigen Buchungen, damit Google die
+              Buchung der auslösenden Anzeige zuordnen kann.
+            </p>
+            <p>
+              (3) Wir setzen hierfür keine Cookies und speichern keine
+              Informationen auf Ihrem Endgerät. Die Klick-Kennung wird
+              ausschließlich aus der aufgerufenen Internetadresse ausgelesen und
+              nur für die Dauer Ihres Besuchs im Arbeitsspeicher gehalten.
+            </p>
+            <p>
+              (4) An Google übermitteln wir dabei keine Namen, E-Mail-Adressen,
+              Telefonnummern und keine Rechnungsbeträge. Wie Google die Kennung
+              weiterverarbeitet, entnehmen Sie der Datenschutzerklärung von
+              Google (siehe Absatz 6).
+            </p>
+            <p>
+              (5) Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Unser
+              berechtigtes Interesse liegt darin, die Wirksamkeit unserer
+              Werbung zu messen und unser Werbebudget wirtschaftlich
+              einzusetzen. Sie können dieser Verarbeitung jederzeit nach Art. 21
+              DSGVO widersprechen &ndash; eine formlose Nachricht an{" "}
+              <a href="mailto:service@schlafnerds.de">service@schlafnerds.de</a>{" "}
+              genügt, wir nehmen Ihre Buchung dann von der Übermittlung aus.
+            </p>
+            <p>
+              (6) Google verarbeitet Daten auch in den USA. Die Übermittlung
+              erfolgt auf Grundlage des EU-US Data Privacy Framework sowie
+              ergänzend auf Grundlage der Standardvertragsklauseln der
+              EU-Kommission. Weitere Informationen finden Sie unter{" "}
+              <a
+                href="https://policies.google.com/privacy?hl=de"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://policies.google.com/privacy
+              </a>
+              .
+            </p>
           </div>
         </div>
       </main>
